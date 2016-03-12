@@ -1,0 +1,235 @@
+\newcommand{\homedir}{/home/bscholtz/workspace-latex/templates/BasicTemplateUCT/}
+
+%######################Preamble######################
+\input{"\homedir preamble.tex"}
+
+\newcommand{\coursecode}{EEE4036A}
+\newcommand{\assignment}{Design Project (Team 14)}
+\newcommand{\lecturer}{Riana Geschke}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Design Project}
+\lhead{Team 14}
+\cfoot{\thepage}
+
+\begin{document}
+
+%######################Title Page######################
+\begin{titlepage} 
+\includegraphics[width = 17cm]{images/uctbanner.png} \\
+
+\begin{center}
+\begin{LARGE}
+Faculty of Engineering and the Built Environment \\
+Department of Electrical Engineering \\
+\end{LARGE}
+\end{center}
+
+\begin{center}  
+\begin{Huge}
+\textbf{\coursecode}\\
+\bigskip
+\bigskip
+\hrule
+\assignment \\
+\end{Huge}
+
+\vspace*{\fill}
+
+\hrule
+\begin{center}
+\textbf{Benjamin Scholtz (SCHBEN011)\\
+Jarushen Govender (GVNJAR002)\\
+Isaac Lebogang Khobo (KHBISA001)\\
+Nasko Stavrev (STVATA001)\\}
+4$^{th}$ year BSc. (Eng.) Electrical Engineering Department\\
+Lecturer: \lecturer \\
+\today
+\end{center}
+\bigskip
+\hrule
+
+\end{center}
+\end{titlepage}
+
+%######################Contents######################
+
+\newpage
+%\section*{Contents}
+%\addcontentsline{toc}{section}{Contents}  
+\tableofcontents
+
+%######################Plagiarism Dec.######################
+\newpage
+\section{Plagiarism Declaration}
+\textbf{DECLARATION:}
+\begin{enumerate}
+\item I know that plagiarism is wrong. Plagiarism is to use another’s work and to pretend that it is one’s own.
+\item I have not allowed, and will not allow, anyone to copy my work with the intention of passing it off as his or her own work.
+\item This assignment is my own work. I have not used the material in this assignment in any of my other assignments.
+\item I have included internet article, book, or other material references used for this assignment.
+\end{enumerate}
+
+\textbf{Signed:} Benjamin Scholtz (SCHBEN011), Jarushen Govender (GVNJAR002), Isaac Lebogang Khobo (KHBISA001), Nasko Stavrev (STVATA001)\\
+\hrule
+\textbf{Date:} \today \\
+\hrule
+
+%######################Begin Content######################
+\newcommand{\lsec}[1]{\normalsize{\textbf{#1}}\\}
+
+\newpage
+
+\section{TASK CLARIFICATION}
+\subsection{Background}
+UCT Upper campus has a number of parking areas for staff, students and visitors using cars to travel to campus. There are red, yellow, blue and unmarked bays on campus. In addition there are disabled and 
+visitor parking bays on campus. These categories are assigned the highest priority. 
+
+For every user, a parking category is assigned, and an associated annual fee is charged.  The purchase of a parking disk allows the staff member/student/visitor to search for a parking spot in the designated category on campus, but it is not guaranteed that one will be available, since parking bays are oversold. When arriving on campus, a driver of a car may spend some time searching for an available spot in the required category. Parking disks are generally linked to a person and only valid for the specific vehicle for which the disk has been purchased, except for student lift clubs.
+
+The Traffic  Department  on  Upper  Campus  administrates  and  manages  all  aspects  related  to  parking  of vehicles.\cite{assignment}
+ 
+\subsection{Problem Statement}
+For  a  driver  entering  Upper  Campus  in  a  car,  it  is  not immediately  apparent  where  there  are  parking bays available.  This is a particular problem during peak times when a large number of cars arrive on campus, looking for parking at the same time. The design assignment is to solve this problem using the electrical engineering skills of each of the team members in your group.\cite{assignment}
+
+The design assignment is:
+
+\begin{itemize}
+\item To provide information in an easily accessible format, to each driver of a car immediately on arrival on campus, on where all the 
+vacant parking bays on campus are. This must be for the specific category of parking for this user.
+
+\item To determine whether a vehicle is parked on a bay not designated for this user, for example a yellow disk holder parks on a red bay, or a visitor parks on a disabled parking bay, and make this available to the traffic department in real time.
+
+\item To  allow electronic reconfiguration  of  traffic  bay allocations  on  special  occasions, for example during the summer school period, when there are many visitors requiring parking on campus.
+
+\item To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.\cite{assignment}
+\end{itemize}
+
+\newpage
+\section{DESIGN SPECIFICATION}
+\subsection{Scope}
+\subsection{Applicable Documents}
+\subsection{Characteristics}
+\subsubsection{Functional Characteristics}
+\lsec{Function 1} 
+\lsec{Function 2} 
+\lsec{Interface Characteristics} 
+\subsubsection{Quality Assurance}
+\lsec{Standards and Codes}
+\lsec{Methods of Testing}
+\lsec{Reliability Issues}
+\subsubsection{Timescale}
+\lsec{Design Schedule}
+\lsec{Development Schedule}
+\lsec{Production Schedule}
+\lsec{Delivery Schedule}
+\subsubsection{Economic Factors}
+\lsec{Market Analysis}
+\lsec{Design Costs}
+\lsec{Development, Manufacturing, Distribution Costs}
+\subsubsection{Ergonomic Factors}
+\lsec{User needs}
+\lsec{Ergonomics}
+\lsec{Controls}
+\subsubsection{Life-cycle}
+\lsec{Distribution}
+\lsec{Operation}
+\lsec{Maintenance}
+\lsec{Disposal}
+\subsection{Acceptance Test Requirements}
+\lsec{Function Test Requirements}
+Test methods: Could be by inspection, theoretical modelling, simulation, laboratory functional demonstration, field trials, in-service measurements, etc.
+
+\newpage
+\section{CONCEPTUAL DESIGN}
+\subsection{Design One}
+\subsubsection{System Diagram}
+\subsubsection{System Components}
+\subsubsection{Requirement Satisfaction}
+
+\subsubsection{Evaluation}
+\lsec{Cost} 
+(implementation, maintenance, energy consumption) \\
+\lsec{Strong/weak Points}
+
+\subsubsection{Risk Assessment}
+\lsec{External Causes} 
+(weather, vehicle impact, human interference) \\
+\lsec{Intended Life}
+risk of failure during intended life \\
+\lsec{Mitigation}
+mitigation (steps you will take to reduce the risk) \\
+
+\subsection{Design Two}
+\subsubsection{System Diagram}
+\subsubsection{System Components}
+\subsubsection{Requirement Satisfaction}
+
+\subsubsection{Evaluation}
+\lsec{Cost} 
+(implementation, maintenance, energy consumption) \\
+\lsec{Strong/weak Points}
+
+\subsubsection{Risk Assessment}
+\lsec{External Causes} 
+(weather, vehicle impact, human interference) \\
+\lsec{Intended Life}
+risk of failure during intended life \\
+\lsec{Mitigation}
+mitigation (steps you will take to reduce the risk) \\
+
+\subsection{Weighted Selection}
+
+\subsection{Recommendation}
+Brief section describing what the recommended action is.
+
+\newpage
+\section{EMBODIMENT DESIGN}
+\subsection{System Overview}
+\subsubsection{System Description}
+\subsubsection{System Diagram}
+\subsection{System Analysis}
+Analysis of system operation, interfaces, use etc.
+\subsection{Software Design}
+\subsection{Mechanical Design} 
+\subsubsection{Mechanical Requirements}
+Durability, forces, dynamics.
+\subsubsection{Technical Drawings}
+\subsection{Electrical Design} 
+\subsubsection{Power Requirements}
+Battery life etc.
+\subsubsection{Schematics}
+\subsection{Assumptions}
+Identify and show that checked validity.
+\subsection{Failure Modes}
+Probabilities,Consequences,Mitigation
+\subsection{System Lifetime}
+A statement of the design life time, with explanation of what (if anything) will limit it.
+\subsection{Worst Case Calculation}
+For at least one component / sub-system 
+
+%\begin{center}
+%\includegraphics[trim={2cm 12cm 2cm 6cm},clip]{images/Fig1.pdf}
+%\end{center}
+
+%\begin{minted}[linenos=true]{matlab}
+%\end{minted}
+
+%######################References######################
+\newpage
+%\input{"\homedir references.tex"} %manual references
+
+\bibliography{bibliography}
+\bibliographystyle{ieeetran}
+\addcontentsline{toc}{section}{References}
+
+
+\end{document}
+
+%----------------------------------------------------------------------------
+
+%######################Appendices######################
+\newpage
+\section*{Appendices}
+\subsection*{Appendix A: Name of appendix}
