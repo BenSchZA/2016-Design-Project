@@ -1,47 +1,53 @@
-\contentsline {section}{\numberline {1}Plagiarism Declaration}{3}{section.1}
-\contentsline {section}{\numberline {2}TASK CLARIFICATION}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Background}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Problem Statement}{4}{subsection.2.2}
-\contentsline {section}{\numberline {3}DESIGN SPECIFICATION}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Scope}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Applicable Documents}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Characteristics}{5}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Functional Characteristics}{5}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Quality Assurance}{5}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Timescale}{5}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Economic Factors}{5}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Ergonomic Factors}{5}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Life-cycle}{6}{subsubsection.3.3.6}
-\contentsline {subsection}{\numberline {3.4}Acceptance Test Requirements}{6}{subsection.3.4}
-\contentsline {section}{\numberline {4}CONCEPTUAL DESIGN}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Design One}{7}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}System Diagram}{7}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}System Components}{7}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Requirement Satisfaction}{7}{subsubsection.4.1.3}
-\contentsline {subsubsection}{\numberline {4.1.4}Evaluation}{7}{subsubsection.4.1.4}
-\contentsline {subsubsection}{\numberline {4.1.5}Risk Assessment}{7}{subsubsection.4.1.5}
-\contentsline {subsection}{\numberline {4.2}Design Two}{7}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}System Diagram}{7}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}System Components}{7}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Requirement Satisfaction}{7}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Evaluation}{7}{subsubsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.5}Risk Assessment}{8}{subsubsection.4.2.5}
-\contentsline {subsection}{\numberline {4.3}Weighted Selection}{8}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Recommendation}{8}{subsection.4.4}
-\contentsline {section}{\numberline {5}EMBODIMENT DESIGN}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}System Overview}{9}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}System Description}{9}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}System Diagram}{9}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}System Analysis}{9}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Software Design}{9}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Mechanical Design}{9}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}Mechanical Requirements}{9}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Technical Drawings}{9}{subsubsection.5.4.2}
-\contentsline {subsection}{\numberline {5.5}Electrical Design}{9}{subsection.5.5}
-\contentsline {subsubsection}{\numberline {5.5.1}Power Requirements}{9}{subsubsection.5.5.1}
-\contentsline {subsubsection}{\numberline {5.5.2}Schematics}{9}{subsubsection.5.5.2}
-\contentsline {subsection}{\numberline {5.6}Assumptions}{9}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Failure Modes}{9}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}System Lifetime}{10}{subsection.5.8}
-\contentsline {subsection}{\numberline {5.9}Worst Case Calculation}{10}{subsection.5.9}
-\contentsline {section}{References}{11}{section*.2}
+\contentsline {section}{Plagiarism Declaration}{4}{section*.2}
+\contentsline {section}{\numberline {1}TASK CLARIFICATION}{5}{section.1}
+\contentsline {subsection}{\numberline {1.1}Background}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Problem Statement}{5}{subsection.1.2}
+\contentsline {section}{\numberline {2}CONTEXT OF DESIGN}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Macroeconomic Factors}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Microeconomic Factors}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}DESIGN SPECIFICATION}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Scope}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Applicable Documents}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Characteristics}{7}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Functional Characteristics}{7}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Quality Assurance}{7}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Timescale}{8}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Economic Factors}{8}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Ergonomic Factors}{8}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Life-cycle}{9}{subsubsection.3.3.6}
+\contentsline {subsection}{\numberline {3.4}Acceptance Test Requirements}{9}{subsection.3.4}
+\contentsline {section}{\numberline {4}CONCEPTUAL DESIGN}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Design One}{10}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}System Diagram}{10}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}System Components}{10}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Requirement Satisfaction}{11}{subsubsection.4.1.3}
+\contentsline {subsubsection}{\numberline {4.1.4}Evaluation}{11}{subsubsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.5}Risk Assessment}{11}{subsubsection.4.1.5}
+\contentsline {subsection}{\numberline {4.2}Design Two}{12}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}System Diagram}{12}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}System Components}{12}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Requirement Satisfaction}{12}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Evaluation}{12}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}Risk Assessment}{12}{subsubsection.4.2.5}
+\contentsline {subsection}{\numberline {4.3}Weighted Selection}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Recommendation}{13}{subsection.4.4}
+\contentsline {section}{\numberline {5}EMBODIMENT DESIGN}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}System Overview}{14}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}System Description}{14}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}System Diagram}{14}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}System Analysis}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Software Design}{14}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Mechanical Design}{14}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Mechanical Requirements}{14}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Technical Drawings}{14}{subsubsection.5.4.2}
+\contentsline {subsection}{\numberline {5.5}Electrical Design}{14}{subsection.5.5}
+\contentsline {subsubsection}{\numberline {5.5.1}Power Requirements}{14}{subsubsection.5.5.1}
+\contentsline {subsubsection}{\numberline {5.5.2}Schematics}{15}{subsubsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.3}PCB Design}{17}{subsubsection.5.5.3}
+\contentsline {subsection}{\numberline {5.6}Assumptions}{17}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Failure Modes}{17}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}System Lifetime}{17}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}Worst Case Calculation}{18}{subsection.5.9}
+\contentsline {section}{References}{19}{section*.3}
+\contentsline {section}{Appendix A: Contributions}{20}{section*.5}
+\contentsline {section}{Appendix B: Progress Reports}{20}{section*.6}

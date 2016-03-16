@@ -27,4 +27,18 @@
   2016}. [Online]. Available: \url{Private}
 \BIBentrySTDinterwordspacing
 
+\bibitem{decawave-presentation}
+\BIBentryALTinterwordspacing
+{Luc Darmon, Gerry O'Grady, Mike Clancy}. (2013, November) {DecaWave’s
+  ScenSor DW1000: The World’s Most Precise Indoor Location and Communication
+  CMOS Chip}. [Online]. Available:
+  \url{http://www.decawave.com/sites/default/files/resources/decawave_scensor_presentation_santa_clara_1.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{handout}
+\BIBentryALTinterwordspacing
+{Riana Geschke}. (2016, February) {EEE4036A Class Handout}. [Online].
+  Available: \url{Private}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
