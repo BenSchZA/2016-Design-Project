@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=latex 2016.2.28)  12 MAR 2016 19:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.2.28)  18 MAR 2016 12:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -48,21 +48,29 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-Missing character: There is no D in font nullfont!
-Missing character: There is no E in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no L in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no R in font nullfont!
-Missing character: There is no A in font nullfont!
-Missing character: There is no T in font nullfont!
-Missing character: There is no I in font nullfont!
-Missing character: There is no O in font nullfont!
-Missing character: There is no N in font nullfont!
-Missing character: There is no : in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 4--6
 []
+ []
+
+
+Overfull \hbox (28.51373pt too wide) in paragraph at lines 4--6
+\OT1/cmr/bx/n/10 DEC-
+ []
+
+
+Overfull \hbox (19.44434pt too wide) in paragraph at lines 4--6
+\OT1/cmr/bx/n/10 LA-
+ []
+
+
+Overfull \hbox (21.15266pt too wide) in paragraph at lines 4--6
+\OT1/cmr/bx/n/10 RA-
+ []
+
+
+Overfull \hbox (33.19426pt too wide) in paragraph at lines 4--6
+\OT1/cmr/bx/n/10 TION: 
  []
 
 Missing character: There is no I in font nullfont!
@@ -425,13 +433,6 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no : in font nullfont!
 Missing character: There is no B in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
@@ -458,6 +459,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ) in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no J in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no r in font nullfont!
@@ -485,6 +487,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no ) in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no I in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -514,6 +517,7 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ) in font nullfont!
+Missing character: There is no , in font nullfont!
 Missing character: There is no N in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
@@ -538,18 +542,13 @@ Missing character: There is no 0 in font nullfont!
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no ) in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--17
-[]
+Overfull \hbox (56.5762pt too wide) in paragraph at lines 13--17
+[]\OT1/cmr/bx/n/10 Signed:
  []
 
-Missing character: There is no D in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no : in font nullfont!
 ! Undefined control sequence.
-l.18 Date: \today
-                  \\
+l.18 \textbf{Date:} \today
+                           \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -557,8 +556,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
-[] 
+Overfull \hbox (47.34706pt too wide) in paragraph at lines 18--19
+[]\OT1/cmr/bx/n/10 Date: 
  []
 
 )
@@ -569,11 +568,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
 
  
 Here is how much of TeX's memory you used:
- 7 strings out of 495026
- 203 string characters out of 6181541
- 46956 words of memory out of 5000000
- 3321 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 10 strings out of 495025
+ 228 string characters out of 6181515
+ 46959 words of memory out of 5000000
+ 3323 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 8i,1n,6p,167b,67s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 13i,1n,10p,167b,67s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
