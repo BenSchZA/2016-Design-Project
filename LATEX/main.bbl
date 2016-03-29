@@ -41,4 +41,29 @@
   Available: \url{Private}
 \BIBentrySTDinterwordspacing
 
+\bibitem{DW-antenna}
+\BIBentryALTinterwordspacing
+{DecaWave}. (2014, February) {APH0007 APPLICATION NOTE: Antenna Selection /
+  Design Guide for DW1000}. [Online]. Available:
+  \url{http://www.decawave.com/support/download/file/nojs/442}
+\BIBentrySTDinterwordspacing
+
+\bibitem{ICASA}
+\BIBentryALTinterwordspacing
+{ICASA}. (2013) {ICASA National Radio Frequency Plan}. [Online]. Available:
+  \url{https://www.icasa.org.za/Portals/0/Regulations/Regulations/National%20Frequency%20Plan/NatRadFreqPlan2013GG.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{UWB-Regs}
+\BIBentryALTinterwordspacing
+{Decawave}. (2015) {APR001 APPLICATION NOTE: UWB REGULATIONS}. [Online].
+  Available: \url{http://www.decawave.com/support/download/file/nojs/726}
+\BIBentrySTDinterwordspacing
+
+\bibitem{notes}
+\BIBentryALTinterwordspacing
+{Prof. T. Gaunt}. (2016) {Course Notes by Prof T Gaunt}. [Online]. Available:
+  \url{Private}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

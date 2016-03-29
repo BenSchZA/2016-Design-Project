@@ -371,8 +371,53 @@ Battery life etc.
 \end{center}
 \end{figure}
 
+\newpage
 \subsubsection{RF Design}
 
+
+\lsec{Antenna Specifciations:\cite{DW-antenna}}
+
+Friss's Transmission Equation states the following:
+$$P_{RX} = \frac{P_{TX}G_{TX}G_{RX} \lambda^2}{(4 \pi r)^2}$$
+There is a quadratic relationship between the received power ($P_{RX}$) and the distance r from the tag to the beacon. This means we need to optimize the received power in another way, as the distance r can not be optimized except by having a dense beacon installation. The transmit power ($P_{TX}$) needs to be kept as low as possible, to optimize battery usage - this means the transmit and received antenna gain need to be made as high as is possible. The tag has a limited space profile, which means the beacon antenna needs to be as large as possible. Unfortunately the beacon antenna needs to be fairly omni-directional in order to pick up all the tags, as will be explained below, this further limits the possible receiver gain.
+
+Because the antenna gains are measured using decibels which are on a logarithmic scale, the following changes in the equation need to be made:
+
+$$P_{RX} = P_{TX} + G_{TX} + G_{R} + 20log_{10}(\frac{\lambda}{4 \pi R})$$
+
+We would like to achieve at least a 60 percent transmission efficiency (this means 60 percent of the transmitted power is received) with a target of 90 percent efficiency. Designing for a 75 percent efficiency will help us achieve this target: 
+
+$$\lambda = \frac{300e6}{f} = \frac{300e6}{3GHz} = 0.1m$$
+
+$$EIRP(f) = P_{TX}G_{TX} = -41.3dBm/MHz$$
+\begin{center}
+value as mentioned below in regulations. This means the peak transmitter power and peak transmitter antenna gain must give a product within the regulations.
+\end{center}
+
+$$\frac{P_{RX}}{P_{TX}} = 0.75 = \frac{G_{TX}G_{RX} \times 0.1}{(4 \pi \times 200)^2} = $$
+
+\begin{table}[H]
+\centering
+\caption{Antenna specifications: tag and beacon}
+\label{my-label}
+\begin{tabular}{l l l l}
+\textbf{Aspect}                      & \textbf{Tag} & \textbf{Beacon} \\ 
+Radiation Pattern    	& Isotropic             & Dipole              \\
+Power Output 			& 5                     & 40                     \\
+Gain                 	& 2.6dBi                     & 10                    \\
+Physical Area 			& 8mm					 & $1m^2$          \\         
+Location 				& Mobile                & Fixed                    \\         
+\end{tabular}
+\end{table}
+
+The tag antenna specifications are based on the calculations above and using the AH086M555003 PCB chip antenna from Mouser which has a wide operating range from 3100MHz to 8000MHz.
+
+\newpage
+\lsec{ICASA National Radio Frequency Plan:\cite{ICASA}\cite{UWB-Regs}}
+The ICASA 2013 NRFP for ITU Region 1 allocates the frequency range from 3.3GHz to 3.4GHz to radio-location with a typical application of government services. In South Africa there are no specific regulations for UWB signals. The Decawave technology is ETSI compliant and will generally be accepted by ICASA so long as EMF and RF mitigation techniques are used. The regulations permit outdoor use on the frequency range 3.1-4.8GHz with an EIRP of -41.3dBm/MHz. The ETSI regulations permit the use of the Decawave chips in an indoor and outdoor environment.
+
+\lsec{DW1000 Frequency Channels:\cite{DW-antenna}}
+The DW1000 can be programmed to use specific frequency channels (defined by the IEEE 802.15.4a-2011 standard) with corresponding bandwidth. Based on the ICASA regulations above, Channel 1 would be used with a Centre Frequency of 3493.4MHz and an operational bandwidth of 500MHz. This falls within the informal regulations mentioned above. 
 
 \subsubsection{Bill of Materials}
 
@@ -384,6 +429,8 @@ Probabilities,Consequences,Mitigation
 A statement of the design life time, with explanation of what (if anything) will limit it.
 \subsection{Worst Case Calculation}
 For at least one component / sub-system 
+
+\textit{Report structure compiled from class notes.}\cite{handout}\cite{notes}
 
 %\begin{figure}[H]
 %\begin{center}
@@ -423,6 +470,79 @@ LATEX Formatting/Template. \\
 \newpage
 \subsection*{Appendix B: Progress Reports}
 \addcontentsline{toc}{section}{Appendix B: Progress Reports}
+
+\subsection*{Appendix C: Tag Bill of Materials and Unit Cost}
+
+\begin{landscape}
+\begin{table}[]
+\centering
+\tiny
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{llllllll}
+\textbf{Ref}   & \textbf{Type} & \textbf{Value}             & \textbf{Footprint}              & \textbf{Part No. (Mouser default)}   & \textbf{Cost (US\$)} & \textbf{Outlay} & \textbf{Cost Outlay} \\
+C4             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C6             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+R2             & Resistor      & 100K                       & Resistors\_SMD:R\_0201          & 660-RK73H1HTTC1003F                  & 0.01                 & 15000           & 150                  \\
+C31            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C30            & Capacitor     & 4.7uF                      & Capacitors\_SMD:C\_0201         & 963-JMK063BJ474KP-F                  & 0.041                & 15000           & 615                  \\
+C29            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C28            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C27            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C26            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C25            & Capacitor     & 1000pF                     & Capacitors\_SMD:C\_0201         & 81-GRM033R71E102KA1D                 & 0.004                & 15000           & 60                   \\
+C24            & Capacitor     & 330pF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R71E331KA1D                 & 0.004                & 15000           & 60                   \\
+C23            & Capacitor     & 10pF                       & Capacitors\_SMD:C\_0201         & 81-GRM0335C1E100JA1D                 & 0.003                & 15000           & 45                   \\
+C22            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C21            & Capacitor     & 330pF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R71E331KA1D                 & 0.004                & 15000           & 60                   \\
+C20            & Capacitor     & 10pF                       & Capacitors\_SMD:C\_0201         & 81-GRM0335C1E100JA1D                 & 0.003                & 15000           & 45                   \\
+C19            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C18            & Capacitor     & 47uF                       & Capacitors\_SMD:C\_0201         & 581-TPSC476K016R0350                 & 0.206                & 15000           & 3090                 \\
+C15            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C17            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C16            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+T1             & Transformer   & TRANSFO4                   & footprints:HHM1595A1            & 810-HHM1595A1                        & 0.362                & 15000           & 5430                 \\
+C14            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+R6             & Resistor      & 270                        & Resistors\_SMD:R\_0201          & 667-ERJ-1GNF2700C                    & 0.005                & 15000           & 75                   \\
+C12            & Capacitor     & 820pF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R71E821KA1D                 & 0.004                & 15000           & 60                   \\
+C13            & Capacitor     & 18pF                       & Capacitors\_SMD:C\_0201         & 581-02013A180GAT2A                   & 0.099                & 15000           & 1485                 \\
+C11            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C9             & Capacitor     & 1.2pF                      & Capacitors\_SMD:C\_0201         & 810-C0603C0G1E1R2BTQ                 & 0.02                 & 15000           & 300                  \\
+R3             & Resistor      & 16k                        & Resistors\_SMD:R\_0201          & 667-ERJ-1GEJ163C                     & 0.004                & 15000           & 60                   \\
+C8             & Capacitor     & 27pF                       & Capacitors\_SMD:C\_0201         & 81-GRM0335C1E270JA1D                 & 0.004                & 15000           & 60                   \\
+C7             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+R1             & Resistor      & 11k 1\%                    & Resistors\_SMD:R\_0201          & 71-CRCW020111K0FKED                  & 0.026                & 15000           & 390                  \\
+C5             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+C3             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+R4             & Resistor      & 10k                        & Resistors\_SMD:R\_0201          & 603-RC0201FR-0710KL                  & 0.004                & 15000           & 60                   \\
+R5             & Resistor      & 10k                        & Resistors\_SMD:R\_0201          & 603-RC0201FR-0710KL                  & 0.004                & 15000           & 60                   \\
+C2             & Capacitor     & 10pF                       & Capacitors\_SMD:C\_0201         & 81-GRM0335C1E100JA1D                 & 0.003                & 15000           & 45                   \\
+C1             & Capacitor     & 10pF                       & Capacitors\_SMD:C\_0201         & 81-GRM0335C1E100JA1D                 & 0.003                & 15000           & 45                   \\
+Y1             & Crystal       & 38.4MHz                    & Crystals:FA238-TSX3225          & ABM10-165-38.400MHz-T3               & 0.667                & 15000           & 10005                \\
+C10            & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
+U1             & Transciever   & DW1000                     & Housings\_DFN\_QFN:QFN-48       & 1479-1001-2-ND                       & 8.8726               & 15000           & 133089               \\
+U2             & DC-DC         & TPS62203DBV                & SMD:SOT-23-5                    & 595-TPS62203DBVR                     & 0.542                & 15000           & 8130                 \\
+U3             & DC-DC         & TPS62203DBV                & SMD:SOT-23-5                    & 595-TPS62203DBVR                     & 0.542                & 15000           & 8130                 \\
+C34            & Capacitor     & 4.7uF                      & Capacitors\_SMD:C\_0201         & 963-JMK063BJ474KP-F                  & 0.041                & 15000           & 615                  \\
+L1             & Inductor      & 10uH                       & Inductors:Inductor\_1212        & 81-LQH3NPN100MM0L                    & 0.132                & 15000           & 1980                 \\
+C35            & Capacitor     & 10uF                       & Capacitors\_SMD:C\_0201         & 80-T491C106K016                      & 0.102                & 15000           & 1530                 \\
+P1             & Connector     & CONN\_01X02                & Connectors\_Molex               & See note.                            & 0.5                  & 15000           & 7500                 \\
+P2             & Antenna       & Antenna                    & PCB Chip Antenna                & 963-AH086M555003-T                   & 0.803                & 15000           & 12045                \\
+IC1            & Micro.        & ATMEGA328P-MM              & DFN\_QFN:QFN-28                 & 556-ATMEGA328P-MMH                   & 1.89                 & 15000           & 28350                \\
+R7             & Resistor      & 10k                        & Resistors\_SMD:R\_0201          & 603-RC0201FR-0710KL                  & 0.004                & 15000           & 60                   \\
+Y2             & Crystal       & 16MHz                      & Crystals:crystal\_FA238-TSX3225 & 732-TX325-16F09Z-AC3                 & 0.278                & 15000           & 4170                 \\
+C32            & Capacitor     & 22pF                       & Capacitors\_SMD:C\_0201         & 810-C0603C0G1H220J                   & 0.004                & 15000           & 60                   \\
+C33            & Capacitor     & 22pF                       & Capacitors\_SMD:C\_0201         & 810-C0603C0G1H220J                   & 0.004                & 15000           & 60                   \\
+               &               &                            &                                 & \textbf{Total Capital Outlay (ZAR):} &                      &                 & \textbf{3558254.88}  \\
+               &               &                            &                                 & \textbf{Unit Cost (ZAR):}            &                      &                 & \textbf{237.216992}  \\
+               &               &                            &                                 &                                      &                      &                 &                      \\
+\textbf{Notes} &               &                            &                                 &                                      &                      &                 &                      \\
+P1             & Connector     & Part No.: Diff. Footprint. &                                 &                                      &                      &                 &                      \\
+C35            & Capacitor     & Footprint: 2412            &                                 &                                      &                      &                 &                      \\
+U1             & Transciever   & Supplier: Digikey          &                                 &                                      &                      &                 &                     
+\end{tabular}
+\end{table}
+\end{landscape}
 
 \end{document}
 

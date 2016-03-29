@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.3.27)  28 MAR 2016 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2016.3.27)  29 MAR 2016 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,18 +662,34 @@ File: pgfcalendar.code.tex 2007/07/23 v3.0.0 (rcs-revision 1.11)
 \gtt@calendar@startofweek=\count155
 \gtt@left@slot=\count156
 \gtt@right@slot=\count157
-) (/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count158
+\rotFPtop=\skip59
+\rotFPbot=\skip60
+\rot@float@box=\box45
+\rot@mess@toks=\toks35
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks35
-\t@pgfplots@tokb=\toks36
-\t@pgfplots@tokc=\toks37
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
 \pgfplots@tmpa=\dimen171
-\c@pgfplots@coordindex=\count158
-\c@pgfplots@scanlineindex=\count159
+\c@pgfplots@coordindex=\count159
+\c@pgfplots@scanlineindex=\count160
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
 .tex))
@@ -690,14 +706,14 @@ tructure.code.tex)
 tructureext.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
 .code.tex
-\c@pgfplotsarray@tmp=\count160
+\c@pgfplotsarray@tmp=\count161
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
 x.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
 d.code.tex
-\c@pgfplotstable@counta=\count161
-\t@pgfplotstable@a=\toks38
+\c@pgfplotstable@counta=\count162
+\t@pgfplotstable@a=\toks39
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
 .code.tex)
@@ -709,7 +725,7 @@ de.tex))
 .tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
 fshading.code.tex
-\c@pgfplotslibrarysurf@no=\count162
+\c@pgfplotslibrarysurf@no=\count163
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
 shading.pgfsys-pdftex.def)))
@@ -739,11 +755,11 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen174
 \pgfdecoratedinputsegmentremainingdistance=\dimen175
 \pgf@decorate@distancetomove=\dimen176
-\pgf@decorate@repeatstate=\count163
+\pgf@decorate@repeatstate=\count164
 \pgfdecorationsegmentamplitude=\dimen177
 \pgfdecorationsegmentlength=\dimen178
 )
-\tikz@lib@dec@box=\box45
+\tikz@lib@dec@box=\box46
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.pathmorphing.code.tex
@@ -753,7 +769,7 @@ decorations.pathmorphing.code.tex))
 zlibrarydecorations.pathreplacing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count164
+\pgfplots@numplots=\count165
 \pgfplots@xmin@reg=\dimen179
 \pgfplots@xmax@reg=\dimen180
 \pgfplots@ymin@reg=\dimen181
@@ -769,8 +785,14 @@ File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 de.tex
 File: pgflibraryplotmarks.code.tex 2013/07/20 v3.0.0 (rcs-revision 1.13)
 )))
-Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
 ) (./main.aux
+
+LaTeX Warning: Label `my-label' multiply defined.
+
+
+LaTeX Warning: Label `my-label' multiply defined.
+
 
 LaTeX Warning: Label `my-label' multiply defined.
 
@@ -793,17 +815,17 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count165
+\scratchcounter=\count166
 \scratchdimen=\dimen185
-\scratchbox=\box46
-\nofMPsegments=\count166
-\nofMParguments=\count167
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count168
+\scratchbox=\box47
+\nofMPsegments=\count167
+\nofMParguments=\count168
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count169
 \MPscratchDim=\dimen186
-\MPnumerator=\count169
-\makeMPintoPDFobject=\count170
-\everyMPtoPDFconversion=\toks40
+\MPnumerator=\count170
+\makeMPintoPDFobject=\count171
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -819,7 +841,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box47
+\AtBeginShipoutBox=\box48
 Package hyperref Info: Link coloring ON on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -828,7 +850,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count171
+\c@section@level=\count172
 )
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
@@ -1012,12 +1034,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--261
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--269
+Underfull \hbox (badness 10000) in paragraph at lines 263--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+Underfull \hbox (badness 10000) in paragraph at lines 277--280
 
  []
 
@@ -1028,7 +1050,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 281--287
+Underfull \hbox (badness 10000) in paragraph at lines 282--289
 
  []
 
@@ -1050,19 +1072,19 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.325 \newpage
+l.327 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.325 \newpage
+l.327 \newpage
               ]
 <data/parking-system.pdf, id=378, page=1, 845.1575pt x 598.235pt>
 File: data/parking-system.pdf Graphic file (type pdf)
 
 <use data/parking-system.pdf, page 1>
-Package pdftex.def Info: data/parking-system.pdf, page1 used on input line 344.
+Package pdftex.def Info: data/parking-system.pdf, page1 used on input line 346.
 
 (pdftex.def)             Requested size: 438.3927pt x 229.07578pt.
 
@@ -1076,7 +1098,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 File: data/parking-system.pdf Graphic file (type pdf)
 
 <use data/parking-system.pdf, page 2>
-Package pdftex.def Info: data/parking-system.pdf, page2 used on input line 351.
+Package pdftex.def Info: data/parking-system.pdf, page2 used on input line 353.
 
 (pdftex.def)             Requested size: 422.57771pt x 299.11676pt.
 
@@ -1084,7 +1106,7 @@ Package pdftex.def Info: data/parking-system.pdf, page2 used on input line 351.
 File: data/parking-system.pdf Graphic file (type pdf)
 
 <use data/parking-system.pdf, page 3>
-Package pdftex.def Info: data/parking-system.pdf, page3 used on input line 358.
+Package pdftex.def Info: data/parking-system.pdf, page3 used on input line 360.
 
 (pdftex.def)             Requested size: 276.10173pt x 228.34863pt.
 
@@ -1099,19 +1121,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 
+l.364 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 
+l.364 
        <./data/parking-system.pdf> <./data/parking-system.pdf>]
 <data/pcb-layout.pdf, id=401, 597.23125pt x 845.1575pt>
 File: data/pcb-layout.pdf Graphic file (type pdf)
 
 <use data/pcb-layout.pdf>
-Package pdftex.def Info: data/pcb-layout.pdf used on input line 367.
+Package pdftex.def Info: data/pcb-layout.pdf used on input line 369.
 (pdftex.def)             Requested size: 369.60832pt x 389.91248pt.
 
 
@@ -1125,7 +1147,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.371 
+l.373 
        <./data/parking-system.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1138,30 +1160,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.383 \subsection
-                 {Worst Case Calculation} <./data/pcb-layout.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[19] (./main.bbl
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 414--419
+l.374 \newpage
+               <./data/pcb-layout.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
 
  []
 
@@ -1171,7 +1172,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21]
+[19pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.414 
+      ]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21] (./main.bbl
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+
+Underfull \hbox (badness 1163) in paragraph at lines 53--56
+[]\OT1/cmr/m/n/12 ICASA. (2013) ICASA Na-tional Ra-dio Fre-quency Plan. [On-lin
+e]. Avail-
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1179,38 +1213,78 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+Underfull \hbox (badness 10000) in paragraph at lines 463--468
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 477.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.545 \end{landscape}
+                     ]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 547.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 547.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 547.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 547.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6D8ADD43815E37772A3FDF60823F8614;3763.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 547.
  ) 
 Here is how much of TeX's memory you used:
- 27663 strings out of 495025
- 654440 string characters out of 6181515
- 852159 words of memory out of 5000000
- 30288 multiletter control sequences out of 15000+600000
- 11316 words of font info for 42 fonts, out of 8000000 for 9000
+ 27777 strings out of 495025
+ 656115 string characters out of 6181515
+ 866810 words of memory out of 5000000
+ 30378 multiletter control sequences out of 15000+600000
+ 12620 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  64i,12n,76p,749b,849s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (23 pages, 353857 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+
+Output written on main.pdf (26 pages, 428989 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 446 compressed objects within 5 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 547 PDF objects out of 1000 (max. 8388607)
+ 491 compressed objects within 5 object streams
+ 113 named destinations out of 1000 (max. 500000)
  502 words of extra memory for PDF output out of 10000 (max. 10000000)
 
