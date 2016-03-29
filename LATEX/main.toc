@@ -45,11 +45,11 @@
 \contentsline {subsubsection}{\numberline {6.5.2}Schematics}{16}{subsubsection.6.5.2}
 \contentsline {subsubsection}{\numberline {6.5.3}PCB Design}{18}{subsubsection.6.5.3}
 \contentsline {subsubsection}{\numberline {6.5.4}RF Design}{19}{subsubsection.6.5.4}
-\contentsline {subsubsection}{\numberline {6.5.5}Bill of Materials}{21}{subsubsection.6.5.5}
+\contentsline {subsubsection}{\numberline {6.5.5}Bill of Materials (Tag)}{21}{subsubsection.6.5.5}
 \contentsline {subsection}{\numberline {6.6}Assumptions}{21}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Failure Modes}{21}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}System Lifetime}{21}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Worst Case Calculation}{21}{subsection.6.9}
-\contentsline {section}{References}{22}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{23}{section*.4}
-\contentsline {section}{Appendix B: Progress Reports}{24}{section*.9}
+\contentsline {subsection}{\numberline {6.7}Failure Modes}{22}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}System Lifetime}{22}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Worst Case Calculation}{22}{subsection.6.9}
+\contentsline {section}{References}{23}{section*.2}
+\contentsline {section}{Appendix A: Contributions}{24}{section*.4}
+\contentsline {section}{Appendix B: Progress Reports}{25}{section*.9}
