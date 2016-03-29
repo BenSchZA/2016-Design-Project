@@ -116,12 +116,17 @@ The following documents are applicable to the project and are of importance to t
 \subsubsection{Functional Characteristics}
 \lsec{Function 1: User interface} 
 Information must be available in an easily accessible format to indicate to drivers where legal parking bays are located.
+
 \lsec{Function 2: Vehicle location}
 Real time location and classification of vehicles in UCT parking areas based on user parking privileges. 
+
 \lsec{Function 3: System back-end}
 Traffic department should be able to access data about vehicles and users on a database as well as reconfigure traffic bay allocations. The use of parking bays should be monitored and logged to be processed to show percentage occupation of parking area and get historical data.
+
 \lsec{Interface Characteristics} 
-Function 1, 2 and 3 should be linked with a wireless communication method. 
+Function 1, 2 and 3 should be linked with a wireless communication method.
+
+\newpage
 \subsubsection{Quality Assurance}
 \lsec{Standards and Codes}
 The design must meet the following standards and codes:
@@ -143,6 +148,14 @@ The design should be tested using the following method:
 \end{enumerate}
 
 \lsec{Reliability Issues}
+
+Reliability issues will arise in the following forms:
+
+\begin{itemize}
+\item Component quality standards.
+\item Supplier reliability (especially for importing).
+\item 
+\end{itemize}
 
 \newpage
 \subsubsection{Timescale}
@@ -189,19 +202,41 @@ The complete system will be installed and in use over the period of 1 month.
 
 \subsubsection{Economic Factors}
 \lsec{Market Analysis}
-UCT allocates about 2.8 users per parking bay, with about 5000 parking bays available on campus. This means UCT has approximately 14000 parking disk holders who pay R500 each to park on campus for the year. This means the cash flow coming into the traffic department, assuming no external funding is received, is approximately R13.4 million per year. 
+To calculate the upper campus UCT parking cash flow in the table below, a few assumptions were made. Approximately 2.8 parking discs are allocated per bay. Assuming this is true of all parking bay categories, this results in a total cash flow of R13.6 million per year. Assuming that 20\% of this cash flow is used for maintenance, and the other 20\% for parking staff salaries, we are left with R8.16 million for the project, with possible external funding if necessary.
 
-808 red
-1046 yellow
-student 2757
-total 4611
+\begin{table}[H]
+\centering
+\caption{Upper Campus UCT Parking Cash Flow}
+\label{my-label}
+\begin{tabular}{lllll}
+                         & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price} & \textbf{Cash Flow} \\
+\textbf{Red}                      & 808                   & 2262.4                  & 1524                & 3447897.6          \\
+\textbf{Yellow}          & 1046                  & 2928.8                  & 960                 & 2811648            \\
+\textbf{Student}         & 2757                  & 7719.6                  & 960                 & 7410816            \\
+\textbf{Total Bays}      & 4611                  & 12910.8                 &                     &                    \\
+\textbf{}                &                       &                         &                     &                    \\
+\textbf{Discs/bay}       & 2.8                   &                         &                     &                    \\
+\textbf{Total Cash Flow} & 13670361.6            &                         &                     &                   
+\end{tabular}
+\end{table}
 
-unmarked 960
-red 1524
-yellow 960
 
 \lsec{Design Costs}
+The design costs will be kept to a minimum by using UCT Electrical Engineering students to complete the design as a part of their EEE4036A design course.
+
 \lsec{Development, Manufacturing, Distribution Costs}
+The main costs incurred will be in contracted manufacturing and distribution. 
+
+The following companies will be contracted to:
+\begin{enumerate}
+\item Zytek will be used for the manufacturing and assembly of the PCBs.
+\item Skeg product development will be used for the tag and beacons casing production using injection mould methods.
+\item Electronic components will be imported from Mouser predominantly. 
+\end{enumerate}
+
+The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag.
+
+\newpage
 \subsubsection{Ergonomic Factors}
 \lsec{User needs}
 \lsec{Ergonomics}
@@ -438,13 +473,13 @@ Location 				& Mobile                & Fixed                    \\
 
 The tag antenna specifications are based on the calculations above and using the AH086M555003 PCB chip antenna from Mouser which has a wide operating range from 3100MHz to 8000MHz.
 
-\newpage
 \lsec{ICASA National Radio Frequency Plan:\cite{ICASA}\cite{UWB-Regs}}
 The ICASA 2013 NRFP for ITU Region 1 allocates the frequency range from 3.3GHz to 3.4GHz to radio-location with a typical application of government services. In South Africa there are no specific regulations for UWB signals. The Decawave technology is ETSI compliant and will generally be accepted by ICASA so long as EMF and RF mitigation techniques are used. The regulations permit outdoor use on the frequency range 3.1-4.8GHz with an EIRP of -41.3dBm/MHz. The ETSI regulations permit the use of the Decawave chips in an indoor and outdoor environment.
 
 \lsec{DW1000 Frequency Channels:\cite{DW-antenna}}
 The DW1000 can be programmed to use specific frequency channels (defined by the IEEE 802.15.4a-2011 standard) with corresponding bandwidth. Based on the ICASA regulations above, Channel 1 would be used with a Centre Frequency of 3493.4MHz and an operational bandwidth of 500MHz. This falls within the informal regulations mentioned above. 
 
+\newpage
 \subsubsection{Bill of Materials (Tag)}
 The bill of materials as well as unit pricing for the tag can be found in Appendix C. Where parts with specific tolerance, such as for the RF circuitry, are needed they have been ordered specifically. The non-critical parts were chosen to optimize the end unit price. 
 
