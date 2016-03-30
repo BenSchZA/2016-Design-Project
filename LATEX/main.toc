@@ -50,6 +50,7 @@
 \contentsline {subsection}{\numberline {6.7}Failure Modes}{22}{subsection.6.7}
 \contentsline {subsection}{\numberline {6.8}System Lifetime}{22}{subsection.6.8}
 \contentsline {subsection}{\numberline {6.9}Worst Case Calculation}{22}{subsection.6.9}
-\contentsline {section}{References}{24}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{25}{section*.4}
-\contentsline {section}{Appendix B: Progress Reports}{26}{section*.9}
+\contentsline {section}{References}{24}{subsection.6.9}
+\contentsline {section}{Appendix A: Contributions}{24}{section*.2}
+\contentsline {section}{Appendix B: Progress Reports}{26}{section*.7}
+\contentsline {section}{Appendix C: Tag Bill of Materials and Unit Cost}{45}{section*.15}

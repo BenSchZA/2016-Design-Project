@@ -207,7 +207,7 @@ To calculate the upper campus UCT parking cash flow in the table below, a few as
 \begin{table}[H]
 \centering
 \caption{Upper Campus UCT Parking Cash Flow}
-\label{my-label}
+\label{cash-flow}
 \begin{tabular}{lllll}
                          & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price} & \textbf{Cash Flow} \\
 \textbf{Red}                      & 808                   & 2262.4                  & 1524                & 3447897.6          \\
@@ -329,7 +329,7 @@ The following weighted selection tables were formed and weights given to each as
 \begin{table}[H]
 \centering
 \caption{Weighted selection: Design One\cite{handout}}
-\label{my-label}
+\label{weighted-selection-1}
 \begin{tabular}{l|l|l|l|}
 \textbf{Aspect}                      & \textbf{Score (1-5)} & \textbf{Weight} & \textbf{Total} \\ \hline
 Functionality / User satisfaction    & 5                     & 20                & 20               \\
@@ -344,7 +344,7 @@ Life span                            & 3                     & 10               
 \begin{table}[H]
 \centering
 \caption{Weighted selection: Design Two\cite{handout}}
-\label{my-label}
+\label{weighted-selection-2}
 \begin{tabular}{l|l|l|l|}
 \textbf{Aspect}                      & \textbf{Score (1-5)} & \textbf{Weight} & \textbf{Total} \\ \hline
 Functionality / User satisfaction    & 3                     & 20                & 12               \\
@@ -460,7 +460,7 @@ $$0.75 = 1 + G_{TX}$$
 \begin{table}[H]
 \centering
 \caption{Antenna specifications: tag and beacon}
-\label{my-label}
+\label{antenna-specs}
 \begin{tabular}{l l l l}
 \textbf{Aspect}                      & \textbf{Tag} & \textbf{Beacon} \\ 
 Radiation Pattern    	& Isotropic             & Dipole              \\
@@ -490,7 +490,7 @@ All parts were ordered from Mouser except if specified otherwise. They offer int
 Total Capital Outlay (ZAR): \\
 Unit Cost (ZAR):
 
-It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be an additional expense of the following:
+It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be the additional expense of the following:
 
 \begin{itemize}
 \item WiFi chips
@@ -531,10 +531,14 @@ For at least one component / sub-system
 
 %######################Appendices######################
 \newpage
-\section*{Appendices}
+\vspace*{\fill}
+\begin{center}
 \subsection*{Appendix A: Contributions}
+\end{center}
+\vspace*{\fill}
 \addcontentsline{toc}{section}{Appendix A: Contributions}
 
+\newpage
 \subsubsection*{Jarushen Govender (GVNJAR002)}
 \subsubsection*{Isaac Lebogang Khobo (KHBISA001)}
 \subsubsection*{Benjamin Scholtz (SCHBEN011)}
@@ -542,21 +546,87 @@ LATEX Formatting/Template. \\
 2. Task Clarification. \\
 4. Design Specification: Scope, Applicable Documents, Quality Assurance, Timescale, Economic Factors. \\
 5. Conceptual Design: Design One, Weighted Selection, Recommendation. \\
-6. Embodiment Design: Schematics, PCB Design. \\
+6. Embodiment Design: Schematics, PCB Design, RF Design, Bill of Materials (Tag). \\
 \subsubsection*{Nasko Stavrev (STVATA001)}
 
 \newpage
+\vspace*{\fill}
+\begin{center}
 \subsection*{Appendix B: Progress Reports}
+\end{center}
+\vspace*{\fill}
 \addcontentsline{toc}{section}{Appendix B: Progress Reports}
 
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 1: SCHBEN011}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report1-ben.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 1: STVATA001}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report1-nasko.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 1: KHBISA001}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report1-isaac.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 1: GVNJAR002}
+\end{center}
+\vspace*{\fill}
+%\includepdf[pages=-]{meeting/report1-jarushen.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 2}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report2-ben.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 3}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report3-jarushen.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Progress Report 4}
+\end{center}
+\vspace*{\fill}
+\includepdf[pages=-]{meeting/report4-isaac.pdf}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
 \subsection*{Appendix C: Tag Bill of Materials and Unit Cost}
+\end{center}
+\vspace*{\fill}
+\addcontentsline{toc}{section}{Appendix C: Tag Bill of Materials and Unit Cost}
 
 \begin{landscape}
 \begin{table}[]
 \centering
 \tiny
-\caption{My caption}
-\label{my-label}
+\caption{Tag Bill of Materials and Unit Cost Analysis}
+\label{bom}
 \begin{tabular}{llllllll}
 \textbf{Ref}   & \textbf{Type} & \textbf{Value}             & \textbf{Footprint}              & \textbf{Part No. (Mouser default)}   & \textbf{Cost (US\$)} & \textbf{Outlay} & \textbf{Cost Outlay} \\
 C4             & Capacitor     & 0.1uF                      & Capacitors\_SMD:C\_0201         & 81-GRM033R60J104KE19                 & 0.005                & 15000           & 75                   \\
