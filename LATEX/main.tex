@@ -154,7 +154,9 @@ Reliability issues will arise in the following forms:
 \begin{itemize}
 \item Component quality standards.
 \item Supplier reliability (especially for importing).
-\item 
+\item User familiarity with the system.
+\item Unknown environment variables (RF signal propagation, mechanical obstructions etc.)
+\item Unknown user variables (User behaviour etc.)
 \end{itemize}
 
 \newpage
@@ -204,22 +206,25 @@ The complete system will be installed and in use over the period of 1 month.
 \lsec{Market Analysis}
 To calculate the upper campus UCT parking cash flow in the table below, a few assumptions were made. Approximately 2.8 parking discs are allocated per bay. Assuming this is true of all parking bay categories, this results in a total cash flow of R13.6 million per year. Assuming that 20\% of this cash flow is used for maintenance, and the other 20\% for parking staff salaries, we are left with R8.16 million for the project, with possible external funding if necessary.
 
+The following table shows the number of different privilege level parking spots  and what the user pay for those slots, as well as how many users are allocated to those spots in order to calculate the cash flow acquired from the user yearly disc payments.
+
 \begin{table}[H]
 \centering
 \caption{Upper Campus UCT Parking Cash Flow}
 \label{cash-flow}
 \begin{tabular}{lllll}
-                         & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price} & \textbf{Cash Flow} \\
+                         & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price (R)} & \textbf{Cash Flow (R)} \\
 \textbf{Red}                      & 808                   & 2262.4                  & 1524                & 3447897.6          \\
 \textbf{Yellow}          & 1046                  & 2928.8                  & 960                 & 2811648            \\
 \textbf{Student}         & 2757                  & 7719.6                  & 960                 & 7410816            \\
 \textbf{Total Bays}      & 4611                  & 12910.8                 &                     &                    \\
 \textbf{}                &                       &                         &                     &                    \\
 \textbf{Discs/bay}       & 2.8                   &                         &                     &                    \\
-\textbf{Total Cash Flow} & 13670361.6            &                         &                     &                   
+\textbf{Total Cash Flow} & R13670361.6            &                         &                     &                   
 \end{tabular}
 \end{table}
 
+From the table above and with with calculated R8.16 million available for research and development, the project capital expenditure should be below R5 million - this leaves enough capital for unforeseen expenses, either from oversight or incurred risk.
 
 \lsec{Design Costs}
 The design costs will be kept to a minimum by using UCT Electrical Engineering students to complete the design as a part of their EEE4036A design course.
@@ -234,18 +239,34 @@ The following companies will be contracted to:
 \item Electronic components will be imported from Mouser predominantly. 
 \end{enumerate}
 
-The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag.
+The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag, assuming  the allocation of funds as outlined above, with 60\% being left for hardware and software costs.
 
 \newpage
 \subsubsection{Ergonomic Factors}
+\textit{\textbf{Device definition:} in the following sections a device refers to whatever user interface and necessary user interactions, whether with software or hardware, are required for the parking system.}
+
 \lsec{User needs}
+The user should be able to easily use the interface, whether internal (cellphone app etc.) or external (LED sign board) while driving. The use of the system should not endanger the user by distraction or otherwise. The device should not interfere with the users field of vision.
+
 \lsec{Ergonomics}
+The ergonomics of the device should meet the needs of the user. The interface should be easily accessible. The process of installing the device in the car should be self explanatory and not involve a complex process that requires assistance from UCT parking staff.
+
 \lsec{Controls}
+The controls of the device should meet the needs of the user. The controls should be minimal to avoid complexity and distraction, yes should also allow access to all the functions as set out above in the Functional Characteristics section.
 \subsubsection{Life-cycle}
 \lsec{Distribution}
+Distribution of the device should be on a yearly basis, with user returning the device for maintenance and license renewal.
+
 \lsec{Operation}
+The user should be able to install the device easily and have it operate reliably for the period of one year. 
+
 \lsec{Maintenance}
+Minimal maintenance (whether for power source or mechanical maintenance or UID configuration) should be required for the device, with a minimum maintenance cycle of one year which is the period a user will be in possession of said device and expect it to operate reliably. Realistically this mean the maintenance cycle should be at least two years for worst case design - this will lessen the risk of a failure during the one year cycle.
+
 \lsec{Disposal}
+The device and it's components should, if required to be, be disposed of in a safe manner - this includes batteries and any other harmful substances. The device, after one year of use, should be returned to the parking staff especially during the initial testing phase where the system will be reviewed.
+
+\newpage
 \subsection{Acceptance Test Requirements}
 \lsec{Function Test Requirements}
 Test methods: Could be by inspection, theoretical modelling, simulation, laboratory functional demonstration, field trials, in-service measurements, etc.
@@ -287,7 +308,18 @@ The user interface will connect with the server back-end to access the database 
 \item Traffic heat-map on campus.
 \end{itemize}
 
-\subsubsection{Requirement Satisfaction}
+\subsubsection{Requirement Satisfaction\cite{assignment}}
+Design One satisfies the design requirements outlined in the Task Clarification section in the following ways:
+
+\begin{itemize}
+\item \textbf{To provide information in an easily accessible format, to each driver of a car immediately on arrival on campus, on where all the vacant parking bays on campus are. This must be for the specific category of parking for this user.}
+
+\item \textbf{To determine whether a vehicle is parked on a bay not designated for this user, for example a yellow disk holder parks on a red bay, or a visitor parks on a disabled parking bay, and make this available to the traffic department in real time.}
+
+\item \textbf{To allow electronic reconfiguration  of  traffic  bay allocations on special occasions, for example during the summer school period, when there are many visitors requiring parking on campus.}
+
+\item \textbf{To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.}
+\end{itemize}
 
 \subsubsection{Evaluation}
 \lsec{Cost} 

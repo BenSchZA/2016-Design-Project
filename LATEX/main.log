@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.3.30)  30 MAR 2016 12:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.3.30)  30 MAR 2016 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,7 +820,7 @@ ick labels; missing features). Consider writing \pgfplotsset{compat=1.12} into
 your preamble.
  on input line 16.
 
-<images/uctbanner.png, id=231, 1034.86626pt x 179.67125pt>
+<images/uctbanner.png, id=232, 1034.86626pt x 179.67125pt>
 File: images/uctbanner.png Graphic file (type png)
 
 <use images/uctbanner.png>
@@ -853,7 +853,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...rline {5.2}Design Two}{14}{subsection.5.2}
+l.26 ...rline {5.2}Design Two}{15}{subsection.5.2}
                                                    [1]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -899,21 +899,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-
-LaTeX Warning: Citation `assignment' on page 5 undefined on input line 78.
-
-
-LaTeX Warning: Citation `assignment' on page 5 undefined on input line 81.
-
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
-(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
-
-
-LaTeX Warning: Citation `assignment' on page 5 undefined on input line 92.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -958,7 +949,7 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.206 
+l.208 
       ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -971,17 +962,8 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 \newpage
+l.244 \newpage
               ]
-Underfull \hbox (badness 10000) in paragraph at lines 241--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 245--249
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -990,30 +972,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [11]
 
-LaTeX Warning: Citation `decawave-presentation' on page 12 undefined on input l
-ine 263.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--305
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--315
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1021,7 +985,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 317--324
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 311.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--337
 
  []
 
@@ -1032,11 +1006,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [14]
+Underfull \hbox (badness 10000) in paragraph at lines 344--347
 
-LaTeX Warning: Citation `handout' on page 15 undefined on input line 331.
+ []
 
 
-LaTeX Warning: Citation `handout' on page 15 undefined on input line 346.
+Underfull \hbox (badness 10000) in paragraph at lines 349--356
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1044,18 +1021,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[15pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
+[15]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{table.2}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \newpage
+l.394 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.362 \newpage
+l.394 \newpage
               ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1063,27 +1047,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <data/parking-system2.pdf, id=385, page=1, 614.295pt x 794.97pt>
+[17] <data/parking-system2.pdf, id=403, page=1, 614.295pt x 794.97pt>
 File: data/parking-system2.pdf Graphic file (type pdf)
 
 <use data/parking-system2.pdf, page 1>
-Package pdftex.def Info: data/parking-system2.pdf, page1 used on input line 385
+Package pdftex.def Info: data/parking-system2.pdf, page1 used on input line 417
 .
 (pdftex.def)             Requested size: 153.21771pt x 424.2296pt.
 
-<data/parking-system.pdf, id=387, page=2, 845.1575pt x 598.235pt>
+<data/parking-system.pdf, id=405, page=2, 845.1575pt x 598.235pt>
 File: data/parking-system.pdf Graphic file (type pdf)
 
 <use data/parking-system.pdf, page 2>
-Package pdftex.def Info: data/parking-system.pdf, page2 used on input line 392.
+Package pdftex.def Info: data/parking-system.pdf, page2 used on input line 424.
 
 (pdftex.def)             Requested size: 422.57771pt x 299.11676pt.
 
-<data/parking-system.pdf, id=389, page=3, 845.1575pt x 598.235pt>
+<data/parking-system.pdf, id=407, page=3, 845.1575pt x 598.235pt>
 File: data/parking-system.pdf Graphic file (type pdf)
 
 <use data/parking-system.pdf, page 3>
-Package pdftex.def Info: data/parking-system.pdf, page3 used on input line 399.
+Package pdftex.def Info: data/parking-system.pdf, page3 used on input line 431.
 
 (pdftex.def)             Requested size: 276.10173pt x 228.34863pt.
 
@@ -1093,24 +1077,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.403 
+l.435 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.403 
+l.435 
        <./data/parking-system2.pdf> <./data/parking-system.pdf>]
-<data/parking-system2.pdf, id=406, page=4, 614.295pt x 794.97pt>
+<data/parking-system2.pdf, id=426, page=4, 614.295pt x 794.97pt>
 File: data/parking-system2.pdf Graphic file (type pdf)
 
 <use data/parking-system2.pdf, page 4>
-Package pdftex.def Info: data/parking-system2.pdf, page4 used on input line 406
+Package pdftex.def Info: data/parking-system2.pdf, page4 used on input line 438
 .
 (pdftex.def)             Requested size: 187.5032pt x 169.009pt.
 
@@ -1120,31 +1104,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.411 \newpage
+l.443 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.411 \newpage
+l.443 \newpage
                <./data/parking-system.pdf> <./data/parking-system2.pdf>]
-<data/pcb-layout.pdf, id=420, 597.23125pt x 845.1575pt>
+<data/pcb-layout.pdf, id=438, 597.23125pt x 845.1575pt>
 File: data/pcb-layout.pdf Graphic file (type pdf)
 
 <use data/pcb-layout.pdf>
-Package pdftex.def Info: data/pcb-layout.pdf used on input line 418.
+Package pdftex.def Info: data/pcb-layout.pdf used on input line 450.
 (pdftex.def)             Requested size: 258.72469pt x 272.93753pt.
 
-<data/pcb-layout-ESP.pdf, id=422, 614.295pt x 794.97pt>
+<data/pcb-layout-ESP.pdf, id=440, 614.295pt x 794.97pt>
 File: data/pcb-layout-ESP.pdf Graphic file (type pdf)
 
 <use data/pcb-layout-ESP.pdf>
-Package pdftex.def Info: data/pcb-layout-ESP.pdf used on input line 425.
+Package pdftex.def Info: data/pcb-layout-ESP.pdf used on input line 457.
 (pdftex.def)             Requested size: 222.95186pt x 295.22058pt.
 
 
@@ -1153,24 +1137,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[19pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.432 \newpage
+l.464 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {figure.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.432 \newpage
+l.464 \newpage
                <./data/pcb-layout.pdf> <./data/pcb-layout-ESP.pdf>]
-
-LaTeX Warning: Citation `DW-antenna' on page 20 undefined on input line 436.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
@@ -1180,42 +1160,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[20]
-
-LaTeX Warning: Citation `ICASA' on page 21 undefined on input line 476.
-
-
-LaTeX Warning: Citation `UWB-Regs' on page 21 undefined on input line 476.
-
-
-LaTeX Warning: Citation `DW-antenna' on page 21 undefined on input line 479.
-
+[21]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[21pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
+[22pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.482 \newpage
+l.514 \newpage
               ]
-
-LaTeX Warning: Citation `handout' on page 22 undefined on input line 511.
-
-
-LaTeX Warning: Citation `notes' on page 22 undefined on input line 511.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[22]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1223,18 +1181,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [23]
-No file main.bbl.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 545--550
+[24] (./main.bbl
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
 
+Underfull \hbox (badness 1163) in paragraph at lines 53--56
+[]\OT1/cmr/m/n/12 ICASA. (2013) ICASA Na-tional Ra-dio Fre-quency Plan. [On-lin
+e]. Avail-
  []
 
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1248,29 +1214,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26] <meeting/report1-ben.pdf, id=474, 597.23125pt x 845.1575pt>
-File: meeting/report1-ben.pdf Graphic file (type pdf)
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 577--582
 
-<use meeting/report1-ben.pdf>
-Package pdftex.def Info: meeting/report1-ben.pdf used on input line 566.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: meeting/report1-ben.pdf Graphic file (type pdf)
- <use meeting/report1-ben.pdf>
-Package pdftex.def Info: meeting/report1-ben.pdf used on input line 566.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-<meeting/report1-ben.pdf, id=477, page=1, 597.23125pt x 845.1575pt>
-File: meeting/report1-ben.pdf Graphic file (type pdf)
-
-<use meeting/report1-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 566.
-
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: meeting/report1-ben.pdf Graphic file (type pdf)
- <use meeting/report1-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 566.
-
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1279,47 +1226,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [27]
-File: meeting/report1-ben.pdf Graphic file (type pdf)
- <use meeting/report1-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 566.
 
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28] <meeting/report1-ben.pdf, id=514, 597.23125pt x 845.1575pt>
+File: meeting/report1-ben.pdf Graphic file (type pdf)
+
+<use meeting/report1-ben.pdf>
+Package pdftex.def Info: meeting/report1-ben.pdf used on input line 598.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: meeting/report1-ben.pdf Graphic file (type pdf)
+ <use meeting/report1-ben.pdf>
+Package pdftex.def Info: meeting/report1-ben.pdf used on input line 598.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<meeting/report1-ben.pdf, id=517, page=1, 597.23125pt x 845.1575pt>
 File: meeting/report1-ben.pdf Graphic file (type pdf)
 
 <use meeting/report1-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 566.
+Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 598.
 
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: meeting/report1-ben.pdf Graphic file (type pdf)
  <use meeting/report1-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 566.
+Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 598.
 
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
-
-[28 <./meeting/report1-ben.pdf>]
-<meeting/report1-nasko.pdf, id=499, 597.23125pt x 845.1575pt>
-File: meeting/report1-nasko.pdf Graphic file (type pdf)
-
-<use meeting/report1-nasko.pdf>
-Package pdftex.def Info: meeting/report1-nasko.pdf used on input line 574.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: meeting/report1-nasko.pdf Graphic file (type pdf)
- <use meeting/report1-nasko.pdf>
-Package pdftex.def Info: meeting/report1-nasko.pdf used on input line 574.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-
-<meeting/report1-nasko.pdf, id=502, page=1, 597.23125pt x 845.1575pt>
-File: meeting/report1-nasko.pdf Graphic file (type pdf)
-
-<use meeting/report1-nasko.pdf, page 1>
-Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 57
-4.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: meeting/report1-nasko.pdf Graphic file (type pdf)
-
-<use meeting/report1-nasko.pdf, page 1>
-Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 57
-4.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 
 
@@ -1329,48 +1263,48 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
-File: meeting/report1-nasko.pdf Graphic file (type pdf)
- <use meeting/report1-nasko.pdf, page 1>
-Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 57
-4.
+File: meeting/report1-ben.pdf Graphic file (type pdf)
+ <use meeting/report1-ben.pdf, page 1>
+Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 598.
+
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: meeting/report1-ben.pdf Graphic file (type pdf)
+
+<use meeting/report1-ben.pdf, page 1>
+Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 598.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: meeting/report1-ben.pdf Graphic file (type pdf)
+ <use meeting/report1-ben.pdf, page 1>
+Package pdftex.def Info: meeting/report1-ben.pdf, page1 used on input line 598.
+
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+
+[30 <./meeting/report1-ben.pdf>]
+<meeting/report1-nasko.pdf, id=541, 597.23125pt x 845.1575pt>
+File: meeting/report1-nasko.pdf Graphic file (type pdf)
+
+<use meeting/report1-nasko.pdf>
+Package pdftex.def Info: meeting/report1-nasko.pdf used on input line 606.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+File: meeting/report1-nasko.pdf Graphic file (type pdf)
+ <use meeting/report1-nasko.pdf>
+Package pdftex.def Info: meeting/report1-nasko.pdf used on input line 606.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
+
+<meeting/report1-nasko.pdf, id=544, page=1, 597.23125pt x 845.1575pt>
 File: meeting/report1-nasko.pdf Graphic file (type pdf)
 
 <use meeting/report1-nasko.pdf, page 1>
-Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 57
-4.
-(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 60
+6.
+(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: meeting/report1-nasko.pdf Graphic file (type pdf)
 
 <use meeting/report1-nasko.pdf, page 1>
-Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 57
-4.
+Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 60
+6.
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [30 <./meeting/report1-nasko.pdf>]
-<meeting/report1-isaac.pdf, id=525, 596.2275pt x 843.15pt>
-File: meeting/report1-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report1-isaac.pdf>
-Package pdftex.def Info: meeting/report1-isaac.pdf used on input line 582.
-(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
-File: meeting/report1-isaac.pdf Graphic file (type pdf)
- <use meeting/report1-isaac.pdf>
-Package pdftex.def Info: meeting/report1-isaac.pdf used on input line 582.
-(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
-
-<meeting/report1-isaac.pdf, id=528, page=1, 596.2275pt x 843.15pt>
-File: meeting/report1-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report1-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 58
-2.
-(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
-File: meeting/report1-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report1-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 58
-2.
-(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1379,51 +1313,101 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31]
+File: meeting/report1-nasko.pdf Graphic file (type pdf)
+ <use meeting/report1-nasko.pdf, page 1>
+Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 60
+6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: meeting/report1-nasko.pdf Graphic file (type pdf)
+
+<use meeting/report1-nasko.pdf, page 1>
+Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 60
+6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+File: meeting/report1-nasko.pdf Graphic file (type pdf)
+
+<use meeting/report1-nasko.pdf, page 1>
+Package pdftex.def Info: meeting/report1-nasko.pdf, page1 used on input line 60
+6.
+(pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
+ [32 <./meeting/report1-nasko.pdf>]
+<meeting/report1-isaac.pdf, id=566, 596.2275pt x 843.15pt>
 File: meeting/report1-isaac.pdf Graphic file (type pdf)
- <use meeting/report1-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 58
-2.
-(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
+
+<use meeting/report1-isaac.pdf>
+Package pdftex.def Info: meeting/report1-isaac.pdf used on input line 614.
+(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
+File: meeting/report1-isaac.pdf Graphic file (type pdf)
+ <use meeting/report1-isaac.pdf>
+Package pdftex.def Info: meeting/report1-isaac.pdf used on input line 614.
+(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
+
+<meeting/report1-isaac.pdf, id=569, page=1, 596.2275pt x 843.15pt>
 File: meeting/report1-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report1-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 58
-2.
-(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
+Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 61
+4.
+(pdftex.def)             Requested size: 596.22604pt x 843.14793pt.
 File: meeting/report1-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report1-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 58
-2.
+Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 61
+4.
 (pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
- [32 <./meeting/report1-isaac.pdf>]
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33] <meeting/report2-ben.pdf, id=554, 597.23125pt x 845.1575pt>
+[33]
+File: meeting/report1-isaac.pdf Graphic file (type pdf)
+ <use meeting/report1-isaac.pdf, page 1>
+Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 61
+4.
+(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
+File: meeting/report1-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report1-isaac.pdf, page 1>
+Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 61
+4.
+(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
+File: meeting/report1-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report1-isaac.pdf, page 1>
+Package pdftex.def Info: meeting/report1-isaac.pdf, page1 used on input line 61
+4.
+(pdftex.def)             Requested size: 597.67256pt x 845.19353pt.
+ [34 <./meeting/report1-isaac.pdf>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35] <meeting/report2-ben.pdf, id=594, 597.23125pt x 845.1575pt>
 File: meeting/report2-ben.pdf Graphic file (type pdf)
 
 <use meeting/report2-ben.pdf>
-Package pdftex.def Info: meeting/report2-ben.pdf used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf used on input line 630.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
  <use meeting/report2-ben.pdf>
-Package pdftex.def Info: meeting/report2-ben.pdf used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf used on input line 630.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 
-<meeting/report2-ben.pdf, id=557, page=1, 597.23125pt x 845.1575pt>
+<meeting/report2-ben.pdf, id=597, page=1, 597.23125pt x 845.1575pt>
 File: meeting/report2-ben.pdf Graphic file (type pdf)
 
 <use meeting/report2-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 630.
 
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
  <use meeting/report2-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 
@@ -1433,67 +1417,67 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[34]
+[36]
 File: meeting/report2-ben.pdf Graphic file (type pdf)
  <use meeting/report2-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
 
 <use meeting/report2-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
  <use meeting/report2-ben.pdf, page 1>
-Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page1 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 
-[35 <./meeting/report2-ben.pdf>]
-<meeting/report2-ben.pdf, id=579, page=2, 597.23125pt x 845.1575pt>
+[37 <./meeting/report2-ben.pdf>]
+<meeting/report2-ben.pdf, id=621, page=2, 597.23125pt x 845.1575pt>
 File: meeting/report2-ben.pdf Graphic file (type pdf)
 
 <use meeting/report2-ben.pdf, page 2>
-Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
  <use meeting/report2-ben.pdf, page 2>
-Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
 File: meeting/report2-ben.pdf Graphic file (type pdf)
 
 <use meeting/report2-ben.pdf, page 2>
-Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 598.
+Package pdftex.def Info: meeting/report2-ben.pdf, page2 used on input line 630.
 
 (pdftex.def)             Requested size: 597.25711pt x 845.19412pt.
- [36 <./meeting/report2-ben.pdf>]
-<meeting/report3-jarushen.pdf, id=586, 597.55246pt x 845.07718pt>
+ [38 <./meeting/report2-ben.pdf>]
+<meeting/report3-jarushen.pdf, id=627, 597.55246pt x 845.07718pt>
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf>
-Package pdftex.def Info: meeting/report3-jarushen.pdf used on input line 606.
+Package pdftex.def Info: meeting/report3-jarushen.pdf used on input line 638.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
  <use meeting/report3-jarushen.pdf>
-Package pdftex.def Info: meeting/report3-jarushen.pdf used on input line 606.
+Package pdftex.def Info: meeting/report3-jarushen.pdf used on input line 638.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 
-<meeting/report3-jarushen.pdf, id=589, page=1, 597.55246pt x 845.07718pt>
+<meeting/report3-jarushen.pdf, id=630, page=1, 597.55246pt x 845.07718pt>
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 1>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page1 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 1>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page1 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
 
@@ -1502,88 +1486,88 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37]
+[39]
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
  <use meeting/report3-jarushen.pdf, page 1>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page1 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 1>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page1 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 1>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page1 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [38 <./meeting/report3-jarushen.pdf>] <meeting/report3-jarushen.pdf, id=621, p
+ [40 <./meeting/report3-jarushen.pdf>] <meeting/report3-jarushen.pdf, id=662, p
 age=2, 597.55246pt x 845.07718pt>
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 2>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page2 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 2>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page2 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 2>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page2 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [39 <./meeting/report3-jarushen.pdf>] <meeting/report3-jarushen.pdf, id=628, p
+ [41 <./meeting/report3-jarushen.pdf>] <meeting/report3-jarushen.pdf, id=669, p
 age=3, 597.55246pt x 845.07718pt>
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 3>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page3 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 3>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page3 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: meeting/report3-jarushen.pdf Graphic file (type pdf)
 
 <use meeting/report3-jarushen.pdf, page 3>
 Package pdftex.def Info: meeting/report3-jarushen.pdf, page3 used on input line
- 606.
+ 638.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [40 <./meeting/report3-jarushen.pdf>] <meeting/report4-isaac.pdf, id=634, 614.
+ [42 <./meeting/report3-jarushen.pdf>] <meeting/report4-isaac.pdf, id=676, 614.
 295pt x 794.97pt>
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report4-isaac.pdf>
-Package pdftex.def Info: meeting/report4-isaac.pdf used on input line 614.
+Package pdftex.def Info: meeting/report4-isaac.pdf used on input line 646.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
  <use meeting/report4-isaac.pdf>
-Package pdftex.def Info: meeting/report4-isaac.pdf used on input line 614.
+Package pdftex.def Info: meeting/report4-isaac.pdf used on input line 646.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<meeting/report4-isaac.pdf, id=637, page=1, 614.295pt x 794.97pt>
+<meeting/report4-isaac.pdf, id=679, page=1, 614.295pt x 794.97pt>
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report4-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 61
-4.
+Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 64
+6.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report4-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 61
-4.
+Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 64
+6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -1592,75 +1576,75 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[41]
+[43]
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
  <use meeting/report4-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 61
-4.
+Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 64
+6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report4-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 61
-4.
+Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 64
+6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: meeting/report4-isaac.pdf Graphic file (type pdf)
 
 <use meeting/report4-isaac.pdf, page 1>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [42 <./meeting/report4-isaac.pdf>]
-<meeting/report4-isaac.pdf, id=672, page=2, 614.295pt x 794.97pt>
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 2>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 2>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 2>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
- [43 <./meeting/report4-isaac.pdf>]
-<meeting/report4-isaac.pdf, id=687, page=3, 614.295pt x 794.97pt>
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 3>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 3>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 61
-4.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: meeting/report4-isaac.pdf Graphic file (type pdf)
-
-<use meeting/report4-isaac.pdf, page 3>
-Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 61
-4.
+Package pdftex.def Info: meeting/report4-isaac.pdf, page1 used on input line 64
+6.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [44 <./meeting/report4-isaac.pdf>]
+<meeting/report4-isaac.pdf, id=714, page=2, 614.295pt x 794.97pt>
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 2>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 2>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 2>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page2 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [45 <./meeting/report4-isaac.pdf>]
+<meeting/report4-isaac.pdf, id=729, page=3, 614.295pt x 794.97pt>
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 3>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 3>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: meeting/report4-isaac.pdf Graphic file (type pdf)
+
+<use meeting/report4-isaac.pdf, page 3>
+Package pdftex.def Info: meeting/report4-isaac.pdf, page3 used on input line 64
+6.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [46 <./meeting/report4-isaac.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[45]
+[47]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 625.
+               Default added (so using `tbp') on input line 657.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1668,57 +1652,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[46pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+[48pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.693 \end{landscape}
+l.725 \end{landscape}
                      ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 695.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 695.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 727.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 727.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 695.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 695.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 9CEBF3C5782F25F65DD809F14897B26B;3860
-(rerunfilecheck)             After:  606A786ACD947C8580271B4CCC9143C1;3860.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 695.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 727.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 727.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A1150B3A4C8D4A126649899BFC171262;3866.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 727.
  ) 
 Here is how much of TeX's memory you used:
- 28302 strings out of 493054
- 670040 string characters out of 6140586
- 893128 words of memory out of 5000000
- 31174 multiletter control sequences out of 15000+600000
- 12620 words of font info for 47 fonts, out of 8000000 for 9000
+ 28326 strings out of 493054
+ 670394 string characters out of 6140586
+ 894128 words of memory out of 5000000
+ 31185 multiletter control sequences out of 15000+600000
+ 12979 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,18n,77p,749b,853s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (47 pages, 2056087 bytes).
+/amsfonts/cm/cmbxti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (49 pages, 2073619 bytes).
 PDF statistics:
- 779 PDF objects out of 1000 (max. 8388607)
- 638 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 500000)
+ 826 PDF objects out of 1000 (max. 8388607)
+ 682 compressed objects within 7 object streams
+ 148 named destinations out of 1000 (max. 500000)
  677 words of extra memory for PDF output out of 10000 (max. 10000000)
 
