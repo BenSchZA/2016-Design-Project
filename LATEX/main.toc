@@ -35,22 +35,27 @@
 \contentsline {subsection}{\numberline {6.1}System Overview}{20}{subsection.6.1}
 \contentsline {subsubsection}{\numberline {6.1.1}System Description}{20}{subsubsection.6.1.1}
 \contentsline {subsubsection}{\numberline {6.1.2}System Diagram}{20}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}System Analysis}{20}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Software Design}{20}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Mechanical Design}{20}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Mechanical Requirements}{20}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Technical Drawings}{20}{subsubsection.6.4.2}
-\contentsline {subsection}{\numberline {6.5}Electrical Design}{20}{subsection.6.5}
-\contentsline {subsubsection}{\numberline {6.5.1}Power Requirements}{20}{subsubsection.6.5.1}
-\contentsline {subsubsection}{\numberline {6.5.2}Schematics}{21}{subsubsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.3}PCB Design}{23}{subsubsection.6.5.3}
-\contentsline {subsubsection}{\numberline {6.5.4}RF Design}{24}{subsubsection.6.5.4}
-\contentsline {subsubsection}{\numberline {6.5.5}Bill of Materials (Tag)}{26}{subsubsection.6.5.5}
-\contentsline {subsection}{\numberline {6.6}Assumptions}{26}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Failure Modes}{26}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}System Lifetime}{26}{subsection.6.8}
-\contentsline {subsection}{\numberline {6.9}Worst Case Calculation}{26}{subsection.6.9}
-\contentsline {section}{References}{28}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{29}{section*.3}
-\contentsline {section}{Appendix B: Progress Reports}{31}{section*.8}
-\contentsline {section}{Appendix C: Tag Bill of Materials and Unit Cost}{50}{section*.16}
+\contentsline {subsection}{\numberline {6.2}System Analysis}{26}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Software Design}{27}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Positioning using Trilateration}{27}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Simulation}{28}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Tag Packet Format}{29}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Database Design}{29}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Mobile and Web Application}{30}{subsubsection.6.3.5}
+\contentsline {subsection}{\numberline {6.4}Mechanical Design}{31}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Mechanical Requirements}{31}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Technical Drawings}{31}{subsubsection.6.4.2}
+\contentsline {subsection}{\numberline {6.5}Electrical Design}{31}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Power Requirements}{31}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Schematics}{32}{subsubsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.3}PCB Design}{34}{subsubsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.4}RF Design}{35}{subsubsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.5}Bill of Materials (Tag)}{37}{subsubsection.6.5.5}
+\contentsline {subsection}{\numberline {6.6}Assumptions}{37}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Failure Modes}{37}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}System Lifetime}{37}{subsection.6.8}
+\contentsline {subsection}{\numberline {6.9}Worst Case Calculation}{37}{subsection.6.9}
+\contentsline {section}{References}{39}{section*.2}
+\contentsline {section}{Appendix A: Contributions}{40}{section*.3}
+\contentsline {section}{Appendix B: Progress Reports}{42}{section*.8}
+\contentsline {section}{Appendix C: Tag Bill of Materials and Unit Cost}{61}{section*.16}

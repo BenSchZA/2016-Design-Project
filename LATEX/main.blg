@@ -1,56 +1,56 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Arch Linux)
+This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: ieeetran.bst
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
-Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
-Reallocated singl_function (elt_size=8) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 8 entries,
+You've used 11 entries,
             4087 wiz_defined-function locations,
-            860 strings with 8299 characters,
-and the built_in function-call counts, 3272 in all, are:
-= -- 279
-> -- 32
+            869 strings with 8634 characters,
+and the built_in function-call counts, 4347 in all, are:
+= -- 366
+> -- 44
 < -- 0
-+ -- 16
-- -- 8
-* -- 115
-:= -- 645
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 16
++ -- 22
+- -- 11
+* -- 135
+:= -- 841
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 244
-empty$ -- 285
-format.name$ -- 8
-if$ -- 694
+cite$ -- 11
+duplicate$ -- 334
+empty$ -- 390
+format.name$ -- 11
+if$ -- 935
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 64
-newline$ -- 63
-num.names$ -- 8
-pop$ -- 168
+int.to.str$ -- 11
+missing$ -- 88
+newline$ -- 74
+num.names$ -- 11
+pop$ -- 235
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 256
+skip$ -- 342
 stack$ -- 0
-substring$ -- 16
-swap$ -- 164
+substring$ -- 22
+swap$ -- 219
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 8
+type$ -- 11
 warning$ -- 0
-while$ -- 8
-width$ -- 9
-write$ -- 110
+while$ -- 11
+width$ -- 13
+write$ -- 136
