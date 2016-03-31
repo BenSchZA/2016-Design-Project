@@ -57,4 +57,7 @@
 \contentsline {section}{References}{36}{section*.2}
 \contentsline {section}{Appendix A: Contributions}{37}{section*.3}
 \contentsline {section}{Appendix B: Progress Reports}{39}{section*.8}
-\contentsline {section}{Appendix C: Tag Bill of Materials and Unit Cost}{58}{section*.16}
+\contentsline {section}{Appendix C: Tag Schematic Diagram}{52}{section*.16}
+\contentsline {section}{Appendix D: Tag PCB Layout}{57}{section*.17}
+\contentsline {section}{Appendix E: Beacon PCB Layout}{59}{section*.18}
+\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{61}{section*.19}
