@@ -70,15 +70,24 @@ Lecturer: \lecturer \\
 
 \section{TASK CLARIFICATION}
 \subsection{Background}
-UCT Upper campus has a number of parking areas for staff, students and visitors using cars to travel to campus. There are red, yellow, blue and unmarked bays on campus. In addition there are disabled and 
+UCT Upper campus has a number of parking areas for staff, students and visitors using cars to travel to campus. There are red, yellow, blue/unmarked bays on campus. In addition there are disabled and 
 visitor parking bays on campus. These categories are assigned the highest priority. 
 
 For every user, a parking category is assigned, and an associated annual fee is charged.  The purchase of a parking disk allows the staff member/student/visitor to search for a parking spot in the designated category on campus, but it is not guaranteed that one will be available, since parking bays are oversold. When arriving on campus, a driver of a car may spend some time searching for an available spot in the required category. Parking disks are generally linked to a person and only valid for the specific vehicle for which the disk has been purchased, except for student lift clubs.
 
 The Traffic  Department  on  Upper  Campus  administrates  and  manages  all  aspects  related  to  parking  of vehicles.\cite{assignment}
+
+In the figure below a survey of UCT students was completed to determine of those students who owned a blue parking disk, how many of them would park illegally in the case of there being no more blue parking bays on upper campus. The results clearly indicate that illegal parking is a problem with the current UCT parking system.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.55,clip]{data/chart.png}
+\caption{Illegal parking on UCT upper campus.}
+\end{center}
+\end{figure}
  
 \subsection{Problem Statement}
-For  a  driver  entering  Upper  Campus  in  a  car,  it  is  not immediately  apparent  where  there  are  parking bays available.  This is a particular problem during peak times when a large number of cars arrive on campus, looking for parking at the same time. The design assignment is to solve this problem using the electrical engineering skills of each of the team members in your group.\cite{assignment}
+For  a  driver  entering  Upper  Campus  in  a  car,  it  is  not immediately  apparent  where  there  are  parking bays available.  This is a particular problem during peak times when a large number of cars arrive on campus, looking for parking at the same time. The second problem that exists is that these users then choose to park illegally if a parking bay can not be found (as shown in the figure above). The design assignment is to solve this problem using the electrical engineering skills of each of the team members in our group.\cite{assignment}
 
 The design assignment is:
 
@@ -92,12 +101,40 @@ The design assignment is:
 \item To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.\cite{assignment}
 \end{itemize}
 
+
+
 \newpage
 \section{CONTEXT OF DESIGN}
 \subsection{Macroeconomic Factors}
-STEEPLE.
+Social, Technical, 
+Environmental, Economic
+, and Political context. 
+(Also 
+STEEPLE
+, adding legal, ethical)
 \subsection{Microeconomic Factors}
+\lsec{UCT Parking Cash Flow}
+To calculate the upper campus UCT parking cash flow in the table below, a few assumptions were made. Approximately 2.8 parking discs are allocated per bay. Assuming this is true of all parking bay categories, this results in a total cash flow of R13.6 million per year. Assuming that 20\% of this cash flow is used for maintenance, and the other 20\% for parking staff salaries, we are left with R8.16 million for the project, with possible external funding if necessary.
 
+The following table shows the number of different privilege level parking spots  and what the user pay for those slots, as well as how many users are allocated to those spots in order to calculate the cash flow acquired from the user yearly disc payments.
+
+\begin{table}[H]
+\centering
+\caption{Upper Campus UCT Parking Cash Flow}
+\label{cash-flow}
+\begin{tabular}{lllll}
+                         & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price (R)} & \textbf{Cash Flow (R)} \\
+\textbf{Red}                      & 808                   & 2262.4                  & 1524                & 3447897.6          \\
+\textbf{Yellow}          & 1046                  & 2928.8                  & 960                 & 2811648            \\
+\textbf{Student}         & 2757                  & 7719.6                  & 960                 & 7410816            \\
+\textbf{Total Bays}      & 4611                  & 12910.8                 &                     &                    \\
+\textbf{}                &                       &                         &                     &                    \\
+\textbf{Discs/bay}       & 2.8                   &                         &                     &                    \\
+\textbf{Total Cash Flow} & R13670361.6            &                         &                     &                   
+\end{tabular}
+\end{table}
+
+From the table above and with with calculated R8.16 million available for research and development, the project capital expenditure should be below R5 million - this leaves enough capital for unforeseen expenses, either from oversight or incurred risk.
 
 \newpage
 \section{DESIGN SPECIFICATION}
@@ -204,27 +241,7 @@ The complete system will be installed and in use over the period of 1 month.
 
 \subsubsection{Economic Factors}
 \lsec{Market Analysis}
-To calculate the upper campus UCT parking cash flow in the table below, a few assumptions were made. Approximately 2.8 parking discs are allocated per bay. Assuming this is true of all parking bay categories, this results in a total cash flow of R13.6 million per year. Assuming that 20\% of this cash flow is used for maintenance, and the other 20\% for parking staff salaries, we are left with R8.16 million for the project, with possible external funding if necessary.
-
-The following table shows the number of different privilege level parking spots  and what the user pay for those slots, as well as how many users are allocated to those spots in order to calculate the cash flow acquired from the user yearly disc payments.
-
-\begin{table}[H]
-\centering
-\caption{Upper Campus UCT Parking Cash Flow}
-\label{cash-flow}
-\begin{tabular}{lllll}
-                         & \textbf{Parking Bays} & \textbf{Allocated Bays} & \textbf{Disc Price (R)} & \textbf{Cash Flow (R)} \\
-\textbf{Red}                      & 808                   & 2262.4                  & 1524                & 3447897.6          \\
-\textbf{Yellow}          & 1046                  & 2928.8                  & 960                 & 2811648            \\
-\textbf{Student}         & 2757                  & 7719.6                  & 960                 & 7410816            \\
-\textbf{Total Bays}      & 4611                  & 12910.8                 &                     &                    \\
-\textbf{}                &                       &                         &                     &                    \\
-\textbf{Discs/bay}       & 2.8                   &                         &                     &                    \\
-\textbf{Total Cash Flow} & R13670361.6            &                         &                     &                   
-\end{tabular}
-\end{table}
-
-From the table above and with with calculated R8.16 million available for research and development, the project capital expenditure should be below R5 million - this leaves enough capital for unforeseen expenses, either from oversight or incurred risk.
+The users of the system will be predominantly students and a small number of staff who may have limited funding for parking disks. The cost of the disks need to be kept at the same price as outlined in the Microeconomic Factors, while adding the advanced functionality needed to meet the design specifications. On questioning users, they responded that they would not be willing to pay more for this advanced functionality - with some saying they still believe the costs for parking on campus are too high considering the lack of available parking on most days. The new parking system should address the above issues.
 
 \lsec{Design Costs}
 The design costs will be kept to a minimum by using UCT Electrical Engineering students to complete the design as a part of their EEE4036A design course.
@@ -239,7 +256,7 @@ The following companies will be contracted to:
 \item Electronic components will be imported from Mouser predominantly. 
 \end{enumerate}
 
-The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag, assuming  the allocation of funds as outlined above, with 60\% being left for hardware and software costs.
+The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag, assuming  the allocation of funds as outlined in the Microeconomic Factors, with 60\% being left for hardware and software costs.
 
 \newpage
 \subsubsection{Ergonomic Factors}
@@ -264,7 +281,7 @@ The user should be able to install the device easily and have it operate reliabl
 Minimal maintenance (whether for power source or mechanical maintenance or UID configuration) should be required for the device, with a minimum maintenance cycle of one year which is the period a user will be in possession of said device and expect it to operate reliably. Realistically this mean the maintenance cycle should be at least two years for worst case design - this will lessen the risk of a failure during the one year cycle.
 
 \lsec{Disposal}
-The device and it's components should, if required to be, be disposed of in a safe manner - this includes batteries and any other harmful substances. The device, after one year of use, should be returned to the parking staff especially during the initial testing phase where the system will be reviewed.
+The device and it's components should, if required to be, be disposed of in a safe manner - this includes batteries and any other harmful substances. The device, after one year of use, should be returned to the parking staff especially during the initial testing phase where the system will be reviewed. The entire system should be operational for a period of at least 15 years. This will ensure that the system makes a return on investment.
 
 \newpage
 \subsection{Acceptance Test Requirements}
@@ -524,6 +541,9 @@ The ICASA 2013 NRFP for ITU Region 1 allocates the frequency range from 3.3GHz t
 
 \lsec{DW1000 Frequency Channels:\cite{DW-antenna}}
 The DW1000 can be programmed to use specific frequency channels (defined by the IEEE 802.15.4a-2011 standard) with corresponding bandwidth. Based on the ICASA regulations above, Channel 1 would be used with a Centre Frequency of 3493.4MHz and an operational bandwidth of 500MHz. This falls within the informal regulations mentioned above. 
+
+\lsec{Operating Range\cite{DW-manual}}
+The operating range of the RF signal is affected by a number of software considerations. If a range of around 250m is required, slightly higher than the design constraint in the calculations above to allow for signal attenuation, then a data rate of 110kbps should be used on the tag side - for the beacon this is not critical as operating range and power use are less of a concern.
 
 \newpage
 \subsubsection{Bill of Materials (Tag)}

@@ -24,7 +24,7 @@
 \bibitem{assignment}
 \BIBentryALTinterwordspacing
 {Riana Geschke}. (2016, February) {EEE4036A Electrical Engineering Design
-  2016}. [Online]. Available: \url{Private}
+  2016}. [Online]. Available: \url{Private} (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{decawave-presentation}
@@ -33,37 +33,48 @@
   ScenSor DW1000: The World’s Most Precise Indoor Location and Communication
   CMOS Chip}. [Online]. Available:
   \url{http://www.decawave.com/sites/default/files/resources/decawave_scensor_presentation_santa_clara_1.pdf}
+  (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{handout}
 \BIBentryALTinterwordspacing
 {Riana Geschke}. (2016, February) {EEE4036A Class Handout}. [Online].
-  Available: \url{Private}
+  Available: \url{Private} (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{DW-antenna}
 \BIBentryALTinterwordspacing
 {DecaWave}. (2014, February) {APH0007 APPLICATION NOTE: Antenna Selection /
   Design Guide for DW1000}. [Online]. Available:
-  \url{http://www.decawave.com/support/download/file/nojs/442}
+  \url{http://www.decawave.com/support/download/file/nojs/442} (Accessed March,
+  2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{ICASA}
 \BIBentryALTinterwordspacing
 {ICASA}. (2013) {ICASA National Radio Frequency Plan}. [Online]. Available:
   \url{https://www.icasa.org.za/Portals/0/Regulations/Regulations/National%20Frequency%20Plan/NatRadFreqPlan2013GG.pdf}
+  (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{UWB-Regs}
 \BIBentryALTinterwordspacing
 {Decawave}. (2015) {APR001 APPLICATION NOTE: UWB REGULATIONS}. [Online].
   Available: \url{http://www.decawave.com/support/download/file/nojs/726}
+  (Accessed March, 2016).
+\BIBentrySTDinterwordspacing
+
+\bibitem{DW-manual}
+\BIBentryALTinterwordspacing
+{DecaWave}. (2016) {DW1000 USER MANUAL}. [Online]. Available:
+  \url{http://www.decawave.com/support/download/file/nojs/725} (Accessed March,
+  2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{notes}
 \BIBentryALTinterwordspacing
 {Prof. T. Gaunt}. (2016) {Course Notes by Prof T Gaunt}. [Online]. Available:
-  \url{Private}
+  \url{Private} (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

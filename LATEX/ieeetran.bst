@@ -2007,8 +2007,8 @@ FUNCTION {electronic}
   format.howpublished "howpublished" bibinfo.check output
   format.organization "organization" bibinfo.check output
   format.address "address" bibinfo.check output
-  format.note output
   format.url output
+  format.note output
   fin.entry
   empty.entry.warn
   if.url.std.interword.spacing
