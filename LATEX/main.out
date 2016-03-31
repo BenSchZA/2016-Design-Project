@@ -33,29 +33,28 @@
 \BOOKMARK [2][-]{subsection.5.4}{Recommendation}{section.5}% 33
 \BOOKMARK [1][-]{section.6}{EMBODIMENT DESIGN}{}% 34
 \BOOKMARK [2][-]{subsection.6.1}{System Overview}{section.6}% 35
-\BOOKMARK [3][-]{subsubsection.6.1.1}{System Description}{subsection.6.1}% 36
+\BOOKMARK [3][-]{subsubsection.6.1.1}{System Description and Analysis}{subsection.6.1}% 36
 \BOOKMARK [3][-]{subsubsection.6.1.2}{System Diagram}{subsection.6.1}% 37
-\BOOKMARK [2][-]{subsection.6.2}{System Analysis}{section.6}% 38
-\BOOKMARK [2][-]{subsection.6.3}{Software Design}{section.6}% 39
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Positioning using Trilateration}{subsection.6.3}% 40
-\BOOKMARK [3][-]{subsubsection.6.3.2}{Simulation}{subsection.6.3}% 41
-\BOOKMARK [3][-]{subsubsection.6.3.3}{Tag Packet Format}{subsection.6.3}% 42
-\BOOKMARK [3][-]{subsubsection.6.3.4}{Database Design}{subsection.6.3}% 43
-\BOOKMARK [3][-]{subsubsection.6.3.5}{Mobile and Web Application}{subsection.6.3}% 44
-\BOOKMARK [2][-]{subsection.6.4}{Mechanical Design}{section.6}% 45
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Mechanical Requirements}{subsection.6.4}% 46
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Technical Drawings}{subsection.6.4}% 47
-\BOOKMARK [2][-]{subsection.6.5}{Electrical Design}{section.6}% 48
-\BOOKMARK [3][-]{subsubsection.6.5.1}{Power Requirements}{subsection.6.5}% 49
-\BOOKMARK [3][-]{subsubsection.6.5.2}{Schematics}{subsection.6.5}% 50
-\BOOKMARK [3][-]{subsubsection.6.5.3}{PCB Design}{subsection.6.5}% 51
-\BOOKMARK [3][-]{subsubsection.6.5.4}{RF Design}{subsection.6.5}% 52
-\BOOKMARK [3][-]{subsubsection.6.5.5}{Bill of Materials \(Tag\)}{subsection.6.5}% 53
-\BOOKMARK [2][-]{subsection.6.6}{Assumptions}{section.6}% 54
-\BOOKMARK [2][-]{subsection.6.7}{Failure Modes}{section.6}% 55
-\BOOKMARK [2][-]{subsection.6.8}{System Lifetime}{section.6}% 56
-\BOOKMARK [2][-]{subsection.6.9}{Worst Case Calculation}{section.6}% 57
-\BOOKMARK [1][-]{section*.2}{References}{}% 58
-\BOOKMARK [1][-]{section*.3}{Appendix A: Contributions}{}% 59
-\BOOKMARK [1][-]{section*.8}{Appendix B: Progress Reports}{}% 60
-\BOOKMARK [1][-]{section*.16}{Appendix C: Tag Bill of Materials and Unit Cost}{}% 61
+\BOOKMARK [2][-]{subsection.6.2}{Software Design}{section.6}% 38
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Positioning using Trilateration}{subsection.6.2}% 39
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Simulation}{subsection.6.2}% 40
+\BOOKMARK [3][-]{subsubsection.6.2.3}{Tag Packet Format}{subsection.6.2}% 41
+\BOOKMARK [3][-]{subsubsection.6.2.4}{Database Design}{subsection.6.2}% 42
+\BOOKMARK [3][-]{subsubsection.6.2.5}{Mobile and Web Application}{subsection.6.2}% 43
+\BOOKMARK [2][-]{subsection.6.3}{Mechanical Design}{section.6}% 44
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Mechanical Requirements}{subsection.6.3}% 45
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Technical Drawings}{subsection.6.3}% 46
+\BOOKMARK [2][-]{subsection.6.4}{Electrical Design}{section.6}% 47
+\BOOKMARK [3][-]{subsubsection.6.4.1}{Power Requirements}{subsection.6.4}% 48
+\BOOKMARK [3][-]{subsubsection.6.4.2}{Schematics}{subsection.6.4}% 49
+\BOOKMARK [3][-]{subsubsection.6.4.3}{PCB Design}{subsection.6.4}% 50
+\BOOKMARK [3][-]{subsubsection.6.4.4}{RF Design}{subsection.6.4}% 51
+\BOOKMARK [3][-]{subsubsection.6.4.5}{Bill of Materials \(Tag\)}{subsection.6.4}% 52
+\BOOKMARK [2][-]{subsection.6.5}{Assumptions}{section.6}% 53
+\BOOKMARK [2][-]{subsection.6.6}{Failure Modes}{section.6}% 54
+\BOOKMARK [2][-]{subsection.6.7}{System Lifetime}{section.6}% 55
+\BOOKMARK [2][-]{subsection.6.8}{Worst Case Calculation}{section.6}% 56
+\BOOKMARK [1][-]{section*.2}{References}{}% 57
+\BOOKMARK [1][-]{section*.3}{Appendix A: Contributions}{}% 58
+\BOOKMARK [1][-]{section*.8}{Appendix B: Progress Reports}{}% 59
+\BOOKMARK [1][-]{section*.16}{Appendix C: Tag Bill of Materials and Unit Cost}{}% 60

@@ -4,7 +4,7 @@
 \input{"\homedir preamble.tex"}
 
 \newcommand{\coursecode}{EEE4036A}
-\newcommand{\assignment}{Design Project (Team 14)}
+\newcommand{\assignment}{Parking System Design Project\\Team 14}
 \newcommand{\lecturer}{Riana Geschke}
 
 \pagestyle{fancy}
@@ -426,72 +426,60 @@ Based on the weighted selection and evaluation above, Design One should be furth
 \section{EMBODIMENT DESIGN}
 \subsection{System Overview}
 
-\subsubsection{System Description}
-A tag periodically (every 5-10 minutes) sends out packets (to be detailed in section~\ref{tag-packet}) containing a timestamp, as well as other information. If the vehicle to which the tag is affixed is located in a parking area that is connected to the system, the beacons in that parking area will pick up the tag's packet. The beacons forward this data to the master beacon. Using a method called Time Difference of Arrival Trilateration (explained in section 6.3.2), the master beacon can determine the position of the tag, and therefore the vehicle.
-The master beacon forwards the information to the main server via an internet connection. The server performs any additional processing required, and updates the parking database. Information in the database can then be accessed via mobile and web client apps. This allows traffic officials to quickly detect illegally parked cars.
+\subsubsection{System Description and Analysis}
+A tag periodically (every 5-10 minutes) sends out packets (to be detailed in section~\ref{tag-packet}) containing a timestamp, as well as other information. If the vehicle to which the tag is affixed is located in a parking area that is connected to the system, the beacons in that parking area will pick up the tag's packet. The beacons forward this data to the master beacon. Using a method called Time Difference of Arrival Trilateration (explained in section~\ref{trilateration}), the master beacon can determine the position of the tag, and therefore the vehicle.
+The master beacon forwards the information to the main server via a WiFi internet connection. The server performs any additional processing required, and updates the parking database. Information in the database can then be accessed via mobile and web client apps. This allows traffic officials to quickly detect illegally parked cars.
 
 \subsubsection{System Diagram}
-Figure~\ref{soft-overview} shows a diagram detailing the overall structure of the system. 
+Figure~\ref{fig:soft-overview} below shows a diagram detailing the overall structure of the system. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.9]{data/software/1.jpg}
+\includegraphics[scale=0.5]{data/software/1.jpg}
 \caption{System overview.}
 \label{fig:soft-overview}
 \end{center}
 \end{figure}
 
-\subsection{System Analysis}
-Analysis of system operation, interfaces, use etc.
-
 \newpage
 \subsection{Software Design}
-This section will cover aspects relating to the software design of the system. This includes an overview of the system and a detailed explanation of how the positions of tags will be determined. A simulation will be used to validate the algorithm and assess how distance error affects the positioning error. The format of the packets that the tags send out will be established, and the back-end database design will be presented.
+This section will cover aspects relating to the software design of the system. Included is a detailed explanation of how the positions of tags will be determined. A simulation will be used to validate the algorithm and assess how distance error affects the positioning error. The format of the packets that the tags send out will be established, and the back-end database design will be presented.
 
-\subsubsection{Positioning using Trilateration}
+\subsubsection{Positioning using Trilateration} \label{trilateration}
 Trilateration is a geometric process by which the coordinates of a point of interest can be determined by measuring the distance from that point to at least three other known reference points. In the two dimensional case (which we will consider for relatively level parking areas), each distance measurement corresponds to the radius of a circle centred at its respective reference point. The unknown point of interest is located at the intersection point of the three circles.
 Figure 6.3.2-1 below illustrates the process. P1, P2 and P3 are known reference points at respective distances r1, r2 and r3 from the point of interest, B. It is clear why a minimum of three reference points are needed. If only one reference point is used, the point of interest could be located anywhere on the circumference of the circle around the point. If two reference points are used (P1 and P2, for example), the resulting circles drawn intersect at a maximum of two places – points A and B in the figure. A third reference point is required to narrow down the possible locations to one.
 In the parking system application, the point of interest is a vehicle (specifically, the tag inside the vehicle), and each beacon is a reference point. It should be noted that although only three beacons are required, a fourth beacon is added to the final system for redundancy. 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/2.jpg}
-\caption{Process of trilateration.}
+\includegraphics[scale=0.6]{data/software/2.jpg}
+\caption{Process of trilateration.\cite{4}}
 \label{fig:trilateration}
 \end{center}
 \end{figure}
 
-
-
-\cite{4}
-
+\newpage
 The means by which the tag's distance to each beacon is determined will now be explained. It is noteworthy that there are multiple methods to estimate the required distance in this application. A few alternatives will briefly be discussed, and the final selection will be expanded upon.
 
 \lsec{Received Signal Strength Technique}
-
 The first method to be discussed is one which uses the received signal strength (RSS) of the signal. Since the energy of the transmitted signal is known, and the energy of the received signal can be determined at the beacons, an estimate of the distance which the signal has travelled can be calculated. However, this requires the assumption of the path loss exponent n. Unfortunately, the value of n can vary, and an exceptionally accurate estimate of its value is needed in order to calculate the distance without any significant level of error. As a result, currently this technique cannot produce a mean accuracy of less than five metres.\cite{gaffney}
 
 \lsec{Time of Flight Technique}
-
 Another technique which can estimate the distance from the tag to the surrounding beacons uses an estimate of the time of flight of the transmitted packet. If the transmission time at the tag and the arrival time at the beacon are known, then the distance between the two can trivially be determined since the propagation speed of the signal is the speed of light. With the assumption that the clocks in the tags and the beacons are synchronized, this method can yield very accurate estimates of the distance. However, crystal effects mean that the clocks will drift with respect to each other over time.\cite{gaffney} This can be combated by periodically sending out clock synchronization packets to the tags, but this is not viable for this application because the tags are to be designed only to periodically transmit and never receive. This is a strict requirement put in place in order to ensure a sufficiently long battery life for the tags. Therefore, this alternative is not suitable.
 
 \lsec{Time Difference of Arrival Technique}
-
 The final technique to be discussed is a modification to the previous method described above. As previously stated, the location of a tag can be determined by finding the intersection of three circles, each centred at a beacon. The radius of each circle is the distance, given by the product of the time of flight of the transmitted signal and the speed of light. The equations of the three circles are as follows\cite{gaffney}:
-
-
-
-
 
 %#################################################################
 
+\newpage
 \subsubsection{Simulation}
 
-While the TDOA method described above is mathematically sound, it is somewhat unknown what the positioning accuracy will be in the real world with error caused by signal attenuation and other factors which have been thus far ignored. In order to better visualize the accuracy and effectiveness of the TDOA trilateration technique, a simple simulation was programmed in C\#. Figure 6.3.3-1 shows a screenshot of the running simulation.
+While the TDOA method described above is mathematically sound, it is somewhat unknown what the positioning accuracy will be in the real world with error caused by signal attenuation and other factors which have been thus far ignored. In order to better visualize the accuracy and effectiveness of the TDOA trilateration technique, a simple simulation was programmed in C\#. Figure~\ref{fig:distance-error} shows a screenshot of the running simulation.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/3.jpg}
+\includegraphics[scale=0.4]{data/software/3.jpg}
 \caption{Simulation used to test the effect of distance error on positioning accuracy.}
 \label{fig:distance-error}
 \end{center}
@@ -514,16 +502,17 @@ The simulation determines the position of a vehicle and checks whether it is in 
 \item The simulation checks whether the calculated location is in the region of any of the parking bays.
 \end{enumerate}
 
+\newpage
 \lsec{Sources of Error}
-Clock drift introduces no error in the TDOA trilateration technique (as long as the beacons are synchronized often enough). Another source of error comes from the fact that, effectively, the reported distance varies slightly (as figure 6.3.3-2 shows) according to the received signal level. This error could be sufficiently large to become problematic for the parking system application. However, it can be compensated for using Friis' well-known path loss formula.\cite{2}
+Clock drift introduces an insignificant error in the TDOA trilateration technique (as long as the beacons are synchronized often enough). Another source of error comes from the fact that, effectively, the reported distance varies slightly (as figure~\ref{fig:reported-distance} shows) according to the received signal level. This error could be sufficiently large to become problematic for the parking system application. However, it can be compensated for using Friis' well-known path loss formula.\cite{2}
 
 %^^^^^^^^^^^^^^^^check citation
 
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/4.jpg}
-\caption{The effect of received signal level on the reported distance.}
+\includegraphics[scale=0.8]{data/software/4.jpg}
+\caption{The effect of received signal level on the reported distance.\cite{2}}
 \label{fig:reported-distance}
 \end{center}
 \end{figure}
@@ -531,9 +520,9 @@ Clock drift introduces no error in the TDOA trilateration technique (as long as 
 The only remaining potentially significant source of error is that caused by signal attenuation resulting from the tag's transmission having to pass through at least one vehicle body and potentially other obstacles. This can be minimised by ensuring that the beacons are high enough above ground level (to minimize the number of vehicle bodies that the signal must propagate through) and maintaining the surrounding area (by trimming foliage and clearing other obstacles). Regardless, some error will be introduced into the system, and the simulation was used to determine the effect of distance error.
 
 \lsec{Findings of the Simulation}
+The simulation revealed that the system was surprisingly tolerant to errors in distance. Using a distance error with a maximum magnitude below 0.50 m, even a car parked partially (about 15\%) in another bay was detected correctly 100\% of the time. Since the error introduced by variation in the received signal level can be nearly eradicated using Friis' path loss formula, it is concluded that the system will be accurate enough, with the assumption that the distance error will be less than 0.50m. This appears to be a very safe assumption as the DecaWave chips are quoted as giving a positioning accuracy up to 0.10m indoors.\cite{3}
 
-The simulation revealed that the system was surprisingly tolerant to errors in distance. Using a distance error with a maximum magnitude below 0.50 m, even a car parked partially (about 15\%) in another bay was detected correctly 100\% of the time. Since the error introduced by variation in the received signal level can be nearly eradicated using Friis' path loss formula, it is concluded that the system will be accurate enough, with the assumption that the distance error will be less than 0.50m. This appears to be a very safe assumption as the DecaWave chips are quoted as giving a positioning accuracy up to 0.10m indoors[ CITATION Dec13 \l 7177 ].
-
+\newpage
 \subsubsection{Tag Packet Format} \label{tag-packet}
 This subsection will briefly outline and justify the contents of the packets that tags will emit. Each data packet will have the following data:
 
@@ -560,45 +549,40 @@ The design of these tables will be expanded upon below:
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/5.jpg}
+\includegraphics[scale=0.5]{data/software/5.jpg}
 \caption{Parking Areas table.}
 \label{fig:table-parking-areas}
 \end{center}
 \end{figure}
 
+Table~\ref{fig:table-parking-areas} shows the design of the Parking Areas table. This is a simple table in which each parking area has a record. The purpose of the Master Beacon ID field is so that the server knows which parking area the information it receives relates to, based on which master beacon it received the information from.
 
-%#################################################################
-
-Table 6.3.5-1 shows the design of the Parking Areas table. This is a simple table in which each parking area has a record. The purpose of the Master Beacon ID field is so that the server knows which parking area the information it receives relates to, based on which master beacon it received the information from.
-
+\newpage
 \lsec{Parking Bays}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/6.jpg}
+\includegraphics[scale=0.5]{data/software/6.jpg}
 \caption{Parking Bays table.}
 \label{fig:table-parking-bays}
 \end{center}
 \end{figure}
 
-%#################################################################
-
-Table 6.3.5-2 shows the design of the Parking Bays table. Every single parking bay on campus will be entered as a record in this table. The Parking Area ID field details in which parking area each bay is located. The category field can be updated via the traffic department's client app as required. For example, student bays could be reassigned to be postgraduate bays. The eight vertex fields define the coordinates of each of the four corners of the parking bay. This is used to determine which bay a tag is occupying, if any.
+Table~\ref{fig:table-parking-bays} shows the design of the Parking Bays table. Every single parking bay on campus will be entered as a record in this table. The Parking Area ID field details in which parking area each bay is located. The category field can be updated via the traffic department's client app as required. For example, student bays could be reassigned to be postgraduate bays. The eight vertex fields define the coordinates of each of the four corners of the parking bay. This is used to determine which bay a tag is occupying, if any.
 
 \lsec{Tags}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/software/7.jpg}
+\includegraphics[scale=0.5]{data/software/7.jpg}
 \caption{Tags table.}
 \label{fig:table-tags}
 \end{center}
 \end{figure}
 
-%#################################################################
+Table~\ref{fig:table-tags} shows the design of the Tags table. The design of this table takes into consideration that a single user may have multiple vehicles and therefore multiple assigned tags, but the tag-vehicle relationship is one-to-one. This means that each tag can only be assigned to one vehicle, and a vehicle can only have one tag assigned to it.
 
-Table 6.3.5-3 shows the design of the Tags table. The design of this table takes into consideration that a single user may have multiple vehicles and therefore multiple assigned tags, but the tag-vehicle relationship is one-to-one. This means that each tag can only be assigned to one vehicle, and a vehicle can only have one tag assigned to it.
-
+\newpage
 The parking category field is used to determine whether the user is allowed to park a specific tag/vehicle in any given bay. The tag's reported battery level is stored in order to notify the user via the mobile app/email/SMS that the battery is low and needs to be replaced.
 The Last Transmission field is used for statistics to keep track of how long users spend on campus.
 
@@ -613,10 +597,11 @@ These users are able to control the assignment of parking bay categories. They a
 These users have the ability to view the location of illegally parked cars and mark them once they have been fined or clamped.
 
 \lsec{Parking Users}
-These users receive information about parking availability (Via their smartphone's screen, or a synthesized voice to allow operation while driving) according to their assigned parking category and preferred parking areas. They will also be given an estimated time (determined from historical data) by which they must arrive on campus if they wish to park in their preferred parking area.
+These users receive information about parking availability (via their smartphone's screen, or a synthesized voice to allow operation while driving) according to their assigned parking category and preferred parking areas. They will also be given an estimated time (determined from historical data) by which they must arrive on campus if they wish to park in their preferred parking area.
 
 The parking users will be informed if they have parked illegally, been fined or clamped. They will be able to view the last location and battery status of each of their vehicles/tags, provided the tags are located in a parking area on campus.
 
+\newpage
 \subsection{Mechanical Design} 
 \subsubsection{Mechanical Requirements}
 Durability, forces, dynamics.
@@ -798,10 +783,15 @@ For at least one component / sub-system
 \subsubsection*{Benjamin Scholtz (SCHBEN011)}
 LATEX Formatting/Template. \\
 2. Task Clarification. \\
-4. Design Specification: Scope, Applicable Documents, Quality Assurance, Timescale, Economic Factors. \\
+3. Context of Design: Microeconomic Factors. \\
+4. Design Specification: Scope, Applicable Documents, Quality Assurance, Timescale, Economic Factors, Ergonomic Factors, Life-cycle. \\
 5. Conceptual Design: Design One, Weighted Selection, Recommendation. \\
 6. Embodiment Design: Schematics, PCB Design, RF Design, Bill of Materials (Tag). \\
 \subsubsection*{Nasko Stavrev (STVATA001)}
+6. Embodiment Design: System Overview, Software Design.
+
+\vfill
+\textbf{Note: }\textit{all team members contributed throughout the course of the design to the various sections mentioned - each section was compiled by the team member shown.}
 
 \newpage
 \vspace*{\fill}

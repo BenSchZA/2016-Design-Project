@@ -50,12 +50,27 @@
 \BIBentrySTDinterwordspacing
 
 \bibitem{gaffney}
+\BIBentryALTinterwordspacing
 {B. Gaffney}. {Considerations and Challenges in Real Time Locating Systems
-  Design}. (Accessed March, 2016).
+  Design}. [Online]. Available:
+  \url{http://www.roadaralert.com/DecaWave%20paper%20on%20RTLS.pdf} (Accessed
+  March, 2016).
+\BIBentrySTDinterwordspacing
 
 \bibitem{2}
+\BIBentryALTinterwordspacing
 {DecaWave Limited}. (2014) {APS011 Application Note: Sources Of Error In DW1000
-  Based Two-Way Ranging (TWR) Schemes}. (Accessed March, 2016).
+  Based Two-Way Ranging (TWR) Schemes}. [Online]. Available:
+  \url{http://www.decawave.com/sites/default/files/resources/aps011_sources_of_error_in_twr.pdf}
+  (Accessed March, 2016).
+\BIBentrySTDinterwordspacing
+
+\bibitem{3}
+\BIBentryALTinterwordspacing
+------. (2013) {Product Information: DW1000}. [Online]. Available:
+  \url{http://www.decawave.com/sites/default/files/product-pdf/dw1000-product-brief.pdf}
+  (Accessed March, 2016).
+\BIBentrySTDinterwordspacing
 
 \bibitem{DW-antenna}
 \BIBentryALTinterwordspacing
