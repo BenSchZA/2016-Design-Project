@@ -533,18 +533,12 @@ While the TDOA method described above is mathematically sound, it is somewhat un
 \end{center}
 \end{figure}
 
-
-
-
-
-%#################################################################
-
 \lsec{Simulation Algorithm}
 The simulation determines the position of a vehicle and checks whether it is in a parking bay according to the following, simplified algorithm:
 
 \begin{enumerate}
 \item The exact distance from the vehicle to each of the beacons is determined geometrically.
-\item A random error with adjustable maximum scale (in the range from 0 – 1 m) is introduced into each of the three distance measurements.
+\item A random error with adjustable maximum scale (in the range from 0 - 1 m) is introduced into each of the three distance measurements.
 \item The two intersection points of the circles centred at beacons 1 and 2 are determined.
 \item The intersection point closest to beacon 3 is taken as the location of the vehicle.
 \item The simulation checks whether the calculated location is in the region of any of the parking bays.
@@ -553,9 +547,6 @@ The simulation determines the position of a vehicle and checks whether it is in 
 \newpage
 \lsec{Sources of Error}
 Clock drift introduces an insignificant error in the TDOA trilateration technique (as long as the beacons are synchronized often enough). Another source of error comes from the fact that, effectively, the reported distance varies slightly (as figure~\ref{fig:reported-distance} shows) according to the received signal level. This error could be sufficiently large to become problematic for the parking system application. However, it can be compensated for using Friis' well-known path loss formula.\cite{2}
-
-%^^^^^^^^^^^^^^^^check citation
-
 
 \begin{figure}[H]
 \begin{center}
@@ -568,7 +559,7 @@ Clock drift introduces an insignificant error in the TDOA trilateration techniqu
 The only remaining potentially significant source of error is that caused by signal attenuation resulting from the tag's transmission having to pass through at least one vehicle body and potentially other obstacles. This can be minimised by ensuring that the beacons are high enough above ground level (to minimize the number of vehicle bodies that the signal must propagate through) and maintaining the surrounding area (by trimming foliage and clearing other obstacles). Regardless, some error will be introduced into the system, and the simulation was used to determine the effect of distance error.
 
 \lsec{Findings of the Simulation}
-The simulation revealed that the system was surprisingly tolerant to errors in distance. Using a distance error with a maximum magnitude below 0.50 m, even a car parked partially (about 15\%) in another bay was detected correctly 100\% of the time. Since the error introduced by variation in the received signal level can be nearly eradicated using Friis' path loss formula, it is concluded that the system will be accurate enough, with the assumption that the distance error will be less than 0.50m. This appears to be a very safe assumption as the DecaWave chips are quoted as giving a positioning accuracy up to 0.10m indoors.\cite{3}
+The simulation revealed that the system was surprisingly tolerant to errors in distance. Using a distance error with a maximum magnitude below 0.50 m, even a car parked partially (about 15\%) in another bay was detected correctly 100\% of the time. Since the error introduced by variation in the received signal level can be nearly eradicated using Friis' path loss formula, it is concluded that the system will be accurate enough, with the assumption that the distance error will be less than 0.50 m. This appears to be a very safe assumption as the DecaWave chips are quoted as giving a positioning accuracy up to 0.10 m indoors.\cite{3}
 
 \newpage
 \subsubsection{Tag Packet Format} \label{tag-packet}
@@ -595,40 +586,40 @@ The design of these tables will be expanded upon below:
 
 \lsec{Parking Areas}
 
-\begin{figure}[H]
+\begin{table}[H]
 \begin{center}
 \includegraphics[scale=0.5]{data/software/5.jpg}
 \caption{Parking Areas table.}
-\label{fig:table-parking-areas}
+\label{tbl:table-parking-areas}
 \end{center}
-\end{figure}
+\end{table}
 
-Table~\ref{fig:table-parking-areas} shows the design of the Parking Areas table. This is a simple table in which each parking area has a record. The purpose of the Master Beacon ID field is so that the server knows which parking area the information it receives relates to, based on which master beacon it received the information from.
+Table~\ref{tbl:table-parking-areas} shows the design of the Parking Areas table. This is a simple table in which each parking area has a record. The purpose of the Master Beacon ID field is so that the server knows which parking area the information it receives relates to, based on which master beacon it received the information from.
 
 \newpage
 \lsec{Parking Bays}
 
-\begin{figure}[H]
+\begin{table}[H]
 \begin{center}
 \includegraphics[scale=0.5]{data/software/6.jpg}
 \caption{Parking Bays table.}
-\label{fig:table-parking-bays}
+\label{tbl:table-parking-bays}
 \end{center}
-\end{figure}
+\end{table}
 
-Table~\ref{fig:table-parking-bays} shows the design of the Parking Bays table. Every single parking bay on campus will be entered as a record in this table. The Parking Area ID field details in which parking area each bay is located. The category field can be updated via the traffic department's client app as required. For example, student bays could be reassigned to be postgraduate bays. The eight vertex fields define the coordinates of each of the four corners of the parking bay. This is used to determine which bay a tag is occupying, if any.
+Table~\ref{tbl:table-parking-bays} shows the design of the Parking Bays table. Every single parking bay on campus will be entered as a record in this table. The Parking Area ID field details in which parking area each bay is located. The category field can be updated via the traffic department's client app as required. For example, student bays could be reassigned to be postgraduate bays. The eight vertex fields define the coordinates of each of the four corners of the parking bay. This is used to determine which bay a tag is occupying, if any.
 
 \lsec{Tags}
 
-\begin{figure}[H]
+\begin{table}[H]
 \begin{center}
 \includegraphics[scale=0.5]{data/software/7.jpg}
 \caption{Tags table.}
-\label{fig:table-tags}
+\label{tbl:table-tags}
 \end{center}
-\end{figure}
+\end{table}
 
-Table~\ref{fig:table-tags} shows the design of the Tags table. The design of this table takes into consideration that a single user may have multiple vehicles and therefore multiple assigned tags, but the tag-vehicle relationship is one-to-one. This means that each tag can only be assigned to one vehicle, and a vehicle can only have one tag assigned to it.
+Table~\ref{tbl:table-tags} shows the design of the Tags table. The design of this table takes into consideration that a single user may have multiple vehicles and therefore multiple assigned tags, but the tag-vehicle relationship is one-to-one. This means that each tag can only be assigned to one vehicle, and a vehicle can only have one tag assigned to it.
 
 \newpage
 The parking category field is used to determine whether the user is allowed to park a specific tag/vehicle in any given bay. The tag's reported battery level is stored in order to notify the user via the mobile app/email/SMS that the battery is low and needs to be replaced.
@@ -717,7 +708,7 @@ EMF and RF mitigation techniques have to be considered when designing the PCBs i
 \subsubsection{RF Design}
 
 
-\lsec{Antenna Specifciations:\cite{DW-antenna}}
+\lsec{Antenna Specifications:\cite{DW-antenna}}
 
 Friis' Transmission Equation states the following:
 $$P_{RX} = \frac{P_{TX}G_{TX}G_{RX} \lambda^2}{(4 \pi r)^2}$$
@@ -863,6 +854,7 @@ LATEX Formatting/Template. \\
 6. Embodiment Design: Schematics, PCB Design, RF Design, Bill of Materials (Tag). \\
 Progress Report 2.
 \subsubsection*{Nasko Stavrev (STVATA001)}
+Simulation.
 6. Embodiment Design: System Overview, Software Design.
 
 \vfill
