@@ -37,27 +37,27 @@
 \contentsline {subsubsection}{\numberline {6.1.2}System Diagram}{20}{subsubsection.6.1.2}
 \contentsline {subsection}{\numberline {6.2}Software Design}{21}{subsection.6.2}
 \contentsline {subsubsection}{\numberline {6.2.1}Positioning using Trilateration}{21}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Simulation}{23}{subsubsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.3}Tag Packet Format}{25}{subsubsection.6.2.3}
-\contentsline {subsubsection}{\numberline {6.2.4}Database Design}{25}{subsubsection.6.2.4}
-\contentsline {subsubsection}{\numberline {6.2.5}Mobile and Web Application}{27}{subsubsection.6.2.5}
-\contentsline {subsection}{\numberline {6.3}Mechanical Design}{28}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Mechanical Requirements}{28}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Technical Drawings}{28}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Electrical Design}{28}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Power Requirements}{28}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Schematics}{29}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}PCB Design}{31}{subsubsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.4}RF Design}{32}{subsubsection.6.4.4}
-\contentsline {subsubsection}{\numberline {6.4.5}Bill of Materials (Tag)}{34}{subsubsection.6.4.5}
-\contentsline {subsection}{\numberline {6.5}Assumptions}{34}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Failure Modes}{34}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}System Lifetime}{34}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{34}{subsection.6.8}
-\contentsline {section}{References}{36}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{37}{section*.3}
-\contentsline {section}{Appendix B: Progress Reports}{39}{section*.8}
-\contentsline {section}{Appendix C: Tag Schematic Diagram}{52}{section*.16}
-\contentsline {section}{Appendix D: Tag PCB Layout}{57}{section*.17}
-\contentsline {section}{Appendix E: Beacon PCB Layout}{59}{section*.18}
-\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{61}{section*.19}
+\contentsline {subsubsection}{\numberline {6.2.2}Simulation}{24}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Tag Packet Format}{26}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Database Design}{26}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Mobile and Web Application}{28}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}Mechanical Design}{29}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Mechanical Requirements}{29}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Technical Drawings}{29}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Electrical Design}{29}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Power Requirements}{29}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Schematics}{30}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}PCB Design}{32}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}RF Design}{33}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Bill of Materials (Tag)}{36}{subsubsection.6.4.5}
+\contentsline {subsection}{\numberline {6.5}Assumptions}{36}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Failure Modes}{36}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}System Lifetime}{36}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{36}{subsection.6.8}
+\contentsline {section}{References}{38}{section*.2}
+\contentsline {section}{Appendix A: Contributions}{39}{section*.3}
+\contentsline {section}{Appendix B: Progress Reports}{41}{section*.8}
+\contentsline {section}{Appendix C: Tag Schematic Diagram}{54}{section*.16}
+\contentsline {section}{Appendix D: Tag PCB Layout}{59}{section*.17}
+\contentsline {section}{Appendix E: Beacon PCB Layout}{61}{section*.18}
+\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{63}{section*.19}

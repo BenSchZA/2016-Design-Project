@@ -80,6 +80,24 @@
   2016).
 \BIBentrySTDinterwordspacing
 
+\bibitem{DW-data}
+\BIBentryALTinterwordspacing
+------. (2016) {DW1000 Datasheet}. [Online]. Available:
+  \url{http://www.decawave.com/support/download/file/nojs/723} (Accessed March,
+  2016).
+\BIBentrySTDinterwordspacing
+
+\bibitem{Book-Antenna}
+{C. Balanis}, Ed., \emph{{Antenna Theory (3rd edition)}}.\hskip 1em plus 0.5em
+  minus 0.4em\relax Wiley, 2005, {ISBN 0-471-66782-X}.
+
+\bibitem{TI-Ant}
+\BIBentryALTinterwordspacing
+{Richard Wallace}. (2010) {Application Note AN058: Antenna Selection Guide}.
+  [Online]. Available: \url{http://www.ti.com/lit/an/swra161b/swra161b.pdf}
+  (Accessed March, 2016).
+\BIBentrySTDinterwordspacing
+
 \bibitem{ICASA}
 \BIBentryALTinterwordspacing
 {ICASA}. (2013) {ICASA National Radio Frequency Plan}. [Online]. Available:
