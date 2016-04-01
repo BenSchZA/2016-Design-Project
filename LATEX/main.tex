@@ -106,12 +106,16 @@ The design assignment is:
 \newpage
 \section{CONTEXT OF DESIGN}
 \subsection{Macroeconomic Factors}
-Social, Technical, 
-Environmental, Economic
-, and Political context. 
-(Also 
-STEEPLE
-, adding legal, ethical)
+\subsubsection{Technical} 
+In South Africa there are a number of technical concerns to deal with regarding the production of electronic systems. The PCB design standards in South Africa are not of as high a standard as in certain overseas production houses and may have longer production times. The system might take a specialized skill set to maintain and repair the system components. Both of these factors need to be dealt with to achieve a balance between quality, production time and capital outlay for the system.
+
+\subsubsection{Economic}
+The current South African economy lends itself to local production of goods using cheaper local labour. The problem with local production is that it is still expensive to import the components and materials needed for the production - this can be justified considering that there may be a possibility to export any products developed as the economy lends itself to the export of goods to foreign markets. 
+
+\subsubsection{Ethical}
+A few ethical issues arise as soon as people or vehicles are equipped with electronics capable of tracking or logging movement and actions. Users will have to be made aware of the risks or lack there of. Legal advice will need to be used to draw up user agreements for the system. The ethics of tracking users will need to be considered and systems put in place to ensure users can not be tracked off campus, and that the data collected on campus is securely encrypted or stored.
+
+\newpage
 \subsection{Microeconomic Factors}
 \lsec{UCT Parking Cash Flow}
 To calculate the upper campus UCT parking cash flow in the table below, a few assumptions were made. Approximately 2.8 parking discs are allocated per bay. Assuming this is true of all parking bay categories, this results in a total cash flow of R13.6 million per year. Assuming that 20\% of this cash flow is used for maintenance, and the other 20\% for parking staff salaries, we are left with R8.16 million for the project, with possible external funding if necessary.
@@ -135,6 +139,9 @@ The following table shows the number of different privilege level parking spots 
 \end{table}
 
 From the table above and with with calculated R8.16 million available for research and development, the project capital expenditure should be below R5 million - this leaves enough capital for unforeseen expenses, either from oversight or incurred risk.
+
+\lsec{Social Behaviour}
+UCT parking system users are currently forced to take illegal action when locating and using parking bays due to a lack of parking bays available. The new system will have to address these issues and the mindset of the parking system users will have to change to accept the new system that will introduce more red tape and make it harder for them to get away with parking illegally. This could be addressed by having a parking system that adjusts to the regularity at which a user parks and charging them accordingly - this will motivate users, even if they are in possession of a disk, to find other means of transport on certain days, thus reducing the parking system load.
 
 \newpage
 \section{DESIGN SPECIFICATION}
@@ -258,7 +265,6 @@ The following companies will be contracted to:
 
 The costs of development, manufacturing and distribution through the above sources should be kept to a unit cost value of less than R400 per tag. This ensures the cost of a disc will cover the cost of production of the tag, assuming  the allocation of funds as outlined in the Microeconomic Factors, with 60\% being left for hardware and software costs.
 
-\newpage
 \subsubsection{Ergonomic Factors}
 \textit{\textbf{Device definition:} in the following sections a device refers to whatever user interface and necessary user interactions, whether with software or hardware, are required for the parking system.}
 
@@ -268,8 +274,10 @@ The user should be able to easily use the interface, whether internal (cellphone
 \lsec{Ergonomics}
 The ergonomics of the device should meet the needs of the user. The interface should be easily accessible. The process of installing the device in the car should be self explanatory and not involve a complex process that requires assistance from UCT parking staff.
 
+\newpage
 \lsec{Controls}
 The controls of the device should meet the needs of the user. The controls should be minimal to avoid complexity and distraction, yes should also allow access to all the functions as set out above in the Functional Characteristics section.
+
 \subsubsection{Life-cycle}
 \lsec{Distribution}
 Distribution of the device should be on a yearly basis, with user returning the device for maintenance and license renewal.
@@ -283,10 +291,15 @@ Minimal maintenance (whether for power source or mechanical maintenance or UID c
 \lsec{Disposal}
 The device and it's components should, if required to be, be disposed of in a safe manner - this includes batteries and any other harmful substances. The device, after one year of use, should be returned to the parking staff especially during the initial testing phase where the system will be reviewed. The entire system should be operational for a period of at least 15 years. This will ensure that the system makes a return on investment.
 
-\newpage
 \subsection{Acceptance Test Requirements}
 \lsec{Function Test Requirements}
-Test methods: Could be by inspection, theoretical modelling, simulation, laboratory functional demonstration, field trials, in-service measurements, etc.
+The following tests will be put in place to ensure the system meets the functional specifications outlined above before and during the system's operation:
+
+\begin{itemize}
+\item \textbf{In-service measurements:} Permanent disk installation (either RFID, Decawave or otherwise) to have a way of testing each parking area is operating correctly without relying on a user reporting the issue.
+\item \textbf{Manual inspection:} Weekly inspection during non-peak hours, to randomly test various bays in each section.
+\item \textbf{Field trials:} Trial the system in a low-traffic parking area before users are introduced to the system for the first time.
+\end{itemize}
 
 \newpage
 \section{CONCEPTUAL DESIGN}
@@ -294,6 +307,18 @@ Test methods: Could be by inspection, theoretical modelling, simulation, laborat
 Design One (D1) uses a triangulation system to locate the registered vehicle within the parking area. Each registered vehicle has a tag with a unique ID - this ID has the user data linked to it in a database on the server back-end. The location of each parking space is known, and with the knowledge of where the vehicle is located it can be determined whether the vehicle is legally parked or not. 
   
 \subsubsection{System Diagram}
+Figure~\ref{fig:soft-overview2} below shows a diagram detailing the overall structure of the system. 
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{data/software/1.jpg}
+\caption{System overview.}
+\label{fig:soft-overview2}
+\end{center}
+\end{figure}
+
+The system uses trilateration to locate the parking system users, relay this information to a server for processing and supply the necessary parking information to the user via a mobile or web interface. This will be further expanded upon in the System Components section.
+
 \subsubsection{System Components}
 \lsec{Tags and Beacons}
 Due to a triangulation system being used, in every parking area there are at least three beacons - with four being used to try to eliminate signal propagation issues. The tags and beacons make use of a Decawave DW1000 ultra-wideband transceiver chip that is controlled via SPI from a Atmel micro-controller. 
@@ -325,24 +350,32 @@ The user interface will connect with the server back-end to access the database 
 \item Traffic heat-map on campus.
 \end{itemize}
 
+\newpage
 \subsubsection{Requirement Satisfaction\cite{assignment}}
 Design One satisfies the design requirements outlined in the Task Clarification section in the following ways:
 
 \begin{itemize}
 \item \textbf{To provide information in an easily accessible format, to each driver of a car immediately on arrival on campus, on where all the vacant parking bays on campus are. This must be for the specific category of parking for this user.}\\
-Description of how it satisfies each requirement...
+Design one satisfies this requirement by not only tracking parked vehicles and where they are, but also the user entering UCT upper campus - this allows the mobile and web GUI system to give user specific directions to the nearest available parking bay.
 
 \item \textbf{To determine whether a vehicle is parked on a bay not designated for this user, for example a yellow disk holder parks on a red bay, or a visitor parks on a disabled parking bay, and make this available to the traffic department in real time.}\\
+Each bay will have it's corresponding GPS coordinate in the database. Every car with a disk on campus will be tracked, which means that whenever someone illegally parks the UCT parking department will know. Visitors will have to be allocated visitor discs for the system to work for all cases.
 
 \item \textbf{To allow electronic reconfiguration  of  traffic  bay allocations on special occasions, for example during the summer school period, when there are many visitors requiring parking on campus.}\\
+The database will be easily reconfigured to allocate each GPS parking location to a different category of user. Visitors will have to be allocated daily disks, much like they are currently required to do.
 
 \item \textbf{To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.}\\
+Not only will the design be able monitor and log the use of parking bays and parking areas via the database, the traffic department will be able to see both real-time movement and post-processed heat maps of campus and where cars are located.
 \end{itemize}
 
 \subsubsection{Evaluation}
 \lsec{Cost} 
-(implementation, maintenance, energy consumption) \\
+\lsec{Implementation}
+\lsec{Maintenance}
+\lsec{Energy Consumption}
+
 \lsec{Strong/weak Points}
+
 
 \subsubsection{Risk Assessment}
 \lsec{External Causes} 
