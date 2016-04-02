@@ -370,21 +370,56 @@ Not only will the design be able monitor and log the use of parking bays and par
 
 \subsubsection{Evaluation}
 \lsec{Cost} 
+The cost of installation of the system will be minimal with the decisions made for costs to be incurred in the distribution of the tags rather than permanent hardware.
+
 \lsec{Implementation}
+The implementation of the system will be very efficient, as very little permanent mechanical installations exist. Implementation will involve distribution of the tags and the set up of the server back end. The poles for the beacons will be easily installed. 
+
+\newpage
 \lsec{Maintenance}
+Maintenance will involve ensuring all tags are working optimally on a yearly basis. The tags are estimated to last on a single 1000mAh LiPo for a period of 3 years. The beacons will most likely need very little maintenance, as they are only subject to weathering and not mechanical impact of vehicles. 
+
 \lsec{Energy Consumption}
+As with the tags, the beacons are also very power efficient, with minimal circuitry and a low density per parking area. The tags are an insignificant energy cost. The beacons will run on solar energy, as they can be trickle charged without having to have solar energy every day.
 
 \lsec{Strong/weak Points}
+Strong:
+\begin{itemize}
+\item Low energy usage.
+\item Minimal installation effort and costs.
+\item Minimal maintenance effort and costs.
+\item Low cost system overall.
+\item Extensive location information from post-processing.
+\end{itemize}
+
+Weak:
+\begin{itemize}
+\item Relatively expensive tag in high risk environment.
+\item Possible RF interference.
+\end{itemize}
 
 
 \subsubsection{Risk Assessment}
 \lsec{External Causes} 
-(weather, vehicle impact, human interference) \\
-risk of failure during intended life \\
+Human Interference \textbf{(high risk)}: The users of the system play a big role in the RF performance of the system - the users need to place the tag on the window of the vehicle in order to ensure there is minimal interference from the car body, if the user fails to do this then the system could fail for that user. The tags are relatively expensive, and could be a target for theft.
+
+Weather \textbf{(low risk)}: The intended lifetime of the beacon and tag system is 15 years. Cape Town receives high wind speeds and rainfall - this poses a relatively large risk to the beacons. UV sun damage poses a risk to the housing of the tags, which will be exposed on the windscreen of the vehicle. 
+
 \lsec{Internal Causes}
-(Failure to recognize long-term design flaws)
+Failure to recognize long-term design flaws \textbf{(low risk)}: The system is well documented and simple in terms of implementation and maintenance. The risk of long term design flaws lies mainly with the power source of the tags and the RF design of the system. There could also be design issues in the UI that could cause confusion in managing the system.
+
+\newpage
 \lsec{Mitigation}
-mitigation (steps you will take to reduce the risk) \\
+The following steps will be taken to mitigate these risks:
+
+\begin{enumerate}
+\item Proper marketing to users and training to staff will be provided prior to the system's installation - this will ensure proper use of the system.
+\item Assisted installation of tags for first time users.
+\item Proper material engineering design and waterproofing will be implemented to ensure endurance to weathering.
+\item Costs will be reduced by eventually manufacturing the product overseas, the tags will also be made low profile to reduce risk of theft.
+\item The system will be made modular which means that if one component fails the system continues working. 
+\item There will be more than the required number of beacons in each parking area to ensure that if one fails the system continues working and if RF interference comes up, it isn't an issue.
+\end{enumerate}
 
 \newpage
 \subsection{Design Two}
