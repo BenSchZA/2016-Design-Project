@@ -710,6 +710,126 @@ The parking users will be informed if they have parked illegally, been fined or 
 
 \newpage
 \subsection{Mechanical Design} 
+This section details the mechanical components design of the transceiver chips.
+
+\subsubsection{Tag Case}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{data/mechanical/1.png}
+\caption{Tag case (thickness 9 mm).}
+\label{fig:mech-1}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{data/mechanical/2.png}
+\caption{Tag case (diameter 93.26 mm).}
+\label{fig:mech-1}
+\end{center}
+\end{figure}
+
+Designed to enclose the Printed Circuit Board (PCB) circuitries for the transceiver chips. Figures~\ref{fig:mech-1} and \ref{fig:mech-2} shows the dimensions of the case.
+
+\lsec{Material}
+The structural case is made from acrylic (thermoset plastic), which cannot change shape by reheating. The material is cheaper and lightweight than its counterparts such as Bakelite and Melamine.\cite{mech-1} It is capable of withstanding weather and is stable in sunlight. The case will be mounted atop the dashboard of the car, in order for it to be visible and its material shape preserved.
+
+\newpage
+\lsec{Mounting}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{data/mechanical/3.png}
+\caption{Suction-cup (height 2.89 mm).}
+\label{fig:mech-3}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=1]{data/mechanical/4.png}
+\caption{Sucker radius 4.9 mm of suction.}
+\label{fig:mech-4}
+\end{center}
+\end{figure}
+
+The case will be mounted using suction-cups (shown in figure~\ref{fig:mech-3}), made from rubber, and attached to its base. The suckers use the negative fluid pressure of air to create a partial vacuum and adhere to the dashboard.\cite{mech-2} The chosen diameter (as shown in figure~\ref{fig:mech-4}) is 9.8 mm, and will provide the necessary resistive detachment force. The minimum force required to detach is given by the following equation:
+$$F=PA$$
+The pressure outside one suction-cup, P, will typically be 1 atmosphere, thus the force required to lift the base from dashboard (at the point of one suction-cup) is about 31 Newtons.\cite{mech-2}
+
+\newpage
+\lsec{Identification}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{data/mechanical/5.png}
+\caption{Tag case base with bar-code.}
+\label{fig:mech-5}
+\end{center}
+\end{figure}
+
+The case will have a bar coded sticker as shown in figure~\ref{fig:mech-5}. This will ensure the chip is identifiable. It will also be used in sanction drivers who are prohibited to park at a specific parking bay or simply incorrectly parked.
+
+\lsec{Evaluation}
+SolidWorks Software Design Evaluation was made to the casing structure, and the following are the estimate calculations of the component:
+
+\begin{center}
+Total Mass = 82 g \\
+Volume = 102985 $mm^3$
+\end{center}
+
+(Drawing designs refer to appendix G2.)
+
+\newpage
+\lsec{Direct Costs}
+3 mm acrylic: starts at R73.61/sq.ft \\
+Laser cutting costs: starts at R2.21/inch \\
+4.1 mm rubber: starts at R51.52/sq.ft 
+
+Cost of manufacturing in South Africa per tag case is estimated to cost R180.00.
+
+\subsubsection{Beacon Structure}
+
+The structure of the beacon is shown in figure~\ref{fig:mech-6}. It is constructed from mild steel which is immensely strong. The material also has a strength of bending without cracking in adverse environmental conditions, this offers the advantage especially when subjected to a greater forces.\cite{mech-3}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{data/mechanical/6.png}
+\caption{Beacon design.}
+\label{fig:mech-6}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.8]{data/mechanical/7.png}
+\caption{Top view of the beacon.}
+\label{fig:mech-7}
+\end{center}
+\end{figure}
+
+Mild steel is often chosen because of its strength, low weight and speed of construction.\cite{mech-4}
+
+\lsec{Evaluation}
+SolidWorks Software Design Evaluation was made to the beacon, and the following are the estimate calculations of the component:
+\begin{center}
+Total mass = 1754 [$kg$]\\
+Volume = 1.7 [$m^3$]\\
+Centre of mass(x,y,z) = (0.01, 5.82, 0.01) [$m$]\\
+Moments of inertia taken at the centre of mass aligned with the coordinate systems.\\
+Lxy = 1.47 [$kg.m^2$]\\
+Lyz = -44.54 [$kg.m^2$]\\
+Lzz = 10523.05 [$kg.m^2$]
+\end{center}
+
+The dynamics makes the structure durable and capable of withstanding the forces that may lead to deformation and toppling torques.
+
+(Drawing designs refer to appendix G1.)
+
+\lsec{Direct Costs}
+3-80mm thickness mild steel: starts at R7378.17/ton\\
+Each beacon is estimated to cost R12 000.00
+
+
+
 \subsubsection{Mechanical Requirements}
 Durability, forces, dynamics.
 \subsubsection{Technical Drawings}
@@ -855,23 +975,25 @@ Further testing of antenna designs and power output will need to be done in the 
 Figure~\ref{fig:tx-power} above shows that both the supply voltage and environmental temperature have an affect on the effective transmit power achieved. This means proper supply voltage regulation, as well as temperature regulation, are needed to ensure the transmit-receive performance designed for is achieved in practise.
 
 \newpage
-\subsubsection{Bill of Materials (Tag)}
+\subsubsection{Bill of Materials}
+\lsec{Tag BOM}
 The bill of materials as well as unit pricing for the tag can be found in Appendix F. Where parts with specific tolerance, such as for the RF circuitry, are needed they have been ordered specifically. The non-critical parts were chosen to optimize the end unit price. 
 
 All parts were ordered from Mouser except if specified otherwise. They offer international shipping and are a reliable source of components to minimize risk. The LiPo batteries were ordered from a chinese source, as stated in the BOM, and the supplier will need to be managed properly to reduce risk.
 
 \textbf{The result of the BOM and Unit Cost analysis is the following:}
 
-Total Capital Outlay (ZAR): \\
-Unit Cost (ZAR):
+Total Capital Outlay (ZAR): R3558254 (tags) + R360000 (beacons)\\
+Unit Cost for Tags (ZAR): R237 (circuitry) + R180 (casing)
+Unit Cost for Beacons (ZAR): R12000
 
-It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be the additional expense of the following:
+It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. The estimated cost for the beacon, as seen in the Mechanical Design section, was R12000 per beacon. With 30 beacons distributed across the upper campus parking areas, this works out to R360000. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be the additional expense of the following:
 
 \begin{itemize}
 \item WiFi chips
 \item Beacon platform
 \item Beacon power supplies
-\item Antenna 
+\item High gain antenna 
 \end{itemize}
 
 \subsection{Assumptions}
@@ -1080,6 +1202,32 @@ U1             & Transciever   & Supplier: Digikey          &                   
 \end{tabular}
 \end{table}
 \end{landscape}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Appendix G1: Beacon Structural Schematics}
+\end{center}
+\vspace*{\fill}
+\addcontentsline{toc}{section}{Appendix G1: Beacon Structural Schematics}
+
+\newpage
+\begin{center}
+\includegraphics[scale=1.3]{data/mechanical/a1.png}
+\end{center}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Appendix G2: Tag Case Schematics}
+\end{center}
+\vspace*{\fill}
+\addcontentsline{toc}{section}{Appendix G2: Tag Case Schematics}
+
+\newpage
+\begin{center}
+\includegraphics[scale=1.3]{data/mechanical/a2.png}
+\end{center}
 
 \end{document}
 

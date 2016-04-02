@@ -45,22 +45,26 @@
 \contentsline {subsubsection}{\numberline {6.2.4}Database Design}{28}{subsubsection.6.2.4}
 \contentsline {subsubsection}{\numberline {6.2.5}Mobile and Web Application}{30}{subsubsection.6.2.5}
 \contentsline {subsection}{\numberline {6.3}Mechanical Design}{31}{subsection.6.3}
-\contentsline {subsubsection}{\numberline {6.3.1}Mechanical Requirements}{31}{subsubsection.6.3.1}
-\contentsline {subsubsection}{\numberline {6.3.2}Technical Drawings}{31}{subsubsection.6.3.2}
-\contentsline {subsection}{\numberline {6.4}Electrical Design}{31}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Power Requirements}{31}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Schematics}{32}{subsubsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.3}PCB Design}{34}{subsubsection.6.4.3}
-\contentsline {subsubsection}{\numberline {6.4.4}RF Design}{35}{subsubsection.6.4.4}
-\contentsline {subsubsection}{\numberline {6.4.5}Bill of Materials (Tag)}{38}{subsubsection.6.4.5}
-\contentsline {subsection}{\numberline {6.5}Assumptions}{38}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Failure Modes}{38}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}System Lifetime}{38}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{38}{subsection.6.8}
-\contentsline {section}{References}{40}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{41}{section*.3}
-\contentsline {section}{Appendix B: Progress Reports}{43}{section*.8}
-\contentsline {section}{Appendix C: Tag Schematic Diagram}{56}{section*.16}
-\contentsline {section}{Appendix D: Tag PCB Layout}{61}{section*.17}
-\contentsline {section}{Appendix E: Beacon PCB Layout}{63}{section*.18}
-\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{65}{section*.19}
+\contentsline {subsubsection}{\numberline {6.3.1}Tag Case}{31}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Beacon Structure}{34}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Mechanical Requirements}{35}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Technical Drawings}{36}{subsubsection.6.3.4}
+\contentsline {subsection}{\numberline {6.4}Electrical Design}{36}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Power Requirements}{36}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Schematics}{37}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}PCB Design}{39}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}RF Design}{40}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Bill of Materials}{43}{subsubsection.6.4.5}
+\contentsline {subsection}{\numberline {6.5}Assumptions}{43}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Failure Modes}{43}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}System Lifetime}{43}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{44}{subsection.6.8}
+\contentsline {section}{References}{45}{section*.2}
+\contentsline {section}{Appendix A: Contributions}{46}{section*.3}
+\contentsline {section}{Appendix B: Progress Reports}{48}{section*.8}
+\contentsline {section}{Appendix C: Tag Schematic Diagram}{61}{section*.16}
+\contentsline {section}{Appendix D: Tag PCB Layout}{66}{section*.17}
+\contentsline {section}{Appendix E: Beacon PCB Layout}{68}{section*.18}
+\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{70}{section*.19}
+\contentsline {section}{Appendix G1: Beacon Structural Schematics}{72}{section*.20}
+\contentsline {section}{Appendix G2: Tag Case Schematics}{74}{section*.21}
