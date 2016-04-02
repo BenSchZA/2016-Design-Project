@@ -72,18 +72,24 @@
   (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
+\bibitem{atmel}
+\BIBentryALTinterwordspacing
+{Atmel Corporation}. (2016) {ATmega328P}. [Online]. Available:
+  \url{http://www.atmel.com/devices/atmega328p.aspx} (Accessed March, 2016).
+\BIBentrySTDinterwordspacing
+
+\bibitem{DW-data}
+\BIBentryALTinterwordspacing
+{DecaWave Limited}. (2016) {DW1000 Datasheet}. [Online]. Available:
+  \url{http://www.decawave.com/support/download/file/nojs/723} (Accessed March,
+  2016).
+\BIBentrySTDinterwordspacing
+
 \bibitem{DW-antenna}
 \BIBentryALTinterwordspacing
 ------. (2014, February) {APH0007 APPLICATION NOTE: Antenna Selection / Design
   Guide for DW1000}. [Online]. Available:
   \url{http://www.decawave.com/support/download/file/nojs/442} (Accessed March,
-  2016).
-\BIBentrySTDinterwordspacing
-
-\bibitem{DW-data}
-\BIBentryALTinterwordspacing
-------. (2016) {DW1000 Datasheet}. [Online]. Available:
-  \url{http://www.decawave.com/support/download/file/nojs/723} (Accessed March,
   2016).
 \BIBentrySTDinterwordspacing
 

@@ -720,19 +720,29 @@ Battery life etc.
 \newpage
 \subsubsection{Schematics}
 
-The following diagrams cover the design of the tag; where the beacon makes a few changes to the circuitry and adds a WiFi module, seen in Figure~\ref{fig:wifi}.
+The following diagrams cover the design of the tag; where the beacon makes a few changes to the circuitry and adds a WiFi module, seen in Figure~\ref{fig:wifi}. 
+
+The system is made up of three components; namely the \textbf{basic DW1000} schematic sheet, the \textbf{microcontroller} schematic sheet and the \textbf{WiFi} schematic sheet - as seen in Figure~\ref{fig:interface-conn}. The system was designed to be modular so that each section has a set function - the \textbf{basic DW1000} circuit is involved in both the beacons and tags with RF functionality, the \textbf{microcontroller} circuitry is a replaceable section that both the tag and beacon rely on, the \textbf{WiFi} module is only required on the master beacon and is thus also a separate section which together form the system.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[page=1,scale=1.5,trim={3cm 5cm 15cm 13cm},clip,angle=-90]{data/parking-system2.pdf}
 \caption{Parking system tag schematic diagram: interface connections.}
+\label{fig:interface-conn}
 \end{center}
 \end{figure}
+
+\lsec{Component Selection}
+The Atmel ATmega328P micro controller was chosen for it's low power consumption with five software selectable power saving modes and it's wide 1.8-5.5 V operating range.\cite{atmel} There is also lots of open-source software available for the Decawave on the Atmel chipset, ensuring less programming issues come up. The processing power of the beacon will be shared with the ESP8266 module which has a capable microprocessor on board. The tags are not required to do very much processing on board, so the Atmel chip is suitable for the job.
+
+The ESP8266 WiFi module was chosen for the beacon circuitry because it is well documented and cheaply available while being a reliable and tested system.
+
+In the BOM and costing of Appendix F, components were chosen to optimize costs rather than quality, except where the RF circuitry was involved.
 
 \begin{figure}[H]
 \begin{center}
 \includegraphics[page=2,scale=0.5,trim={0cm 0cm 0cm 0cm},clip]{data/parking-system.pdf}
-\caption{Parking system tag schematic diagram: transceiver chip.}
+\caption{Parking system tag schematic diagram: transceiver chip.\cite{DW-data}}
 \end{center}
 \end{figure}
 
@@ -751,14 +761,15 @@ The following diagrams cover the design of the tag; where the beacon makes a few
 \end{center}
 \end{figure}
 
-\newpage
 \subsubsection{PCB Design}
 
 EMF and RF mitigation techniques have to be considered when designing the PCBs in order to make them compliant with the ICASA regulations. This involved using a ground plane and ensuring the antennas are correctly matched ($100\Omega$ traces) to reduce RF harmonic signals.
 
+The PCBs were designed and routed using the open source software KiCad, to reduce design costs. Decoupling capacitors were placed as close as possible to their relevant power terminals. Traces were optimized to be as short as possible and to reduce ground feedback loops which could pick up RF interference. The traces for the antenna were placed as close as possible to the antenna terminal and in the case of the tag a chip antenna was used.
+
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.7,trim={4cm 15cm 4cm 1cm},clip]{data/pcb-layout.pdf}
+\includegraphics[scale=0.6,trim={4cm 15cm 4cm 1cm},clip]{data/pcb-layout.pdf}
 \caption{Parking system tag PCB layout.}
 \end{center}
 \end{figure}
@@ -770,12 +781,7 @@ EMF and RF mitigation techniques have to be considered when designing the PCBs i
 \end{center}
 \end{figure}
 
-
-
-\newpage
 \subsubsection{RF Design}
-
-
 \lsec{Antenna Specifications:\cite{DW-antenna}}
 
 Friis' Transmission Equation states the following:
@@ -835,13 +841,12 @@ The DW1000 can be programmed to use specific frequency channels (defined by the 
 \lsec{Operating Range\cite{DW-manual}}
 The operating range of the RF signal is affected by a number of software considerations. If a range of around 250m is required, slightly higher than the design constraint in the calculations above to allow for signal attenuation, then a data rate of 110kbps should be used on the tag side - for the beacon this is not critical as operating transmitter range and power use are less of a concern.
 
-\newpage
 \lsec{Further Design Considerations}
 Further testing of antenna designs and power output will need to be done in the parking system environment as calculations can not be relied upon for RF design.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4,trim={7cm 1.5cm 8cm 5.5cm},clip]{data/tx_power.png}
+\includegraphics[scale=0.35,trim={7cm 1.5cm 8cm 5.5cm},clip]{data/tx_power.png}
 \caption{TX Power vs Supply Voltage and Temperature.\cite{DW-data}}
 \label{fig:tx-power}
 \end{center}
