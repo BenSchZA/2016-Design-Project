@@ -101,8 +101,6 @@ The design assignment is:
 \item To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.\cite{assignment}
 \end{itemize}
 
-
-
 \newpage
 \section{CONTEXT OF DESIGN}
 \subsection{Macroeconomic Factors}
@@ -319,6 +317,7 @@ Figure~\ref{fig:soft-overview2} below shows a diagram detailing the overall stru
 
 The system uses trilateration to locate the parking system users, relay this information to a server for processing and supply the necessary parking information to the user via a mobile or web interface. This will be further expanded upon in the System Components section.
 
+\newpage
 \subsubsection{System Components}
 \lsec{Tags and Beacons}
 Due to a triangulation system being used, in every parking area there are at least three beacons - with four being used to try to eliminate signal propagation issues. The tags and beacons make use of a Decawave DW1000 ultra-wideband transceiver chip that is controlled via SPI from a Atmel micro-controller. 
@@ -350,7 +349,6 @@ The user interface will connect with the server back-end to access the database 
 \item Traffic heat-map on campus.
 \end{itemize}
 
-\newpage
 \subsubsection{Requirement Satisfaction\cite{assignment}}
 Design One satisfies the design requirements outlined in the Task Clarification section in the following ways:
 
@@ -372,14 +370,14 @@ Not only will the design be able monitor and log the use of parking bays and par
 \lsec{Cost} 
 The cost of installation of the system will be minimal with the decisions made for costs to be incurred in the distribution of the tags rather than permanent hardware.
 
-\lsec{Implementation}
+\textit{Implementation}\\
 The implementation of the system will be very efficient, as very little permanent mechanical installations exist. Implementation will involve distribution of the tags and the set up of the server back end. The poles for the beacons will be easily installed. 
 
 \newpage
-\lsec{Maintenance}
+\textit{Maintenance}\\
 Maintenance will involve ensuring all tags are working optimally on a yearly basis. The tags are estimated to last on a single 1000mAh LiPo for a period of 3 years. The beacons will most likely need very little maintenance, as they are only subject to weathering and not mechanical impact of vehicles. 
 
-\lsec{Energy Consumption}
+\textit{Energy Consumption}\\
 As with the tags, the beacons are also very power efficient, with minimal circuitry and a low density per parking area. The tags are an insignificant energy cost. The beacons will run on solar energy, as they can be trickle charged without having to have solar energy every day.
 
 \lsec{Strong/weak Points}
@@ -423,37 +421,203 @@ The following steps will be taken to mitigate these risks:
 
 \newpage
 \subsection{Design Two}
+Design 2 (D2) uses radio frequency identification (RFID) to track the positions of vehicles. An RFID coil-pad would be placed on each parking bay and users would be issued a tag when they register for parking. This tag would make use of passive RFID - using radio energy transmitted by the reader instead of a battery – in order for the driver to be identified.
+
 \subsubsection{System Diagram}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.13]{data/D2.jpg}
+\caption{System overview.}
+\label{fig:soft-overview2}
+\end{center}
+\end{figure}
+
 \subsubsection{System Components}
+\lsec{RFID Tag}
+Every user is issued with an RFID tag upon registration for parking at UCT. This will replace the
+standard disks that are currently issued and users will be required to keep the tag in their cars at all
+times. RFID tags can be either active, passive or battery assisted passive. Our tags will be passive in
+order to save costs.
+
+RFID tags contain an integrated circuit (IC) to store and process information as well as modulation
+and demodulation procedures of radio frequencies, and the collection of DC power from incident reader signals. There is also an antenna usually which receives and transmit the required signals. Tag
+information is stored in non-volatile memory.
+
+\lsec{RFID Reader}
+Readers transmit an encoded signal in order to identify the tags. When the tag receives this signal it
+will respond with its identification. In our case, this will be a unique tag serial number in order to
+identify individual drivers. Since tags have individual serial numbers, the reader is capable of
+differentiating between multiple different tags that all within range.
+
+RFID systems are usually classified by the type of tag and reader used. In our case it will be an Active
+Reader/Passive Tag System, which will be transmitting identifier signals and receiving authentication
+replies from the (passive) tags.
+
+Tags which operate on Low Frequency and High Frequency bands are very close to the reader
+antenna because they are actually only a small percentage of a wavelength away. In this area, the
+tag is coupled electrically with the transmitter in the reader and can then modulate the field
+produced by the reader by changing its electrical loading. By switching between lower and higher
+relative loads, the tag produces a change for the reader to detect.
+
+\lsec{RFID Sensor/Coil}
+An RFID coil will be placed on each bay. This essentially will act as the readers antenna and will allow
+information to be transmitted and received. The coil will be made of copper and be able to operate
+in the required voltage band.
+
+\lsec{Server Back-end}
+The RFID active reader will connect back with the master via WIFI, relaying all important
+information. This will include the bay used and the driver ID. This will be updated on a centralised
+database roughly every 5-10 minutes. Other information will be able to be calculated or derived. The
+following data will be available:
+
+\begin{itemize}
+\item User privileges (visitor, staff, student etc)
+\item Tag location (updated periodically).
+\item Bay occupation
+\end{itemize}
+
+In addition intelligent parking suggestions will be made to the user, based on the above mentioned
+data. This is similar in principle to designs adopted by the parking facilities at many shopping malls.
+
+\lsec{User Interface}
+The user interface will connect with the server back-end to access the database and will relay the
+following data to the end user via a smart phone application or web application:
+
+\begin{itemize}
+\item Indication of privilege level and violations.
+\item Vehicle location.
+\item Location of open parking bays.• Recommended parking area.
+\item Number of free parking bays in parking area.
+\item Traffic heat-map on campus.
+\end{itemize}
+
 \subsubsection{Requirement Satisfaction}
 Design Two satisfies the design requirements outlined in the Task Clarification section in the following ways:
 
 \begin{itemize}
 \item \textbf{To provide information in an easily accessible format, to each driver of a car immediately on arrival on campus, on where all the vacant parking bays on campus are. This must be for the specific category of parking for this user.}\\
-Description of how it satisfies each requirement...
+All data will be provided to the user via easy-to-use mobile and web applications. These applications
+will automatically know the privilege level of the user. In addition each bay will be uniquely assigned
+via an RFID coil/reader so the system will know which bays are available to which privilege level.
+Based on this, the system will easily be able to both suggest and direct the user to appropriate and
+available parking spots.
+
+The drivers will be assigned privileges when they purchase their parking allocation based on their
+level (student, staff etc). This value can be easily changed at the parking centre if necessary.
+Temporary discs will also be available for visitors. It will also be possible to change the value of any
+bay at any time from a central location (the parking office). These two considerations will make
+visitor access straightforward. However they will have to be briefed beforehand about the
+procedure.
 
 \item \textbf{To determine whether a vehicle is parked on a bay not designated for this user, for example a yellow disk holder parks on a red bay, or a visitor parks on a disabled parking bay, and make this available to the traffic department in real time.}\\
+Each RFID coil in each bay will be assigned a certain value (student, staff, visitor, disabled etc.) and
+each driver will have an RFID tag with a certain value based on their status. If a reader with a
+particular status detects a tag with a different status, it will be a violation and the traffic department
+will be notified exactly which bay is in violation on their central computers via the RFID reader
+broadcasting the information back.
+
+In addition it will assumed that the bays will fill up completely during the day, so if a bay is detected
+as empty for longer than 10 minutes, it will also be assumed that someone is illegally parking there
+and the traffic department will be notified via the RFID readers.
 
 \item \textbf{To allow electronic reconfiguration  of  traffic  bay allocations on special occasions, for example during the summer school period, when there are many visitors requiring parking on campus.}\\
+The value of the bays can be easily changed at a central location at any time, since each RFID reader
+sends out a unique interrogation signal to the tags. Should a certain amount of bays be required forspecial events, the bays can simply be swapped at the parking office after some form of planning has
+occurred.
 
 \item \textbf{To monitor and log the use of parking bays and the percentage of occupation of each parking area and make this available to the traffic department, for the purpose of planning.}\\
+Each RFID tag will have a unique ID, and these ID’s will be grouped under certain values (student,
+visitor, disabled, staff etc.). In order for the RFID to work, each RFID reader will broadcast an
+interrogation signal looking for the associated tags. There will be an RFID coil/antenna in each
+parking bay, connected to the Active Reader/Passive Tag system.
+
+Using these methods, the value of each bay can be detected constantly during the day to ensure that
+there are no violations
 \end{itemize}
 
 \subsubsection{Evaluation}
 \lsec{Cost} 
-(implementation, maintenance, energy consumption) \\
+The following cost analysis was performed to determine the evaluation costs:
+
+\textit{Implementation}\\
+We will need to construct the RFID tags, the RFID readers, the RFID coils/antennas and in addition,
+the power supplies and the extra requirements for the computer network. This will require raw
+materials, labour, expertise and some form of training.
+
+\textit{Maintenance}\\
+The coils and readers will need to be routinely maintained in order to ensure that the system
+smoothly functions. Most components can be swapped without too much disruption to the rest of
+the system.
+
+\textit{Energy Consumption}\\
+The system will require energy for the tags, the readers and for all the extra computing required.
+This will increase the current power consumption of the university as everything will be connected
+to the mains.
+
 \lsec{Strong/weak Points}
+Strong:
+
+\begin{itemize}
+\item The system is flexible and it is easy to change the values of bays. This will ensure the smooth
+operation of the parking system in general.
+\item After installation the system should be relatively simple for traffic staff to utilise. This is a
+huge advantage as instead of worrying about patrols and spot checks, the staff can be
+assigned directly to problem areas. Again this will improve the general efficiency of whole
+parking configuration for the entire university, and the effect will be significant.
+\item The system is very user-friendly for the drivers. Very little is required on their part.
+\item The RFID readers are very reliable.
+\end{itemize}
+
+Weak:
+\begin{itemize}
+\item It will be expensive to install the entire system. Thousands of tags would need to be created,
+as well as RFID readers and RFID coils in each bay. The raw material costs as well as labour
+will be significant.
+\item Maintenance of the system will be expensive and often complicated as specialists will need
+to be called in if the electronics malfunction.
+\item The system will not be able to detect cars without an RFID tag. These drivers could still
+illegally park.
+\end{itemize}
 
 \subsubsection{Risk Assessment}
 \lsec{External Causes} 
-(weather, vehicle impact, human interference) \\
-risk of failure during intended life \\
-\lsec{Internal Causes}
-(Failure to recognize long-term design flaws)
-\lsec{Mitigation}
-mitigation (steps you will take to reduce the risk) \\
+\begin{itemize}
+\item The RFID coils and readers will be exposed to the weather. The electronics could
+malfunction in extreme heat or wet conditions. \textbf{Risk: Moderate}
+\item The possibility of vehicular impact always exists. The readers will be most susceptible to this.
+\textbf{Risk: Moderate}
+\item People could attempt to vandalise or steal the readers and coils as these devices are
+exposed. The readers will also contain potentially useful electronic components and the
+copper used in the coils is a high risk item. \textbf{Risk: High}
+\item The RFID tags will be in the possession of the drivers. This can be assumed to be a high risk
+situation as the university will have no authority over them. \textbf{Risk: High}
+\end{itemize}
+Due to these factors, the risk failure can be assumed to be moderate, mainly because of the
+exposure of the components.
 
-\newpage
+\lsec{Internal Causes}
+\begin{itemize}
+\item RFID tags could be difficult for users to understand and use effectively
+\item People could abuse the system by not purchasing discs.
+\item Staff could take time to adjust to the new system. This could cause issues with changing the
+parking allotment.
+\item The increase in complexity could turn users away from buying discs.
+\end{itemize}
+
+\lsec{Mitigation}
+Mitigation of external factors can be somewhat managed by:
+
+\begin{itemize}
+\item Placing the RFID in readers in water proof containers.
+\item Using heat sinks in the electronics to protect against excessive temperature.
+\item Build the RFID readers in areas that are not conducive to being damaged by vehicles such as
+on trees or light poles.
+\item Organise additional human patrols of the parking lots from CPS and the traffic department
+\item Introduction of security cameras in potentially high risk areas.
+\item Provide drivers with a deposit system for RFID tags so that there is a consequence for
+loss/damage
+\end{itemize}
+
 \subsection{Weighted Selection}
 The following weighted selection tables were formed and weights given to each aspect of the system design in order to determine which design meets the requirements outlined in the design specification:
 
@@ -503,7 +667,7 @@ Figure~\ref{fig:soft-overview} below shows a diagram detailing the overall struc
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.5]{data/software/1.jpg}
+\includegraphics[scale=0.7]{data/software/1.jpg}
 \caption{System overview.}
 \label{fig:soft-overview}
 \end{center}
@@ -526,9 +690,9 @@ In the parking system application, the point of interest is a vehicle (specifica
 \end{center}
 \end{figure}
 
-\newpage
 The means by which the tag's distance to each beacon is determined will now be explained. It is noteworthy that there are multiple methods to estimate the required distance in this application. A few alternatives will briefly be discussed, and the final selection will be expanded upon.
 
+\newpage
 \lsec{Received Signal Strength Technique}
 The first method to be discussed is one which uses the received signal strength (RSS) of the signal. Since the energy of the transmitted signal is known, and the energy of the received signal can be determined at the beacons, an estimate of the distance which the signal has travelled can be calculated. However, this requires the assumption of the path loss exponent n. Unfortunately, the value of n can vary, and an exceptionally accurate estimate of its value is needed in order to calculate the distance without any significant level of error. As a result, currently this technique cannot produce a mean accuracy of less than five metres.\cite{gaffney}
 
@@ -537,7 +701,6 @@ Another technique which can estimate the distance from the tag to the surroundin
 
 \lsec{Time Difference of Arrival Technique}
 The final technique to be discussed is a modification to the previous method described above. As previously stated, the location of a tag can be determined by finding the intersection of three circles, each centred at a beacon. The radius of each circle is the distance, given by the product of the time of flight of the transmitted signal and the speed of light. The equations of the three circles are as follows\cite{gaffney}:
-
 $$(\tau_1 c)^2 = (x_1-x_t)^2 + (y_1-y_t)^2$$
 $$(\tau_2 c)^2 = (x_2-x_t)^2 + (y_2-y_t)^2$$
 $$(\tau_3 c)^2 = (x_3-x_t)^2 + (y_3-y_t)^2$$
@@ -548,20 +711,16 @@ Where:
 \item $(x_n,y_n)$ is the location of beacon n, which is known, and
 \item $(x_t,y_t)$ is the location of the tag, which is unknown.
 \end{itemize}
-
-\newpage
 Solving the intersection of the above equations will allow the determination of the location of the tag. The problem is that with tags using clocks which are unsynchronized with the beacons, the time of flights $\tau_n$ cannot be determined.
 
 The solution is the time difference of arrival (TDOA) technique. This technique is also known as multilateration. It computes the time difference of arrival of a packet transmitted from the tag to the beacons. Only the beacons are assumed to have synchronized clocks. This technique will now be demonstrated.
 
+\newpage
 Assume that at a time $t_0$, a tag transmits a packet. Beacons 1, 2 and 3 each receive the packet at times $t_1$, $t_2$ and $t_3$ respectively. The time of flights are then given by the equations below:
-
 $$\tau_1 = t_1 - t_0$$
 $$\tau_2 = t_2 - t_0$$
 $$\tau_3 = t_3 - t_0$$
-
 Allow the time difference of arrival (or the difference in the time of flight) between beacon 1 and beacon 2 to be $\Delta \tau_{12}$. By definition, it is given by the following equation:
-
 \begin{equation*}
 \begin{split}
 \Delta \tau_{12} &= \tau_1 - \tau_2\\
@@ -569,33 +728,28 @@ Allow the time difference of arrival (or the difference in the time of flight) b
  &= t_1 - t_2\\
 \end{split}
 \end{equation*}
-
 Taking beacon 3 as the system origin and defining its position as (0, 0), it can be written that:
-
 \begin{equation*}
 \begin{split}
 \Delta \tau_{13} &= \frac{1}{c} \sqrt{(x_1-x_t)^2 + (y_1-y_t)^2} - \frac{1}{c} \sqrt{(x_3-x_t)^2 + (y_3-y_t)^2}\\ 
 &= \frac{1}{c} (\sqrt{(x_1-x_t)^2 + (y_1-y_t)^2} - \sqrt{x_t^2 + y_t^2})
 \end{split}
 \end{equation*}
-
 \begin{equation*}
 \begin{split}
 \Delta \tau_{23} &= \frac{1}{c} \sqrt{(x_2-x_t)^2 + (y_2-y_t)^2} - \frac{1}{c} \sqrt{(x_3-x_t)^2 + (y_3-y_t)^2}\\ 
 &= \frac{1}{c} (\sqrt{(x_2-x_t)^2 + (y_2-y_t)^2} - \sqrt{x_t^2 + y_t^2})
 \end{split}
 \end{equation*}
-
 The equations above define two hyperbolae - the intersection of which gives the tag location (xt,yt).\cite{gaffney}
 
-\newpage
-\subsubsection{Simulation}
+\subsubsection{Simulation}\label{sim}
 
 While the TDOA method described above is mathematically sound, it is somewhat unknown what the positioning accuracy will be in the real world with error caused by signal attenuation and other factors which have been thus far ignored. In order to better visualize the accuracy and effectiveness of the TDOA trilateration technique, a simple simulation was programmed in C\#. Figure~\ref{fig:distance-error} shows a screenshot of the running simulation.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.4]{data/software/3.jpg}
+\includegraphics[scale=0.3]{data/software/3.jpg}
 \caption{Simulation used to test the effect of distance error on positioning accuracy.}
 \label{fig:distance-error}
 \end{center}
@@ -612,7 +766,6 @@ The simulation determines the position of a vehicle and checks whether it is in 
 \item The simulation checks whether the calculated location is in the region of any of the parking bays.
 \end{enumerate}
 
-\newpage
 \lsec{Sources of Error}
 Clock drift introduces an insignificant error in the TDOA trilateration technique (as long as the beacons are synchronized often enough). Another source of error comes from the fact that, effectively, the reported distance varies slightly (as figure~\ref{fig:reported-distance} shows) according to the received signal level. This error could be sufficiently large to become problematic for the parking system application. However, it can be compensated for using Friis' well-known path loss formula.\cite{2}
 
@@ -624,12 +777,12 @@ Clock drift introduces an insignificant error in the TDOA trilateration techniqu
 \end{center}
 \end{figure}
 
+\newpage
 The only remaining potentially significant source of error is that caused by signal attenuation resulting from the tag's transmission having to pass through at least one vehicle body and potentially other obstacles. This can be minimised by ensuring that the beacons are high enough above ground level (to minimize the number of vehicle bodies that the signal must propagate through) and maintaining the surrounding area (by trimming foliage and clearing other obstacles). Regardless, some error will be introduced into the system, and the simulation was used to determine the effect of distance error.
 
 \lsec{Findings of the Simulation}
 The simulation revealed that the system was surprisingly tolerant to errors in distance. Using a distance error with a maximum magnitude below 0.50 m, even a car parked partially (about 15\%) in another bay was detected correctly 100\% of the time. Since the error introduced by variation in the received signal level can be nearly eradicated using Friis' path loss formula, it is concluded that the system will be accurate enough, with the assumption that the distance error will be less than 0.50 m. This appears to be a very safe assumption as the DecaWave chips are quoted as giving a positioning accuracy up to 0.10 m indoors.\cite{3}
 
-\newpage
 \subsubsection{Tag Packet Format} \label{tag-packet}
 This subsection will briefly outline and justify the contents of the packets that tags will emit. Each data packet will have the following data:
 
@@ -652,6 +805,7 @@ This subsection will detail the design of the parking system database. Specifica
 
 The design of these tables will be expanded upon below:
 
+\newpage
 \lsec{Parking Areas}
 
 \begin{table}[H]
@@ -664,7 +818,6 @@ The design of these tables will be expanded upon below:
 
 Table~\ref{tbl:table-parking-areas} shows the design of the Parking Areas table. This is a simple table in which each parking area has a record. The purpose of the Master Beacon ID field is so that the server knows which parking area the information it receives relates to, based on which master beacon it received the information from.
 
-\newpage
 \lsec{Parking Bays}
 
 \begin{table}[H]
@@ -677,24 +830,21 @@ Table~\ref{tbl:table-parking-areas} shows the design of the Parking Areas table.
 
 Table~\ref{tbl:table-parking-bays} shows the design of the Parking Bays table. Every single parking bay on campus will be entered as a record in this table. The Parking Area ID field details in which parking area each bay is located. The category field can be updated via the traffic department's client app as required. For example, student bays could be reassigned to be postgraduate bays. The eight vertex fields define the coordinates of each of the four corners of the parking bay. This is used to determine which bay a tag is occupying, if any.
 
+\newpage
 \lsec{Tags}
-
 \begin{table}[H]
 \begin{center}
-\includegraphics[scale=0.5]{data/software/7.jpg}
+\includegraphics[scale=0.37]{data/software/7.jpg}
 \caption{Tags table.}
 \label{tbl:table-tags}
 \end{center}
 \end{table}
-
 Table~\ref{tbl:table-tags} shows the design of the Tags table. The design of this table takes into consideration that a single user may have multiple vehicles and therefore multiple assigned tags, but the tag-vehicle relationship is one-to-one. This means that each tag can only be assigned to one vehicle, and a vehicle can only have one tag assigned to it.
 
-\newpage
 The parking category field is used to determine whether the user is allowed to park a specific tag/vehicle in any given bay. The tag's reported battery level is stored in order to notify the user via the mobile app/email/SMS that the battery is low and needs to be replaced.
 The Last Transmission field is used for statistics to keep track of how long users spend on campus.
 
 \subsubsection{Mobile and Web Application}
-
 This subsection will briefly outline the functionality of the mobile and web application. The two applications will have the same features. Each user logs in with their student/employee number and UCT password. There will be only one type of app, regardless of the user type. There will be three user types:
 
 \lsec{Admin Users}
@@ -725,20 +875,20 @@ This section details the mechanical components design of the transceiver chips.
 \begin{center}
 \includegraphics[scale=0.6]{data/mechanical/2.png}
 \caption{Tag case (diameter 93.26 mm).}
-\label{fig:mech-1}
+\label{fig:mech-2}
 \end{center}
 \end{figure}
 
 Designed to enclose the Printed Circuit Board (PCB) circuitries for the transceiver chips. Figures~\ref{fig:mech-1} and \ref{fig:mech-2} shows the dimensions of the case.
 
 \lsec{Material}
-The structural case is made from acrylic (thermoset plastic), which cannot change shape by reheating. The material is cheaper and lightweight than its counterparts such as Bakelite and Melamine.\cite{mech-1} It is capable of withstanding weather and is stable in sunlight. The case will be mounted atop the dashboard of the car, in order for it to be visible and its material shape preserved.
+The structural case is made from acrylic (thermoset plastic), which cannot change shape by reheating. The material is cheaper and lightweight than its counterparts such as Bakelite and Melamine.\cite{fig:mech-1} It is capable of withstanding weather and is stable in sunlight. The case will be mounted atop the dashboard of the car, in order for it to be visible and its material shape preserved.
 
 \newpage
 \lsec{Mounting}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/mechanical/3.png}
+\includegraphics[scale=0.6]{data/mechanical/3.png}
 \caption{Suction-cup (height 2.89 mm).}
 \label{fig:mech-3}
 \end{center}
@@ -746,21 +896,20 @@ The structural case is made from acrylic (thermoset plastic), which cannot chang
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=1]{data/mechanical/4.png}
+\includegraphics[scale=0.5]{data/mechanical/4.png}
 \caption{Sucker radius 4.9 mm of suction.}
 \label{fig:mech-4}
 \end{center}
 \end{figure}
 
-The case will be mounted using suction-cups (shown in figure~\ref{fig:mech-3}), made from rubber, and attached to its base. The suckers use the negative fluid pressure of air to create a partial vacuum and adhere to the dashboard.\cite{mech-2} The chosen diameter (as shown in figure~\ref{fig:mech-4}) is 9.8 mm, and will provide the necessary resistive detachment force. The minimum force required to detach is given by the following equation:
+The case will be mounted using suction-cups (shown in figure~\ref{fig:mech-3}), made from rubber, and attached to its base. The suckers use the negative fluid pressure of air to create a partial vacuum and adhere to the dashboard.\ref{fig:mech-2} The chosen diameter (as shown in figure~\ref{fig:mech-4}) is 9.8 mm, and will provide the necessary resistive detachment force. The minimum force required to detach is given by the following equation:
 $$F=PA$$
-The pressure outside one suction-cup, P, will typically be 1 atmosphere, thus the force required to lift the base from dashboard (at the point of one suction-cup) is about 31 Newtons.\cite{mech-2}
+The pressure outside one suction-cup, P, will typically be 1 atmosphere, thus the force required to lift the base from dashboard (at the point of one suction-cup) is about 31 Newtons.\ref{fig:mech-2}
 
-\newpage
 \lsec{Identification}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.8]{data/mechanical/5.png}
+\includegraphics[scale=0.4]{data/mechanical/5.png}
 \caption{Tag case base with bar-code.}
 \label{fig:mech-5}
 \end{center}
@@ -778,7 +927,6 @@ Volume = 102985 $mm^3$
 
 (Drawing designs refer to appendix G2.)
 
-\newpage
 \lsec{Direct Costs}
 3 mm acrylic: starts at R73.61/sq.ft \\
 Laser cutting costs: starts at R2.21/inch \\
@@ -788,11 +936,11 @@ Cost of manufacturing in South Africa per tag case is estimated to cost R180.00.
 
 \subsubsection{Beacon Structure}
 
-The structure of the beacon is shown in figure~\ref{fig:mech-6}. It is constructed from mild steel which is immensely strong. The material also has a strength of bending without cracking in adverse environmental conditions, this offers the advantage especially when subjected to a greater forces.\cite{mech-3}
+The structure of the beacon is shown in figure~\ref{fig:mech-6}. It is constructed from mild steel which is immensely strong. The material also has a strength of bending without cracking in adverse environmental conditions, this offers the advantage especially when subjected to a greater forces.\ref{fig:mech-3}
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.8]{data/mechanical/6.png}
+\includegraphics[scale=0.4]{data/mechanical/6.png}
 \caption{Beacon design.}
 \label{fig:mech-6}
 \end{center}
@@ -800,13 +948,13 @@ The structure of the beacon is shown in figure~\ref{fig:mech-6}. It is construct
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.8]{data/mechanical/7.png}
+\includegraphics[scale=0.3]{data/mechanical/7.png}
 \caption{Top view of the beacon.}
 \label{fig:mech-7}
 \end{center}
 \end{figure}
 
-Mild steel is often chosen because of its strength, low weight and speed of construction.\cite{mech-4}
+Mild steel is often chosen because of its strength, low weight and speed of construction.\ref{fig:mech-4}
 
 \lsec{Evaluation}
 SolidWorks Software Design Evaluation was made to the beacon, and the following are the estimate calculations of the component:
@@ -820,7 +968,7 @@ Lyz = -44.54 [$kg.m^2$]\\
 Lzz = 10523.05 [$kg.m^2$]
 \end{center}
 
-The dynamics makes the structure durable and capable of withstanding the forces that may lead to deformation and toppling torques.
+The dynamics make the structure durable and capable of withstanding the forces that may lead to deformation and toppling torques.
 
 (Drawing designs refer to appendix G1.)
 
@@ -828,19 +976,260 @@ The dynamics makes the structure durable and capable of withstanding the forces 
 3-80mm thickness mild steel: starts at R7378.17/ton\\
 Each beacon is estimated to cost R12 000.00
 
-
-
-\subsubsection{Mechanical Requirements}
-Durability, forces, dynamics.
-\subsubsection{Technical Drawings}
-\subsection{Electrical Design} 
-\subsubsection{Power Requirements}
-Battery life etc.
+\subsubsection{Beacon Placement}
+Figure~\ref{fig:mech-8} in Appendix H  shows the location of parking areas on UCT Upper Campus and figure~\ref{fig:mech-9} in Appendix H shows where the beacons will be placed in relation to these parking areas - with 4 beacons within a 150m range of each parking area including one master beacon per parking area.
 
 \newpage
-\subsubsection{Schematics}
+\subsection{Electrical Design} 
+\subsubsection{Power Requirements}
+\lsec{Overview}
+In order to power the beacons, certain specialised circuitry is required. These are known as voltage regulators. They are necessary for two different reasons in our design namely:
 
-The following diagrams cover the design of the tag; where the beacon makes a few changes to the circuitry and adds a WiFi module, seen in Figure~\ref{fig:wifi}. 
+\begin{itemize}
+\item The first voltage regulator is used for the solar powered beacons. Solar power generated is unstable and can damage electrical components if it is not regulated using a VC.
+\item The second voltage regulator is powered via the mains. The AC voltage that comes from the mains is not suitable for use in the circuits. It first needs to be stepped down and then converted into DC.
+\end{itemize}
+
+Two voltage regulators were designed; one for the mains and one for the solar panels.
+
+\lsec{Power Budget for Beacon}
+Using datasheet values for the three ICs the following rough power budget was constructed:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{data/power/1.png}
+\caption{Power.}
+\label{fig:pow-1}
+\end{center}
+\end{figure}
+
+This table assumes that 50\% of the power used will be dissipated. This was done for design
+purposes. It can be seen that the beacon requires a fairly low estimate of power (roughly 1.2W) and
+so some cost saving measures in the design can be taken. These will be specified.
+
+\lsec{Power Supply Design}
+\textit{Design requirements - Regulators:}
+
+We need to design voltage regulators which regulate the voltage to levels appropriate for the ICs
+used in our design namely the ATM328P and ESP8266 as well as the Decawave DW1000.
+From the datasheets the required value ranges for both are summarised as:
+
+Input Voltage: 1.8V-5.5V, Output Voltage 2.1V – 4.2V, Current Rating 40mA
+
+The primary goal of our voltage regulators will be to get around 5V outputted to the circuit.
+We also want the regulators to be power efficient and have low dissipation because of the inherent
+inefficiency of solar panels. In addition the regulators need to be as robust and as cheap as possible.
+
+\textit{Design requirements - Solar Panel:}
+
+The solar panel needs to be able to provide roughly 1.2W according to the energy budget of power
+for the circuitry to work. This is a small amount. The solar panel will be assumed to have an
+efficiency of 20\%. There are roughly 12 hours of sunlight in a day, so the assumption will be that our
+solar panels will only be exposed to light for 5 hours every day, assuming the most overcast possible
+winter's day. The actual amount will be much higher, but the design assumes the worst case.
+
+This equates to 1.282 Wh a day.
+
+The solar panel traps solar energy and produces an output voltage. But, since the light radiation
+falling on the solar panel can vary, the output voltage becomes unstable. For our purposes, stable
+voltage is required. So, to make the output voltage stable and regulated, we use a voltage regulator
+circuit along with the solar panel.
+
+With these considerations the following solar panel was selected:
+
+Sirius Solar Energy Systems SS-005-12, 5W 12V rating. The model size is 253 x 279 x 22mm
+
+\lsec{Solar Panel Voltage Regulator}
+\textit{Selecting a voltage Regulator:}
+
+The LM 7805 Voltage Regulator was selected because it can regulate a steady output voltage of 5V
+which is what we need for our ICs. It is also easy to use and relatively cheap.
+
+\textit{Battery Selection:}
+
+We require rechargeable batteries. Four LiPO batteries were selected for this purpose. They are
+relatively cheap rechargeable batteries and have a sufficient lifespan. Even though their cost seems
+prohibitive, they will actually greatly extend the functionality of the system, in addition to saving
+large amounts of money on electricity tariffs. 3 were selected in order to get the voltage to 4.8V.
+
+\textit{Simulations:}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{data/power/2.png}
+\caption{Initial regulator using datasheet example.}
+\label{fig:pow-2}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/3.png}
+\caption{Voltmeter reading for initial circuit showing 5.003V.}
+\label{fig:pow-3}
+\end{center}
+\end{figure}
+
+The initial circuit was set up and tested in LTspice.
+
+As can be seen from the Ltspice simulation, the output voltage is regulated to 5.03V which is roughly
+what we need for the beacon circuitry.
+
+The most obvious improvement would be to use a battery to store excess power generated. This is
+doubly important for solar panels as they can be unreliable. To keep the device running, a battery
+can be attached in parallel as a backup power source. Diodes are connected to the battery and the
+solar panel. This is a failsafe in case the battery is installed backwards accidentally as the diodes will
+prevent the battery from receiving power from the solar panel since it is a one-way valve.
+
+When the solar panel receives enough light, the device runs entirely from the solar panel. Our design
+aim is for the battery to have a lower voltage rating than the outputted rating from the voltage
+regulator. Current only flows from a higher voltage to a lower voltage, so when there is sufficient
+power from the solar panel, the battery won't be used at all.
+
+When the solar panel and the battery pack are at the same voltage, they will both contribute to
+running the device. This will extend the life of a device with an otherwise underpowered solar panel.
+
+Finally, when the solar panel isn't receiving enough light, its voltage will drop below that of the
+battery – and the battery will now power the circuit.
+
+Diodes are very cheap and their inclusion is a far superior option to replacing a device due to a
+potential reversed-battery error.
+
+The final design for the regulator is show below:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{data/power/4.png}
+\caption{Regulator final design.}
+\label{fig:pow-4}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/5.png}
+\caption{Regulator final design simulation.}
+\label{fig:pow-5}
+\end{center}
+\end{figure}
+
+As can be seen the output voltage is roughly 5V which satisfies our requirements. The additional
+components – the battery and the diodes – provide additional functionality and protection. NOTE:
+The location labelled output on the circuit is where the beacon circuitry will be installed.
+
+\textit{Bill of Materials for Solar Regulator:}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/tb1.png}
+\caption{BOM for Solar Regulator.}
+\label{fig:pow-BOM}
+\end{center}
+\end{figure}
+
+\lsec{Mains Voltage Regulator}
+This voltage regulator will differ from the one required for solar panels. In South Africa our mains are
+rated at 230V 50Hz so the design will revolve around this. The mains AC voltage needs to be
+converted to a usable DC voltage.
+
+To achieve this we need to design a voltage regulator taking note of 4 main components:
+
+\begin{enumerate}
+\item A Step Down Transformer (to step down the mains)
+\item Voltage Regulator
+\item Capacitor
+\item Diodes
+\end{enumerate}
+
+We need 5V so again as specified by the datasheets so I will use the LM7805 voltage regulator which
+was previously used in the solar panel regulator. This will also assist in lowering the cost as these
+regulators can be bought in bulk.
+
+\textit{Step 1: Transformer Design}
+
+A suitable transformer needs to be selected first. This decision will be based on current rating and
+the secondary voltage.
+
+\begin{itemize}
+\item For design purposes, the input voltage to the LM7805 (what comes out of the secondary
+winding) should be at least 2V greater than the required output. For our purposes this
+should be around 7V.
+\item The current rating is dependent on the load.
+\end{itemize}
+
+Based on these observations we can select a transformer. It was found that a 6-0-6 transformer with
+a current rating of 500mA was suitable for design.
+
+\textit{Step 2: Rectifier Design}
+
+The design choice was taken to use a full wave rectifier. It was chosen for the following reasons:
+
+\begin{itemize}
+\item It will allow a higher transformer utilization factor. TUC is the ratio of DC power available at
+the load resistor and the AC rating of the secondary coil.
+\item 1N4148 diodes are used as they can withstand a higher reverse voltage than 1N5818.
+\item Less DC saturation
+\end{itemize}
+
+\textit{Step 3: Capacitor Choice}
+Ripple factor is used to decide which capacitors to use.
+$$Y=\frac{1}{4 \sqrt{3fRC}}$$
+Where:
+\begin{itemize}
+\item $f$ = frequency of AC which is 50Hz in South Africa
+\item R is calculated via $\frac{V}{I}=\frac{6\sqrt{2}[V]}{500mA}=16.97\Omega$
+\item C is the filtering capacitance. This is calculated via:\\
+$Y=\frac{V_{AC}-rms}{V_{DC}}$\\
+$V_{AC}-rms=\frac{V_r}{2\sqrt{3}}$\\
+$V_{DC}=V_{MAX}-\frac{V_r}{2}$\\
+$V_r=V_{MAX}-V_{MIN}$\\
+The following values are obtained:\\
+$V_r=0.4V$\\
+$V_{AC}-rms=0.346V$\\
+$V_{DC}=5V$\\
+$Y=0.06928$\\
+With this value of Y we can use the ripple effect equation at the beginning to solve for C
+which comes to C = 2314 uF. A 2200uF capacitor is therefore selected for use in the circuit.
+\end{itemize}
+
+Additionally the LM7805 datasheet suggests using a 0.01uF capacitor at the output in order to
+protect against transient changes in voltage caused by changes in load. The datasheet also suggest
+using a 0.33uF capacitor at the input side of the regulator to avoid ripples. Both of these were
+factored into the design.
+
+The final circuit designed is shown below. However the transformer was neglected from the final
+circuit for simplicity even though it will be used:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/7.png}
+\caption{Final circuit.}
+\label{fig:pow-7}
+\end{center}
+\end{figure}
+Checking the output voltage via simulation the following value was obtained:
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/8.png}
+\caption{Final circuit simulation.}
+\label{fig:pow-8}
+\end{center}
+\end{figure}
+This value of 4.89V is suitable for use in the beacon.
+
+\newpage
+\textit{Bill of Materials for Mains Regulator:}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/power/tb2.png}
+\caption{BOM for Mains Regulator.}
+\label{fig:pow-BOM2}
+\end{center}
+\end{figure}
+
+\subsubsection{Schematics (Tag and Beacon)}
+
+The following diagrams cover the design of the tag; where the beacon makes a few changes to the circuitry and adds a WiFi module, seen in Figure~\ref{fig:wifi}. The full schematics can be seen in Appendix C.
 
 The system is made up of three components; namely the \textbf{basic DW1000} schematic sheet, the \textbf{microcontroller} schematic sheet and the \textbf{WiFi} schematic sheet - as seen in Figure~\ref{fig:interface-conn}. The system was designed to be modular so that each section has a set function - the \textbf{basic DW1000} circuit is involved in both the beacons and tags with RF functionality, the \textbf{microcontroller} circuitry is a replaceable section that both the tag and beacon rely on, the \textbf{WiFi} module is only required on the master beacon and is thus also a separate section which together form the system.
 
@@ -852,10 +1241,13 @@ The system is made up of three components; namely the \textbf{basic DW1000} sche
 \end{center}
 \end{figure}
 
+\newpage
 \lsec{Component Selection}
 The Atmel ATmega328P micro controller was chosen for it's low power consumption with five software selectable power saving modes and it's wide 1.8-5.5 V operating range.\cite{atmel} There is also lots of open-source software available for the Decawave on the Atmel chipset, ensuring less programming issues come up. The processing power of the beacon will be shared with the ESP8266 module which has a capable microprocessor on board. The tags are not required to do very much processing on board, so the Atmel chip is suitable for the job.
 
 The ESP8266 WiFi module was chosen for the beacon circuitry because it is well documented and cheaply available while being a reliable and tested system.
+
+Two DC-DC buck converters were used, namely the TPS62203DBVR from Texas Instruments, because of their low supply current of 15uA and high operating efficiency - which will be needed for the tags especially.
 
 In the BOM and costing of Appendix F, components were chosen to optimize costs rather than quality, except where the RF circuitry was involved.
 
@@ -868,7 +1260,7 @@ In the BOM and costing of Appendix F, components were chosen to optimize costs r
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[page=3,scale=1,trim={10cm 8cm 10cm 5cm},clip]{data/parking-system.pdf}
+\includegraphics[page=3,scale=0.9,trim={10cm 8cm 10cm 5cm},clip]{data/parking-system.pdf}
 \caption{Parking system tag schematic diagram: micro-controller.}
 \end{center}
 \end{figure}
@@ -881,25 +1273,10 @@ In the BOM and costing of Appendix F, components were chosen to optimize costs r
 \end{center}
 \end{figure}
 
-\subsubsection{PCB Design}
+\subsubsection{PCB Design (Tag and Beacon)}
+The PCB design for the tag and beacon can be seen in Appendix D and E respectively. The PCBs were designed and routed using the open source software KiCad, to reduce design costs. Decoupling capacitors were placed as close as possible to their relevant power terminals. Traces were optimized to be as short as possible and to reduce ground feedback loops which could pick up RF interference. The traces for the antenna were placed as close as possible to the antenna terminal and in the case of the tag a chip antenna was used. 
 
 EMF and RF mitigation techniques have to be considered when designing the PCBs in order to make them compliant with the ICASA regulations. This involved using a ground plane and ensuring the antennas are correctly matched ($100\Omega$ traces) to reduce RF harmonic signals.
-
-The PCBs were designed and routed using the open source software KiCad, to reduce design costs. Decoupling capacitors were placed as close as possible to their relevant power terminals. Traces were optimized to be as short as possible and to reduce ground feedback loops which could pick up RF interference. The traces for the antenna were placed as close as possible to the antenna terminal and in the case of the tag a chip antenna was used.
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.6,trim={4cm 15cm 4cm 1cm},clip]{data/pcb-layout.pdf}
-\caption{Parking system tag PCB layout.}
-\end{center}
-\end{figure}
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[scale=0.4,trim={1cm 1cm 1cm 1cm},clip,angle=-90]{data/pcb-layout-ESP.pdf}
-\caption{Parking system beacon PCB layout.}
-\end{center}
-\end{figure}
 
 \subsubsection{RF Design}
 \lsec{Antenna Specifications:\cite{DW-antenna}}
@@ -961,6 +1338,7 @@ The DW1000 can be programmed to use specific frequency channels (defined by the 
 \lsec{Operating Range\cite{DW-manual}}
 The operating range of the RF signal is affected by a number of software considerations. If a range of around 250m is required, slightly higher than the design constraint in the calculations above to allow for signal attenuation, then a data rate of 110kbps should be used on the tag side - for the beacon this is not critical as operating transmitter range and power use are less of a concern.
 
+\newpage
 \lsec{Further Design Considerations}
 Further testing of antenna designs and power output will need to be done in the parking system environment as calculations can not be relied upon for RF design.
 
@@ -974,7 +1352,6 @@ Further testing of antenna designs and power output will need to be done in the 
 
 Figure~\ref{fig:tx-power} above shows that both the supply voltage and environmental temperature have an affect on the effective transmit power achieved. This means proper supply voltage regulation, as well as temperature regulation, are needed to ensure the transmit-receive performance designed for is achieved in practise.
 
-\newpage
 \subsubsection{Bill of Materials}
 \lsec{Tag BOM}
 The bill of materials as well as unit pricing for the tag can be found in Appendix F. Where parts with specific tolerance, such as for the RF circuitry, are needed they have been ordered specifically. The non-critical parts were chosen to optimize the end unit price. 
@@ -987,23 +1364,85 @@ Total Capital Outlay (ZAR): R3558254 (tags) + R360000 (beacons)\\
 Unit Cost for Tags (ZAR): R237 (circuitry) + R180 (casing)
 Unit Cost for Beacons (ZAR): R12000
 
-It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. The estimated cost for the beacon, as seen in the Mechanical Design section, was R12000 per beacon. With 30 beacons distributed across the upper campus parking areas, this works out to R360000. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be the additional expense of the following:
+It was decided not to include the BOM and Unit Cost analysis for the beacons, as their costs will be minimal when compared with the 15000 tags needed for the system. The estimated cost for the beacon, as seen in the Mechanical Design section, was R12000 per beacon. With 30 beacons distributed across the upper campus parking areas, this works out to R360000. In terms of circuitry, the beacons will work out to the same price as a tag - adding WiFi but not using LiPo batteries. There will be the additional expense of the following: WiFi chips, beacon platform, beacon power supplies, high gain antenna. 
 
-\begin{itemize}
-\item WiFi chips
-\item Beacon platform
-\item Beacon power supplies
-\item High gain antenna 
-\end{itemize}
-
+\newpage
 \subsection{Assumptions}
-Identify and show that checked validity.
+The following assumptions were made and validated as indicated:
+
+\begin{enumerate}
+\item \textbf{Solar panels are able to provide the needed power for recharge of the LiPo batteries.}\\The circuitry of the chips is protected with a casing which is placed inside the vehicles, this ensures disturbances and damages are minimized.
+\item \textbf{Five hours of sunlight expected at beacon locations.}\\The location chosen from the map for beacon placement are in direct sunlight, no obstruction from trees or buildings.
+\item \textbf{Circuitry components will have correct (and within ratings) voltage levels.}\\Voltage ratings of the circuits are studied and necessary regulators used to ensure maintenance of the correct voltage at all times and the system designed to protect itself from overload 
+\item \textbf{The beacons’ transceiver chips will not be vandalized or disrupted.}\\The height of the beacons is just over nine metres, and the chips are placed at the highest point which brings difficulty in accessibility. The height also helps in the operation range of the tag antenna choice. 
+\item \textbf{Triangulation method will always provide accurate results.}\\Triangulation typical needs three beacons, the system is design to use four to ensure accuracy as well as a fail-sage mechanism
+\item \textbf{Durability of the transceiver chips is certain.}\\The circuitry of the chips is protected with a casing which is placed inside the vehicles, this ensures disturbances and damages are minimized.
+\item \textbf{Chip holders will comply by rules and not damage the transceiver chips.}\\The material for the chip casing cannot be easily damaged. The bar coded stick is needed for identification, therefore in order to avoid possible fines; users are encouraged to avoid tampering
+\item \textbf{Constant rate of manufacturing prices.}\\Minimum laser cutting and material costs’ estimation for system have been based on Pololu Robotics and Electronics and Robor Steel pricings with constant market-based inflation rate of 1\% 
+And 4.82\% respectively.
+\end{enumerate}
+
 \subsection{Failure Modes}
 Probabilities,Consequences,Mitigation
+
+\newpage
 \subsection{System Lifetime}
-A statement of the design life time, with explanation of what (if anything) will limit it.
+The design lifetime of the system is expected to be 15 years, with certain sub-systems requiring more regular replacement. 
+
+The sub-systems that will limit the design lifetime are the following:
+\begin{itemize}
+\item \textbf{LiPo Batteries:} LiPo batteries will need to be replaced every year for the beacons and every 5 years for the tags. The 5 year lifetime of the tag is due to exposure to heat rather than exceeding the charge cycle limit, as they will be charged once a year upon return from the user. 
+\item \textbf{Tags:} The tags will be in an unknown environment. This could lead to mishandling by the users and possible damage - these will need to be replaced.
+\item \textbf{Solar Panel:} Solar panels in outdoor environments need to be maintained and possibly replaced every 15 years. 
+\end{itemize}
+
 \subsection{Worst Case Calculation}
-For at least one component / sub-system 
+This section will focus on the factors affecting the distance measurement from the tags to the beacons,
+and the worst case distance error that can result. The value of the distance measurement was chosen
+for this analysis because it is at the core of the system. The distance measurements are what determine
+the accuracy of the determination of the location of a tag. The accuracy of the location estimate, in turn,
+affects how effective the system is at determining which parking bays are occupied. The simulation
+described in section~\ref{sim} allows for the assessment of the effect of distance error on the accuracy of
+the parking bay occupation algorithm. Table~\ref{tbl:dst-error} shows the sources of error and their estimated
+magnitude.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{3cm}|p{5cm}|}
+\hline
+\textbf{Factor}                        & \multicolumn{1}{l|}{\textbf{Introduced Distance Error}} & \multicolumn{1}{l|}{\textbf{Comment}}                                                                                                                                  \\ \hline
+\textbf{Signal level}                  & $\pm 0.15 m$ \newline (Uncompensated) $\pm 0.05 m$ \newline (Compensated)            & Can be compensated for using Friis’ path loss formula.\cite{2} Then the error can be taken to be much smaller, perhaps a worst case of $0.05 m$.                          \\ \hline
+\textbf{Attenuation through vehicles}  & $+1 \%$ (Estimate)                                        & Cannot be factored into path loss compensation because the attenuation depends on the vehicles parked nearby. Can be minimised by having beacons at sufficient height. \\ \hline
+\textbf{Noise and interference from other tags} & $\pm 0.5 \%$ \newline (Estimate)                                      & Not a significant issue with the Ultra Wide Band DecaWave chips.\cite{gaffney}                                                                                               \\ \hline
+\end{tabular}
+\caption{Sources of error in the distance measurement.}
+\label{tbl:dst-error}
+\end{table}
+
+The resulting worst case error is therefore
+\begin{equation*}
+\begin{split}
+Worst Case Error &= +1\% + 0.5\% + 0.05 m \\
+&= +1.5\% + 0.05 m
+\end{split}
+\end{equation*}
+Knowing that each parking area will be served by a minimum of 4 beacons, and based on the size of
+parking areas at UCT, it can be said that no parking spot will be more than 50 m away from any of the 3
+nearest beacons. The absolute worst case error is then
+\begin{equation*}
+\begin{split}
+Worst Case Error &= 50 \times 1.5\% + 0.05 m \\
+&= 0.8 m
+\end{split}
+\end{equation*}
+The simulation in section~\ref{sim} showed that the distance error cut-off point was at $\pm 0.5m$ before a
+poorly parked car was detected to be in the wrong bay. However, this is assuming equal distance error
+at each beacon, which is not the case in reality, where one beacon will be the furthest away, while the other two will be nearer, resulting in this worst case distance error only applying to one of the three
+nearest beacons. Thus, it can be said that the system should be accurate enough even in the worst case.
+
+If further testing shows that the error is in fact too great, the tag distance to the nearest three beacons
+can easily be decreased by simply adding another one or two beacons to the parking area. This can be
+done without increasing the cost of the system too much due to the relatively low cost of the beacons.
 
 \textit{Report structure compiled from class notes.}\cite{handout}\cite{notes}
 
@@ -1037,20 +1476,25 @@ For at least one component / sub-system
 
 \newpage
 \subsubsection*{Jarushen Govender (GVNJAR002)}
+5. Conceptual Design: Design Two.
+6. Embodiment Design: Power Requirements.
 Progress Report 3.
 \subsubsection*{Isaac Lebogang Khobo (KHBISA001)}
-Progress Report 4.
+6. Embodiment Design: Mechanical Design.
+Progress Report 4. \\
+Appendix G1, G2.
 \subsubsection*{Benjamin Scholtz (SCHBEN011)}
 LATEX Formatting/Template. \\
 2. Task Clarification. \\
-3. Context of Design: Microeconomic Factors. \\
-4. Design Specification: Scope, Applicable Documents, Quality Assurance, Timescale, Economic Factors, Ergonomic Factors, Life-cycle. \\
+3. Context of Design. \\
+4. Design Specification. \\
 5. Conceptual Design: Design One, Weighted Selection, Recommendation. \\
-6. Embodiment Design: Schematics, PCB Design, RF Design, Bill of Materials (Tag). \\
-Progress Report 2.
+6. Embodiment Design: Schematics (Tag and Beacon), PCB Design (Tag and Beacon), RF Design, Bill of Materials (Tag). \\
+Progress Report 2. \\
+Appendix C,D,E,F.
 \subsubsection*{Nasko Stavrev (STVATA001)}
 Simulation.
-6. Embodiment Design: System Overview, Software Design.
+6. Embodiment Design: System Overview, Software Design, Worst Case Calculation.
 
 \vfill
 \textbf{Note: }\textit{all team members contributed throughout the course of the design to the various sections mentioned - each section was compiled by the team member shown.}
@@ -1228,6 +1672,31 @@ U1             & Transciever   & Supplier: Digikey          &                   
 \begin{center}
 \includegraphics[scale=1.3]{data/mechanical/a2.png}
 \end{center}
+
+\newpage
+\vspace*{\fill}
+\begin{center}
+\subsection*{Appendix H: Beacon Placement on UCT Upper Campus}
+\end{center}
+\vspace*{\fill}
+\addcontentsline{toc}{section}{Appendix H: Beacon Placement on UCT Upper Campus}
+
+\newpage
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.3]{data/mechanical/8.png}
+\caption{UCT Upper Campus parking areas.}
+\label{fig:mech-8}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.5]{data/mechanical/9.jpg}
+\caption{Beacon placement.}
+\label{fig:mech-9}
+\end{center}
+\end{figure}
 
 \end{document}
 
