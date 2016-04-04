@@ -14,7 +14,7 @@
 \cfoot{\thepage}
 
 \begin{document}
-
+\pagenumbering{gobble}
 %######################Title Page######################
 \begin{titlepage} 
 \includegraphics[width = 17cm]{images/uctbanner.png} \\
@@ -62,7 +62,7 @@ Lecturer: \lecturer \\
 
 %######################Plagiarism Dec.######################
 \input{"\homedir plagiarism-declaration.tex"}
-
+\pagenumbering{arabic}
 %######################Begin Content######################
 \newcommand{\lsec}[1]{\normalsize{\textbf{#1}}\\}
 
@@ -317,7 +317,6 @@ Figure~\ref{fig:soft-overview2} below shows a diagram detailing the overall stru
 
 The system uses trilateration to locate the parking system users, relay this information to a server for processing and supply the necessary parking information to the user via a mobile or web interface. This will be further expanded upon in the System Components section.
 
-\newpage
 \subsubsection{System Components}
 \lsec{Tags and Beacons}
 Due to a triangulation system being used, in every parking area there are at least three beacons - with four being used to try to eliminate signal propagation issues. The tags and beacons make use of a Decawave DW1000 ultra-wideband transceiver chip that is controlled via SPI from a Atmel micro-controller. 
@@ -1490,15 +1489,6 @@ done without increasing the cost of the system too much due to the relatively lo
 %\begin{minted}[linenos=true]{matlab}
 %\end{minted}
 
-%######################References######################
-\newpage
-%\input{"\homedir references.tex"} %manual references
-
-\bibliography{bibliography}
-\bibliographystyle{ieeetran}
-\addcontentsline{toc}{section}{References}
-
-
 %######################Appendices######################
 \newpage
 \vspace*{\fill}
@@ -1731,6 +1721,14 @@ U1             & Transciever   & Supplier: Digikey          &                   
 \label{fig:mech-9}
 \end{center}
 \end{figure}
+
+%######################References######################
+\newpage
+%\input{"\homedir references.tex"} %manual references
+
+\bibliography{bibliography}
+\bibliographystyle{ieeetran}
+\addcontentsline{toc}{section}{References}
 
 \end{document}
 
