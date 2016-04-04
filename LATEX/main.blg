@@ -8,49 +8,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: bibliography.bib
+Warning--I didn't find a database entry for "fig:mech-1"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 16 entries,
+You've used 17 entries,
             4087 wiz_defined-function locations,
-            894 strings with 9279 characters,
-and the built_in function-call counts, 6381 in all, are:
-= -- 547
-> -- 65
+            900 strings with 9458 characters,
+and the built_in function-call counts, 6775 in all, are:
+= -- 582
+> -- 69
 < -- 0
-+ -- 32
-- -- 16
-* -- 203
-:= -- 1244
-add.period$ -- 47
-call.type$ -- 16
-change.case$ -- 32
++ -- 34
+- -- 17
+* -- 214
+:= -- 1321
+add.period$ -- 50
+call.type$ -- 17
+change.case$ -- 34
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 483
-empty$ -- 576
-format.name$ -- 16
-if$ -- 1381
+cite$ -- 17
+duplicate$ -- 513
+empty$ -- 611
+format.name$ -- 17
+if$ -- 1467
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 126
-newline$ -- 101
-num.names$ -- 17
-pop$ -- 338
+int.to.str$ -- 17
+missing$ -- 134
+newline$ -- 106
+num.names$ -- 18
+pop$ -- 360
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 508
+skip$ -- 540
 stack$ -- 0
-substring$ -- 32
-swap$ -- 317
+substring$ -- 34
+swap$ -- 337
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 16
+type$ -- 17
 warning$ -- 0
-while$ -- 16
-width$ -- 18
-write$ -- 194
+while$ -- 17
+width$ -- 19
+write$ -- 205
+(There was 1 warning)

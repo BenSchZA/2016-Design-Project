@@ -1382,8 +1382,42 @@ The following assumptions were made and validated as indicated:
 And 4.82\% respectively.
 \end{enumerate}
 
+\newpage
 \subsection{Failure Modes}
-Probabilities,Consequences,Mitigation
+The following table discusses the failure mode effect analysis (FMEA) of the system.\cite{FMEA} 
+
+The rating scores are as follows:
+
+1=not severe, 10=very severe; \\
+1=not likely, 10=very likely; \\
+1=easy to detect, 10=not easy to detect. \\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.6]{data/failure-modes.png}
+\caption{Failure mode effect analysis.}
+\label{fig:failure}
+\end{center}
+\end{figure}
+
+%\begin{table}[H]
+%\centering
+%\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+%\hline
+%\textbf{Function / processor item}    & \textbf{Failure Type}                              & \textbf{Potential impact}                    & \textbf{Potential causes}                  & \textbf{Detection}                   & \textbf{Severity} & \textbf{Frequency} & \textbf{Detection mode} & \textbf{Risk priority} \\ \hline
+%\textbf{PCB function}               & Incorrect data transmission                       & Inaccurate results of bay spaces             & Overheated components                      & Suitable regulators                           & 9                 & 2                                & 3                       & 54                            \\ \hline
+%\textbf{Beacon structure}           & Fatigue crack of the structure                    & Disruption of recovery time of triangulation & Bending stresses                           & Not necessary                                 & 9                 & 1                                & 1                       & 9                             \\ \hline
+%\textbf{Tag case}                   & Mounted chip loosened/ Suction cup malfunction    & Damage or loss                               & Surface mounted porous                     & Chip placement inspect before parking         & 10                & 2                                & 3                       & 60                            \\ \hline
+%\textbf{Solar panels}               & Energy storage inefficiency                       & Inability to be used for battery recharge    & Less hours of sunlight due to localization & Occasional inspect and clean-up               & 7                 & 2                                & 2                       & 28                            \\ \hline
+%\textbf{LiPo Batteries}            & Capacity loss                                     & System halt                                  & Lifetime reach                             & Charge level measurement before next recharge & 10                & 1                                & 1                       & 10                            \\ \hline
+%\textbf{Transceiver antennae}       & Irregular radiation pattern \& less gain achieved & Inaccurate data transmission                 & Adverse climatic conditions                & Data transmission regularities inspection     & 7                 & 3                                & 3                       & 63                            \\ \hline
+%\textbf{Database server}            & Data loss                                         & Unresolved fines                             & System update and power failure            & Routine system back-ups                       & 8                 & 2                                & 3                       & 48                            \\ \hline
+%\textbf{Mobile and Web Application} & Asychronization and less response time            & Vehicle owners frustration of time wastage   & Signal attenuation during transmission     & Significant height placement of beacon chips  & 5                 & 2                                & 5                       & 50                            \\ \hline
+%\end{tabular}
+%\caption{Failure mode effect analysis.}
+%\label{my-label}
+%\end{table}
+
 
 \newpage
 \subsection{System Lifetime}
@@ -1476,11 +1510,11 @@ done without increasing the cost of the system too much due to the relatively lo
 
 \newpage
 \subsubsection*{Jarushen Govender (GVNJAR002)}
-5. Conceptual Design: Design Two.
-6. Embodiment Design: Power Requirements.
+5. Conceptual Design: Design Two.\\
+6. Embodiment Design: Power Requirements.\\
 Progress Report 3.
 \subsubsection*{Isaac Lebogang Khobo (KHBISA001)}
-6. Embodiment Design: Mechanical Design.
+6. Embodiment Design: Mechanical Design, Assumptions, Failure Modes.\\
 Progress Report 4. \\
 Appendix G1, G2.
 \subsubsection*{Benjamin Scholtz (SCHBEN011)}
@@ -1489,11 +1523,11 @@ LATEX Formatting/Template. \\
 3. Context of Design. \\
 4. Design Specification. \\
 5. Conceptual Design: Design One, Weighted Selection, Recommendation. \\
-6. Embodiment Design: Schematics (Tag and Beacon), PCB Design (Tag and Beacon), RF Design, Bill of Materials (Tag). \\
+6. Embodiment Design: Schematics (Tag and Beacon), PCB Design (Tag and Beacon), RF Design, Bill of Materials (Tag), System Lifetime. \\
 Progress Report 2. \\
 Appendix C,D,E,F.
 \subsubsection*{Nasko Stavrev (STVATA001)}
-Simulation.
+Simulation.\\
 6. Embodiment Design: System Overview, Software Design, Worst Case Calculation.
 
 \vfill

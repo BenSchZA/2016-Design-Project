@@ -1,0 +1,11 @@
+"Function/process
+or item","Failure
+Type",Potential impact,Potential causes,Detection controls,Severity,Frequency of occurrence,Detection mode,Risk priority number
+PCB function,Incorrect data transmission,Inaccurate results of bay spaces,Overheated components,Suitable regulators,9,2,3,54
+Beacon structure,Fatigue crack of the structure,Disruption of recovery time of triangulation,Bending stresses,Not necessary,9,1,1,9
+Tag case,Mounted chip loosened/ Suction cup malfunction,Damage or loss,Surface mounted porous,Chip placement inspect before parking,10,2,3,60
+Solar panels,Energy storage inefficiency,Inability to be used for battery recharge,Less hours of sunlight due to localization,Occasional inspect and clean-up,7,2,2,28
+LiPos Batteries,Capacity loss,System halt,Lifetime reach,Charge level measurement before next recharge,10,1,1,10
+Transceiver antennae,Irregular radiation pattern & less gain achieved,Inaccurate data transmission,Adverse climatic conditions,Data transmission regularities inspection,7,3,3,63
+Database server,Data loss,Unresolved fines,System update and power failure,Routine system back-ups,8,2,3,48
+Mobile and Web Application,Asychronization and less response time,Vehicle owners frustration of time wastage,Signal attenuation during transmission,Significant height placement of beacon chips,5,2,5,50

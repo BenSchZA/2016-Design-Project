@@ -46,7 +46,7 @@
 \BIBentryALTinterwordspacing
 {R. van der Blom}. (11 March 2016) {AS3 Trilateration}. [Online]. Available:
   \url{http://www.caffaware.com/wp-content/uploads/2016/03/trilateration.png}
-  (Accessed 30 March, 2016).
+  [image](Accessed 30 March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{gaffney}
@@ -124,6 +124,14 @@
 {DecaWave Limited}. (2016) {DW1000 USER MANUAL}. [Online]. Available:
   \url{http://www.decawave.com/support/download/file/nojs/725} (Accessed March,
   2016).
+\BIBentrySTDinterwordspacing
+
+\bibitem{FMEA}
+\BIBentryALTinterwordspacing
+{Forrest, G}. (2016) {Quick Guide to Failure Mode and Effects Analysis}.
+  [Online]. Available:
+  \url{http://www.isixsigma.com/tools-templates/fmea/quick-guide-failure-mode-and-effects-analysis/}
+  (Accessed March, 2016).
 \BIBentrySTDinterwordspacing
 
 \bibitem{notes}

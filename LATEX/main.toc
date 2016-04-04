@@ -55,16 +55,16 @@
 \contentsline {subsubsection}{\numberline {6.4.4}RF Design}{46}{subsubsection.6.4.4}
 \contentsline {subsubsection}{\numberline {6.4.5}Bill of Materials}{48}{subsubsection.6.4.5}
 \contentsline {subsection}{\numberline {6.5}Assumptions}{49}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Failure Modes}{49}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}System Lifetime}{50}{subsection.6.7}
-\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{50}{subsection.6.8}
-\contentsline {section}{References}{52}{section*.2}
-\contentsline {section}{Appendix A: Contributions}{53}{section*.3}
-\contentsline {section}{Appendix B: Progress Reports}{55}{section*.8}
-\contentsline {section}{Appendix C: Tag Schematic Diagram}{68}{section*.16}
-\contentsline {section}{Appendix D: Tag PCB Layout}{73}{section*.17}
-\contentsline {section}{Appendix E: Beacon PCB Layout}{75}{section*.18}
-\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{77}{section*.19}
-\contentsline {section}{Appendix G1: Beacon Structural Schematics}{79}{section*.20}
-\contentsline {section}{Appendix G2: Tag Case Schematics}{81}{section*.21}
-\contentsline {section}{Appendix H: Beacon Placement on UCT Upper Campus}{83}{section*.22}
+\contentsline {subsection}{\numberline {6.6}Failure Modes}{50}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}System Lifetime}{51}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Worst Case Calculation}{51}{subsection.6.8}
+\contentsline {section}{References}{54}{section*.2}
+\contentsline {section}{Appendix A: Contributions}{55}{section*.3}
+\contentsline {section}{Appendix B: Progress Reports}{57}{section*.8}
+\contentsline {section}{Appendix C: Tag Schematic Diagram}{70}{section*.16}
+\contentsline {section}{Appendix D: Tag PCB Layout}{75}{section*.17}
+\contentsline {section}{Appendix E: Beacon PCB Layout}{77}{section*.18}
+\contentsline {section}{Appendix F: Tag Bill of Materials and Unit Cost}{79}{section*.19}
+\contentsline {section}{Appendix G1: Beacon Structural Schematics}{81}{section*.20}
+\contentsline {section}{Appendix G2: Tag Case Schematics}{83}{section*.21}
+\contentsline {section}{Appendix H: Beacon Placement on UCT Upper Campus}{85}{section*.22}
